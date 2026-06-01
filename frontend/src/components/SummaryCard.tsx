@@ -4,7 +4,7 @@ interface SummaryCardProps {
   icon: ReactNode;
   iconBg?: string;
   title: string;
-  count: string | number;
+  count: ReactNode;
   onEdit?: () => void;
   children: ReactNode;
 }
@@ -18,7 +18,7 @@ export function SummaryCard({
   children,
 }: SummaryCardProps) {
   return (
-    <div className="rounded-[28px] rounded-tl-none rounded-br-none border border-border bg-card p-5">
+    <div className="rounded-2xl border border-border bg-card p-5">
       <div className="mb-4 flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
           <div

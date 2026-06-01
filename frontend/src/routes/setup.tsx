@@ -247,7 +247,7 @@ function SetupPage() {
       </div>
 
       <div className="fixed bottom-0 left-0 right-0 px-5 py-4">
-        <div className="mx-auto max-w-3xl rounded-[28px] rounded-tl-none rounded-br-none border border-border bg-card">
+        <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
           <div className="flex min-h-16 items-center gap-3 px-4 py-3 sm:px-5">
             {step > 1 && (
               <Button

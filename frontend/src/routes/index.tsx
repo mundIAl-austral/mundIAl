@@ -1,6 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import {
+  ArrowRight,
   ChevronRight,
   Clock3,
   Globe2,
@@ -10,6 +11,7 @@ import {
   Users,
 } from "lucide-react";
 import { fetchRecommendations } from "@/api/recommendations";
+import { Flag } from "@/components/Flag";
 import { NavBar } from "@/components/NavBar";
 import { SummaryCard } from "@/components/SummaryCard";
 import { WeekHeatmap } from "@/components/WeekHeatmap";
@@ -17,7 +19,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { COUNTRY_LABELS } from "@/data/countries";
-import { TEAM_META } from "@/data/teams";
+import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
 import { TIMEZONES } from "@/data/timezones";
 import { useProfile } from "@/hooks/useProfile";
 import { useSetupStep4 } from "@/hooks/useSetupStep4";
@@ -151,12 +153,20 @@ function IndexPage() {
               <div className="flex flex-wrap gap-2">
                 {profile.favorite_teams.map((team) => {
                   const meta = TEAM_META[team];
+                  const countryCode = TEAM_COUNTRY_CODES[team];
                   return (
                     <span
                       key={team}
                       className="inline-flex items-center gap-2 rounded-full border border-border bg-[color:var(--surface-soft)] px-3 py-1.5 text-sm text-foreground/88"
                     >
-                      {meta?.flag} {meta?.es ?? team}
+                      {countryCode ? (
+                        <Flag
+                          countryCode={countryCode}
+                          countryLabel={meta?.es ?? team}
+                          size="sm"
+                        />
+                      ) : null}
+                      {meta?.es ?? team}
                     </span>
                   );
                 })}
@@ -216,7 +226,16 @@ function IndexPage() {
               icon={<Globe2 className="h-4 w-4" />}
               iconBg="rgba(142, 167, 255, 0.14)"
               title="Ubicación"
-              count={countryLabel}
+              count={
+                <span className="inline-flex items-center gap-3">
+                  <Flag
+                    countryCode={profile.country}
+                    countryLabel={countryLabel}
+                    size="md"
+                  />
+                  <span>{countryLabel}</span>
+                </span>
+              }
               onEdit={() =>
                 void navigate({ to: "/setup", search: { step: 4 } })
               }
@@ -246,7 +265,7 @@ function IndexPage() {
       </main>
 
       <div className="fixed bottom-0 left-0 right-0 px-5 py-4">
-        <div className="mx-auto max-w-3xl rounded-[28px] rounded-tl-none rounded-br-none border border-border bg-card">
+        <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
           <div className="flex min-h-16 items-center px-4 py-3 sm:px-5">
             {isPending ? (
               <Skeleton className="h-12 w-full rounded-2xl" />
@@ -257,7 +276,7 @@ function IndexPage() {
                 size="lg"
               >
                 Ver mis recomendaciones
-                <ChevronRight className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4" />
               </Button>
             )}
           </div>

@@ -1,6 +1,7 @@
 import { MapPin } from "lucide-react";
 import type { MatchRecommendation } from "@/types";
-import { TEAM_META } from "@/data/teams";
+import { Flag } from "@/components/Flag";
+import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
 
 interface MatchRowProps {
   match: MatchRecommendation;
@@ -40,6 +41,8 @@ export function MatchRow({ match }: MatchRowProps) {
   );
   const teamAMeta = TEAM_META[match.team_a];
   const teamBMeta = TEAM_META[match.team_b];
+  const teamACountryCode = TEAM_COUNTRY_CODES[match.team_a];
+  const teamBCountryCode = TEAM_COUNTRY_CODES[match.team_b];
   const pct = Math.round(match.score * 100);
 
   return (
@@ -68,11 +71,23 @@ export function MatchRow({ match }: MatchRowProps) {
 
         <div className="mb-3 space-y-1">
           <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-            <span>{teamAMeta?.flag ?? "🏳️"}</span>
+            {teamACountryCode ? (
+              <Flag
+                countryCode={teamACountryCode}
+                countryLabel={teamAMeta?.es ?? match.team_a}
+                size="sm"
+              />
+            ) : null}
             <span className="truncate">{teamAMeta?.es ?? match.team_a}</span>
           </div>
           <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-            <span>{teamBMeta?.flag ?? "🏳️"}</span>
+            {teamBCountryCode ? (
+              <Flag
+                countryCode={teamBCountryCode}
+                countryLabel={teamBMeta?.es ?? match.team_b}
+                size="sm"
+              />
+            ) : null}
             <span className="truncate">{teamBMeta?.es ?? match.team_b}</span>
           </div>
         </div>

@@ -18,7 +18,7 @@ export function StepperHeader({ step, total }: StepperHeaderProps) {
 
   return (
     <header className="px-5 pt-4">
-      <div className="mx-auto max-w-3xl rounded-[28px] rounded-tl-none rounded-br-none border border-border bg-card">
+      <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
         <div className="flex min-h-16 w-full items-center justify-between gap-3 px-4 py-3 sm:px-5">
           <div className="text-center">
             <span

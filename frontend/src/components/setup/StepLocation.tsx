@@ -1,4 +1,5 @@
 import type { CatalogCountry, CatalogTimezone } from "@/types";
+import { Flag } from "@/components/Flag";
 import {
   Select,
   SelectContent,
@@ -42,7 +43,18 @@ export function StepLocation({
       return value ?? "Seleccioná un país";
     }
 
-    return `${selectedCountry.label} (${selectedCountry.code})`;
+    return (
+      <span className="flex min-w-0 items-center gap-3">
+        <Flag
+          countryCode={selectedCountry.code}
+          countryLabel={selectedCountry.label}
+          size="sm"
+        />
+        <span className="truncate leading-none">
+          {selectedCountry.label} ({selectedCountry.code})
+        </span>
+      </span>
+    );
   }
 
   return (
@@ -106,7 +118,16 @@ export function StepLocation({
                 label={`${currentCountry.label} (${currentCountry.code})`}
                 className="text-sm text-popover-foreground focus:bg-[color:var(--surface-elevated-hover)] focus:text-popover-foreground"
               >
-                {currentCountry.label} ({currentCountry.code})
+                <span className="flex min-w-0 items-center gap-3">
+                  <Flag
+                    countryCode={currentCountry.code}
+                    countryLabel={currentCountry.label}
+                    size="sm"
+                  />
+                  <span className="truncate leading-none">
+                    {currentCountry.label} ({currentCountry.code})
+                  </span>
+                </span>
               </SelectItem>
             ))}
           </SelectContent>

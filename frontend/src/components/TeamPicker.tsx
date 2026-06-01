@@ -2,9 +2,11 @@ import {
   CONFEDERATION_LABELS,
   TEAMS_BY_CONFEDERATION,
   type TeamMeta,
+  TEAM_COUNTRY_CODES,
   TEAM_META,
   type Confederation,
 } from "@/data/teams";
+import { Flag } from "@/components/Flag";
 import type { CatalogTeam } from "@/types";
 
 interface TeamPickerProps {
@@ -82,6 +84,7 @@ export function TeamPicker({ selected, onChange, teams }: TeamPickerProps) {
             <div className="flex flex-wrap gap-2">
               {confTeams.map((teamKey) => {
                 const meta: TeamMeta | undefined = TEAM_META[teamKey];
+                const countryCode = TEAM_COUNTRY_CODES[teamKey];
                 const isSelected = selectedSet.has(teamKey);
                 return (
                   <button
@@ -94,7 +97,14 @@ export function TeamPicker({ selected, onChange, teams }: TeamPickerProps) {
                         : "border-border bg-[color:var(--surface-soft)] text-foreground/90"
                     }`}
                   >
-                    <span>{meta?.flag}</span>
+                    {countryCode ? (
+                      <Flag
+                        countryCode={countryCode}
+                        countryLabel={meta?.es ?? teamKey}
+                        size="sm"
+                        className="border-current/10 bg-white/70"
+                      />
+                    ) : null}
                     <span>{meta?.es ?? teamKey}</span>
                   </button>
                 );
