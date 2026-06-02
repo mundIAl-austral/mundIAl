@@ -6,6 +6,7 @@ import {
   type ComponentType,
 } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { animate } from "animejs";
 import {
   ArrowLeft,
   ArrowRight,
@@ -42,6 +43,8 @@ function SetupPage() {
   const { step } = Route.useSearch();
   const navigate = useNavigate({ from: "/setup" });
   const { profile, saveProfile } = useProfile();
+  const stepContentRef = useRef<HTMLDivElement>(null);
+  const previousStepRef = useRef(step);
 
   const { teams } = useSetupStep1();
   const { countries, timezones } = useSetupStep4();
@@ -80,6 +83,38 @@ function SetupPage() {
       setCountry(profile.country);
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const panel = stepContentRef.current;
+
+    if (!panel) {
+      previousStepRef.current = step;
+      return;
+    }
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (prefersReducedMotion) {
+      previousStepRef.current = step;
+      return;
+    }
+
+    const direction = step >= previousStepRef.current ? 1 : -1;
+    const animation = animate(panel, {
+      opacity: [0, 1],
+      translateX: [direction * 30, 0],
+      duration: 250,
+      ease: "outCubic",
+    });
+
+    previousStepRef.current = step;
+
+    return () => {
+      animation.revert();
+    };
+  }, [step]);
 
   const handlePlayerSearch = useCallback(
     async (q: string, signal: AbortSignal): Promise<string[]> => {
@@ -181,12 +216,12 @@ function SetupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="sticky top-0 z-50 pb-2">
+    <div className="min-h-[100svh] bg-background">
+      <div className="sticky top-0 z-50">
         <StepperHeader step={step} total={TOTAL_STEPS} />
       </div>
 
-      <div className="px-5 pb-36 pt-4">
+      <div className="overflow-x-hidden px-5 pb-36 pt-4">
         <div className="mx-auto max-w-3xl">
           <div className="mb-5 px-1 pt-4">
             <div className="flex items-center gap-3">
@@ -202,72 +237,76 @@ function SetupPage() {
             </p>
           </div>
 
-          {step === 1 && (
-            <StepTeams
-              selectedTeams={selectedTeams}
-              teams={teams}
-              onChange={setSelectedTeams}
-            />
-          )}
+          <div
+            key={step}
+            ref={stepContentRef}
+            className="will-change-transform"
+          >
+            {step === 1 && (
+              <StepTeams
+                selectedTeams={selectedTeams}
+                teams={teams}
+                onChange={setSelectedTeams}
+              />
+            )}
 
-          {step === 2 && (
-            <StepPlayers
-              players={players}
-              suggestions={playerSuggestions}
-              onChange={setPlayers}
-              onSearch={handlePlayerSearch}
-            />
-          )}
+            {step === 2 && (
+              <StepPlayers
+                players={players}
+                suggestions={playerSuggestions}
+                onChange={setPlayers}
+                onSearch={handlePlayerSearch}
+              />
+            )}
 
-          {step === 3 && (
-            <StepSchedule
-              slotMode={slotMode}
-              slots={slots}
-              uploadedFile={uploadedFile}
-              fileInputRef={fileInputRef}
-              onSlotModeChange={setSlotMode}
-              onSlotsChange={setSlots}
-              onUploadedFileChange={setUploadedFile}
-            />
-          )}
+            {step === 3 && (
+              <StepSchedule
+                slotMode={slotMode}
+                slots={slots}
+                uploadedFile={uploadedFile}
+                fileInputRef={fileInputRef}
+                onSlotModeChange={setSlotMode}
+                onSlotsChange={setSlots}
+                onUploadedFileChange={setUploadedFile}
+              />
+            )}
 
-          {step === 4 && (
-            <StepLocation
-              country={country}
-              timezone={timezone}
-              countries={countries}
-              timezones={timezones}
-              onCountryChange={(nextCountry) =>
-                setCountry(nextCountry.toUpperCase().slice(0, 2))
-              }
-              onTimezoneChange={setTimezone}
-            />
-          )}
+            {step === 4 && (
+              <StepLocation
+                country={country}
+                timezone={timezone}
+                countries={countries}
+                timezones={timezones}
+                onCountryChange={(nextCountry) =>
+                  setCountry(nextCountry.toUpperCase().slice(0, 2))
+                }
+                onTimezoneChange={setTimezone}
+              />
+            )}
+          </div>
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 px-5 py-4">
-        <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
-          <div className="flex min-h-16 items-center gap-3 px-4 py-3 sm:px-5">
-            {step > 1 && (
-              <Button
-                variant="outline"
-                onClick={goBack}
-                className="h-12 gap-2 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-none border-border bg-card px-5 text-foreground/80 hover:bg-[color:var(--surface-elevated-hover)] hover:text-foreground"
-              >
-                <ArrowLeft className="h-4 w-4" />
-                Atrás
-              </Button>
-            )}
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
+        <div className="mx-auto flex min-h-16 max-w-3xl items-center gap-3 px-5 py-3">
+          {step > 1 && (
             <Button
-              onClick={() => void goNext()}
-              disabled={!isStepValid()}
-              className="h-12 flex-1 gap-2 rounded-br-2xl rounded-bl-2xl rounded-tr-2xl rounded-tl-none"
+              variant="outline"
+              onClick={goBack}
+              className="h-12 gap-2 rounded-2xl rounded-br-xs border-border bg-card px-5 text-foreground/80 hover:bg-[color:var(--surface-elevated-hover)] hover:text-foreground"
             >
-              {step === TOTAL_STEPS ? "Crear mi perfil" : "Continuar"}
-              <ArrowRight className="h-4 w-4" />
+              <ArrowLeft className="h-4 w-4" />
+              Atrás
             </Button>
-          </div>
+          )}
+          <Button
+            onClick={() => void goNext()}
+            disabled={!isStepValid()}
+            className="h-12 flex-1 gap-2 rounded-br-2xl rounded-bl-2xl rounded-tr-2xl rounded-tl-none"
+          >
+            {step === TOTAL_STEPS ? "Crear mi perfil" : "Continuar"}
+            <ArrowRight className="h-4 w-4" />
+          </Button>
         </div>
       </div>
     </div>

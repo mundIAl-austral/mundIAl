@@ -17,9 +17,9 @@ export function StepperHeader({ step, total }: StepperHeaderProps) {
   };
 
   return (
-    <header className="px-5 pt-4">
-      <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
-        <div className="flex min-h-16 w-full items-center justify-between gap-3 px-4 py-3 sm:px-5">
+    <header className="border-b border-border bg-background/95 pt-[env(safe-area-inset-top)] backdrop-blur">
+      <div className="mx-auto max-w-3xl px-5">
+        <div className="flex min-h-16 w-full items-center justify-between gap-3 py-3">
           <div className="text-center">
             <span
               className="block text-2xl text-foreground"
@@ -34,7 +34,7 @@ export function StepperHeader({ step, total }: StepperHeaderProps) {
           </span>
         </div>
 
-        <div className="px-4 pb-4 sm:px-5">
+        <div className="pb-4">
           <StepperProgress total={total} current={step} compact />
         </div>
       </div>

@@ -1,15 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import {
-  ArrowRight,
-  ChevronRight,
-  Clock3,
-  Globe2,
-  Shield,
-  Sparkles,
-  Star,
-  Users,
-} from "lucide-react";
+import { ArrowRight, Clock3, Globe2, Shield, Star, Users } from "lucide-react";
 import { fetchRecommendations } from "@/api/recommendations";
 import { Flag } from "@/components/Flag";
 import { NavBar } from "@/components/NavBar";
@@ -52,12 +43,8 @@ function IndexPage() {
 
         <main className="px-5 pb-20">
           <div className="mx-auto max-w-3xl">
-            <section className="rounded-[36px] rounded-tl-none rounded-br-none border border-border bg-card px-6 py-8 sm:px-8 sm:py-10">
+            <section className="rounded-2xl border border-border bg-card px-6 py-8 mt-6 sm:px-8 sm:py-10">
               <div className="max-w-3xl">
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-[color:var(--surface-soft)] px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
-                  <Sparkles className="h-3.5 w-3.5 text-primary" />
-                  Recomendaciones personalizadas
-                </div>
                 <h1 className="max-w-2xl text-4xl leading-none text-foreground sm:text-5xl">
                   Elegí qué partidos del Mundial 2026 valen tu tiempo.
                 </h1>
@@ -77,11 +64,8 @@ function IndexPage() {
                   size="lg"
                 >
                   Configurar mi perfil
-                  <ChevronRight className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4" />
                 </Button>
-                <div className="inline-flex items-center rounded-full border border-border bg-[color:var(--surface-soft)] px-4 py-2 text-sm text-muted-foreground">
-                  Gratis · Sin registro · Demo lista para compartir
-                </div>
               </div>
             </section>
           </div>
@@ -264,22 +248,20 @@ function IndexPage() {
         </div>
       </main>
 
-      <div className="fixed bottom-0 left-0 right-0 px-5 py-4">
-        <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
-          <div className="flex min-h-16 items-center px-4 py-3 sm:px-5">
-            {isPending ? (
-              <Skeleton className="h-12 w-full rounded-2xl" />
-            ) : (
-              <Button
-                onClick={handleRecommend}
-                className="h-12 w-full gap-2 rounded-br-2xl rounded-bl-2xl rounded-tr-2xl rounded-tl-none"
-                size="lg"
-              >
-                Ver mis recomendaciones
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            )}
-          </div>
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
+        <div className="mx-auto flex min-h-16 max-w-3xl items-center px-5 py-3">
+          {isPending ? (
+            <Skeleton className="h-12 w-full rounded-2xl" />
+          ) : (
+            <Button
+              onClick={handleRecommend}
+              className="h-12 w-full gap-2 rounded-2xl rounded-tl-xs"
+              size="lg"
+            >
+              Ver mis recomendaciones
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          )}
         </div>
       </div>
     </div>

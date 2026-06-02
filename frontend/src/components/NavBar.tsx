@@ -6,8 +6,8 @@ interface NavBarProps {
 
 export function NavBar({ rightSlot }: NavBarProps) {
   return (
-    <header className="sticky top-0 z-50 px-5 pt-4 pb-2">
-      <div className="mx-auto flex min-h-16 max-w-3xl items-center justify-between gap-3 rounded-2xl border border-border bg-card/95 px-4 py-3 backdrop-blur sm:px-5">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/95 pt-[env(safe-area-inset-top)] backdrop-blur">
+      <div className="mx-auto flex min-h-16 max-w-3xl items-center justify-between gap-3 px-5 py-3">
         <span
           className="block text-2xl text-foreground"
           style={{ fontFamily: "var(--font-heading)" }}
