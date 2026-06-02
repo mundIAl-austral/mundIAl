@@ -106,18 +106,18 @@ export function PlayerInput({
   return (
     <div className="space-y-4">
       <div
-        className="relative min-h-[56px] cursor-text rounded-xl border border-[var(--line-strong)] bg-white p-2 focus-within:border-[var(--ink-900)] focus-within:ring-2 focus-within:ring-black/5"
+        className="relative min-h-[64px] cursor-text rounded-2xl border border-border bg-[color:var(--surface-medium)] p-2.5 focus-within:border-primary/60 focus-within:bg-[color:var(--surface-strong)] focus-within:ring-2 focus-within:ring-primary/20"
         onClick={() => inputRef.current?.focus()}
       >
         <div className="flex flex-wrap gap-1.5">
           {selected.map((player) => (
             <span
               key={player}
-              className="inline-flex items-center gap-1 rounded-full border border-[var(--line)] bg-[var(--surface-2)] px-2.5 py-0.5 text-[13px]"
+              className="inline-flex items-center gap-1 rounded-full border border-primary/20 bg-[color:var(--primary-soft)] px-2.5 py-1 text-[13px] text-foreground"
             >
               <span
                 className="h-1.5 w-1.5 rounded-full"
-                style={{ backgroundColor: "var(--brand-blue)" }}
+                style={{ backgroundColor: "var(--secondary)" }}
               />
               {player}
               <button
@@ -126,7 +126,7 @@ export function PlayerInput({
                   e.stopPropagation();
                   remove(player);
                 }}
-                className="ml-0.5 cursor-pointer text-[var(--ink-500)] hover:text-[var(--ink-900)]"
+                className="ml-0.5 cursor-pointer text-muted-foreground hover:text-foreground"
                 aria-label={`Quitar ${player}`}
               >
                 <X className="h-3 w-3" />
@@ -146,14 +146,14 @@ export function PlayerInput({
             placeholder={
               selected.length === 0 ? "Lionel Messi, Kylian Mbappé…" : ""
             }
-            className="min-w-[140px] flex-1 bg-transparent text-sm text-[var(--ink-900)] placeholder:text-[var(--ink-500)] outline-none"
+            className="min-w-[140px] flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground/70 outline-none"
           />
         </div>
 
         {showDropdown && (isSearching || dropdownItems.length > 0) && (
-          <ul className="absolute left-0 right-0 top-full z-50 mt-1 max-h-52 overflow-y-auto rounded-xl border border-[var(--line)] bg-white py-1 shadow-lg">
+          <ul className="absolute left-0 right-0 top-full z-50 mt-2 max-h-52 overflow-y-auto rounded-2xl border border-border bg-popover py-1">
             {isSearching && dropdownItems.length === 0 ? (
-              <li className="px-3 py-2 text-sm text-[var(--ink-500)]">
+              <li className="px-3 py-2 text-sm text-muted-foreground">
                 Buscando…
               </li>
             ) : (
@@ -165,7 +165,7 @@ export function PlayerInput({
                       e.preventDefault();
                       add(player);
                     }}
-                    className="w-full cursor-pointer px-3 py-2 text-left text-sm text-[var(--ink-900)] hover:bg-[var(--surface-2)]"
+                    className="w-full cursor-pointer px-3 py-2 text-left text-sm text-popover-foreground/90 hover:bg-[color:var(--surface-strong)]"
                   >
                     {player}
                   </button>
@@ -177,7 +177,7 @@ export function PlayerInput({
       </div>
 
       <div>
-        <p className="mb-2 text-[11px] font-medium uppercase tracking-wider text-[var(--ink-500)]">
+        <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
           Sugerencias
         </p>
         <div className="flex flex-wrap gap-2">
@@ -186,7 +186,7 @@ export function PlayerInput({
               key={player}
               type="button"
               onClick={() => add(player)}
-              className="cursor-pointer rounded-full border border-dashed border-[var(--line-strong)] px-2.5 py-1 text-[13px] text-[var(--ink-700)] transition-colors hover:border-[var(--ink-900)] hover:bg-[var(--surface-2)]"
+              className="cursor-pointer rounded-full border border-dashed border-border bg-transparent px-2.5 py-1 text-[13px] text-muted-foreground transition-colors hover:border-secondary/50 hover:bg-secondary/10 hover:text-foreground"
             >
               {player}
             </button>

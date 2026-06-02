@@ -78,7 +78,7 @@ export function WeekHeatmap({ slots, onChange }: WeekHeatmapProps) {
   }, [endPainting]);
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-[var(--line)] p-3">
+    <div className="overflow-x-auto rounded-2xl border border-border bg-[color:var(--surface-medium)] p-4">
       <div
         ref={gridRef}
         className={`grid ${interactive ? "select-none touch-none" : ""}`}
@@ -92,7 +92,7 @@ export function WeekHeatmap({ slots, onChange }: WeekHeatmapProps) {
         {DAYS.map((d) => (
           <div
             key={d.value}
-            className="pb-1 text-center font-mono text-[9px] uppercase tracking-wider text-[var(--ink-500)]"
+            className="pb-1 text-center font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground"
           >
             {d.label}
           </div>
@@ -101,7 +101,8 @@ export function WeekHeatmap({ slots, onChange }: WeekHeatmapProps) {
         {Array.from({ length: 24 }, (_, hour) => (
           <Fragment key={hour}>
             <div
-              className="flex items-center justify-end pr-1 font-mono text-[9px] text-[var(--ink-500)]"
+              key={`label-${hour}`}
+              className="flex items-center justify-end pr-1 font-mono text-[9px] text-muted-foreground/80"
               style={{
                 height: 8,
                 visibility: hour % 3 === 0 ? "visible" : "hidden",
@@ -122,8 +123,8 @@ export function WeekHeatmap({ slots, onChange }: WeekHeatmapProps) {
                       height: 8,
                       borderRadius: 2,
                       backgroundColor: available
-                        ? "var(--brand-green)"
-                        : "var(--surface-3)",
+                        ? "var(--primary)"
+                        : "var(--surface-strong)",
                     }}
                   />
                 );
@@ -137,13 +138,13 @@ export function WeekHeatmap({ slots, onChange }: WeekHeatmapProps) {
                   data-hour={hour}
                   aria-pressed={available}
                   aria-label={ariaLabel}
-                  className="cursor-pointer border-0 p-0 transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[var(--ink-900)]"
+                  className="cursor-pointer border-0 p-0 transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-ring"
                   style={{
                     height: 8,
                     borderRadius: 2,
                     backgroundColor: available
-                      ? "var(--brand-green)"
-                      : "var(--surface-3)",
+                      ? "var(--primary)"
+                      : "var(--surface-strong)",
                   }}
                   onPointerDown={(e) =>
                     handleCellPointerDown(e, d.value, hour, available)
