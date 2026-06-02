@@ -55,7 +55,7 @@ export function StepSchedule({
 
       {slotMode === "manual" ? (
         <>
-          <WeekHeatmap slots={slots} />
+          <WeekHeatmap slots={slots} onChange={onSlotsChange} />
           <SlotEditor slots={slots} onChange={onSlotsChange} />
         </>
       ) : (
