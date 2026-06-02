@@ -27,7 +27,7 @@ function isHourAvailable(
 
 export function WeekHeatmap({ slots }: WeekHeatmapProps) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-[var(--line)] p-3">
+    <div className="overflow-x-auto rounded-2xl border border-border bg-[color:var(--surface-medium)] p-4">
       <div
         className="grid"
         style={{ gridTemplateColumns: "28px repeat(7, 1fr)", gap: "2px" }}
@@ -37,7 +37,7 @@ export function WeekHeatmap({ slots }: WeekHeatmapProps) {
         {DAYS.map((d) => (
           <div
             key={d.value}
-            className="pb-1 text-center font-mono text-[9px] uppercase tracking-wider text-[var(--ink-500)]"
+            className="pb-1 text-center font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground"
           >
             {d.label}
           </div>
@@ -48,7 +48,7 @@ export function WeekHeatmap({ slots }: WeekHeatmapProps) {
           <Fragment key={hour}>
             <div
               key={`label-${hour}`}
-              className="flex items-center justify-end pr-1 font-mono text-[9px] text-[var(--ink-500)]"
+              className="flex items-center justify-end pr-1 font-mono text-[9px] text-muted-foreground/80"
               style={{
                 height: 8,
                 visibility: hour % 3 === 0 ? "visible" : "hidden",
@@ -63,8 +63,8 @@ export function WeekHeatmap({ slots }: WeekHeatmapProps) {
                   height: 8,
                   borderRadius: 2,
                   backgroundColor: isHourAvailable(d.value, hour, slots)
-                    ? "var(--brand-green)"
-                    : "var(--surface-3)",
+                    ? "var(--primary)"
+                    : "var(--surface-strong)",
                 }}
               />
             ))}

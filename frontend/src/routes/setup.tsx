@@ -1,14 +1,26 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type ComponentType,
+} from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Clock3,
+  MapPin,
+  Shield,
+  Star,
+} from "lucide-react";
 import { z } from "zod";
-import { Calendar, CheckCircle2, Upload } from "lucide-react";
 import { searchPlayers } from "@/api/players";
-import { PlayerInput } from "@/components/PlayerInput";
-import { SlotEditor } from "@/components/SlotEditor";
 import { StepperHeader } from "@/components/StepperHeader";
-import { StepperProgress } from "@/components/StepperProgress";
-import { TeamPicker } from "@/components/TeamPicker";
-import { WeekHeatmap } from "@/components/WeekHeatmap";
+import { StepLocation } from "@/components/setup/StepLocation";
+import { StepPlayers } from "@/components/setup/StepPlayers";
+import { StepSchedule } from "@/components/setup/StepSchedule";
+import { StepTeams } from "@/components/setup/StepTeams";
 import { Button } from "@/components/ui/button";
 import { usePlayerSuggestions } from "@/hooks/usePlayerSuggestions";
 import { useProfile } from "@/hooks/useProfile";
@@ -128,299 +140,136 @@ function SetupPage() {
     void navigate({ to: "/" });
   }
 
-  const stepTitles: Record<number, { title: string; subtitle: string }> = {
+  const stepTitles: Record<
+    number,
+    {
+      title: string;
+      subtitle: string;
+      icon: ComponentType<{ className?: string }>;
+    }
+  > = {
     1: {
+      icon: Shield,
       title: "Tus equipos",
       subtitle: "Elegí los equipos que más seguís. Podés seleccionar varios.",
     },
     2: {
+      icon: Star,
       title: "Tus jugadores",
       subtitle: "Agregá los jugadores que no te querés perder.",
     },
     3: {
+      icon: Clock3,
       title: "Tus horarios",
       subtitle: "Indicá cuándo podés mirar partidos durante la semana.",
     },
     4: {
+      icon: MapPin,
       title: "Tu ubicación",
       subtitle: "Para mostrarte los horarios en tu zona horaria.",
     },
   };
 
-  const { title, subtitle } = stepTitles[step] ?? { title: "", subtitle: "" };
+  const {
+    title,
+    subtitle,
+    icon: StepIcon,
+  } = stepTitles[step] ?? {
+    title: "",
+    subtitle: "",
+    icon: Shield,
+  };
 
   return (
-    <div className="flex min-h-screen flex-col bg-white">
-      <StepperHeader step={step} total={TOTAL_STEPS} onBack={goBack} />
-      <StepperProgress total={TOTAL_STEPS} current={step} />
+    <div className="min-h-screen bg-background">
+      <div className="sticky top-0 z-50 pb-2">
+        <StepperHeader step={step} total={TOTAL_STEPS} />
+      </div>
 
-      <div className="flex-1 overflow-y-auto px-5 pb-32 pt-6">
-        <div className="mx-auto max-w-lg">
-          <div className="mb-6">
-            <p className="mb-1 font-mono text-xs uppercase tracking-widest text-[var(--ink-500)]">
-              {String(step).padStart(2, "0")} · de{" "}
-              {String(TOTAL_STEPS).padStart(2, "0")}
+      <div className="px-5 pb-36 pt-4">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-5 px-1 pt-4">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-border bg-[color:var(--surface-medium)] text-primary">
+                <StepIcon className="h-5 w-5" />
+              </div>
+              <h1 className="text-2xl leading-tight text-foreground md:text-3xl">
+                {title}
+              </h1>
+            </div>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+              {subtitle}
             </p>
-            <h1 className="text-2xl font-bold text-[var(--ink-900)]">
-              {title}
-            </h1>
-            <p className="mt-1 text-sm text-[var(--ink-500)]">{subtitle}</p>
           </div>
 
           {step === 1 && (
-            <TeamPicker
-              selected={selectedTeams}
-              onChange={setSelectedTeams}
+            <StepTeams
+              selectedTeams={selectedTeams}
               teams={teams}
+              onChange={setSelectedTeams}
             />
           )}
 
           {step === 2 && (
-            <PlayerInput
-              selected={players}
-              onChange={setPlayers}
+            <StepPlayers
+              players={players}
               suggestions={playerSuggestions}
+              onChange={setPlayers}
               onSearch={handlePlayerSearch}
             />
           )}
 
           {step === 3 && (
-            <div className="space-y-5">
-              {/* Mode toggle */}
-              <div className="flex gap-2 rounded-xl border border-[var(--line)] bg-[var(--surface-2)] p-1">
-                <button
-                  type="button"
-                  onClick={() => setSlotMode("manual")}
-                  className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                    slotMode === "manual"
-                      ? "bg-white shadow-sm text-[var(--ink-900)]"
-                      : "text-[var(--ink-500)] hover:text-[var(--ink-700)]"
-                  }`}
-                >
-                  <Calendar className="h-4 w-4" />
-                  Seleccionar manualmente
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setSlotMode("upload")}
-                  className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                    slotMode === "upload"
-                      ? "bg-white shadow-sm text-[var(--ink-900)]"
-                      : "text-[var(--ink-500)] hover:text-[var(--ink-700)]"
-                  }`}
-                >
-                  <Upload className="h-4 w-4" />
-                  Subir .ics
-                </button>
-              </div>
-
-              {slotMode === "manual" && (
-                <>
-                  <WeekHeatmap slots={slots} />
-                  <SlotEditor slots={slots} onChange={setSlots} />
-                </>
-              )}
-
-              {slotMode === "upload" && (
-                <IcsUploadZone
-                  file={uploadedFile}
-                  inputRef={fileInputRef}
-                  onFileChange={setUploadedFile}
-                />
-              )}
-            </div>
+            <StepSchedule
+              slotMode={slotMode}
+              slots={slots}
+              uploadedFile={uploadedFile}
+              fileInputRef={fileInputRef}
+              onSlotModeChange={setSlotMode}
+              onSlotsChange={setSlots}
+              onUploadedFileChange={setUploadedFile}
+            />
           )}
 
           {step === 4 && (
-            <div className="space-y-5">
-              <div>
-                <label className="mb-1.5 block text-sm font-medium text-[var(--ink-700)]">
-                  Zona horaria
-                  <span className="ml-2 text-[11px] font-normal text-[var(--ink-500)]">
-                    Para calcular los horarios locales
-                  </span>
-                </label>
-                <select
-                  value={timezone}
-                  onChange={(e) => setTimezone(e.target.value)}
-                  className="h-11 w-full rounded-xl border border-[var(--line-strong)] bg-white px-3 text-sm text-[var(--ink-900)] outline-none focus:border-[var(--ink-900)] focus:ring-2 focus:ring-black/5"
-                >
-                  {timezones.map((tz) => (
-                    <option key={tz.value} value={tz.value}>
-                      {tz.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="mb-1.5 block text-sm font-medium text-[var(--ink-700)]">
-                  País
-                  <span className="ml-2 text-[11px] font-normal text-[var(--ink-500)]">
-                    Código ISO de 2 letras (ej: AR, BR, MX)
-                  </span>
-                </label>
-                <select
-                  value={country}
-                  onChange={(e) =>
-                    setCountry(e.target.value.toUpperCase().slice(0, 2))
-                  }
-                  className="h-11 w-full rounded-xl border border-[var(--line-strong)] bg-white px-3 text-sm text-[var(--ink-900)] outline-none focus:border-[var(--ink-900)] focus:ring-2 focus:ring-black/5"
-                >
-                  {countries.map((c) => (
-                    <option key={c.code} value={c.code}>
-                      {c.label} ({c.code})
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="rounded-xl bg-[var(--surface-2)] p-4">
-                <p className="mb-2 font-mono text-[10px] uppercase tracking-wider text-[var(--ink-500)]">
-                  Sedes 2026
-                </p>
-                <div className="flex gap-4">
-                  {[
-                    { label: "Canadá", color: "var(--brand-red)" },
-                    { label: "México", color: "var(--brand-green)" },
-                    { label: "USA", color: "var(--brand-blue)" },
-                  ].map(({ label, color }) => (
-                    <div key={label} className="flex items-center gap-1.5">
-                      <div
-                        className="h-2.5 w-2.5 rounded-full"
-                        style={{ backgroundColor: color }}
-                      />
-                      <span className="text-sm text-[var(--ink-700)]">
-                        {label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <p className="mt-2 text-[12px] text-[var(--ink-500)]">
-                  Los partidos se juegan en tres países. Los horarios se ajustan
-                  automáticamente según tu zona.
-                </p>
-              </div>
-            </div>
+            <StepLocation
+              country={country}
+              timezone={timezone}
+              countries={countries}
+              timezones={timezones}
+              onCountryChange={(nextCountry) =>
+                setCountry(nextCountry.toUpperCase().slice(0, 2))
+              }
+              onTimezoneChange={setTimezone}
+            />
           )}
         </div>
       </div>
 
-      <div
-        className="fixed bottom-0 left-0 right-0 border-t border-[var(--line)] bg-white px-5 py-3"
-        style={{ boxShadow: "0 -8px 24px rgba(0,0,0,.06)" }}
-      >
-        <div className="mx-auto flex max-w-lg gap-3">
-          {step > 1 && (
+      <div className="fixed bottom-0 left-0 right-0 px-5 py-4">
+        <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
+          <div className="flex min-h-16 items-center gap-3 px-4 py-3 sm:px-5">
+            {step > 1 && (
+              <Button
+                variant="outline"
+                onClick={goBack}
+                className="h-12 gap-2 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-none border-border bg-card px-5 text-foreground/80 hover:bg-[color:var(--surface-elevated-hover)] hover:text-foreground"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                Atrás
+              </Button>
+            )}
             <Button
-              variant="outline"
-              onClick={goBack}
-              className="h-12 px-5 text-[var(--ink-700)]"
+              onClick={() => void goNext()}
+              disabled={!isStepValid()}
+              className="h-12 flex-1 gap-2 rounded-br-2xl rounded-bl-2xl rounded-tr-2xl rounded-tl-none"
             >
-              Atrás
+              {step === TOTAL_STEPS ? "Crear mi perfil" : "Continuar"}
+              <ArrowRight className="h-4 w-4" />
             </Button>
-          )}
-          <Button
-            onClick={() => void goNext()}
-            disabled={!isStepValid()}
-            className="h-12 flex-1 bg-[var(--brand-red)] text-white hover:bg-[#c8152a] disabled:opacity-40"
-          >
-            {step === TOTAL_STEPS ? "Crear mi perfil" : "Continuar"}
-          </Button>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// ICS upload sub-component
-// ---------------------------------------------------------------------------
-
-interface IcsUploadZoneProps {
-  file: File | null;
-  inputRef: React.RefObject<HTMLInputElement | null>;
-  onFileChange: (file: File | null) => void;
-}
-
-function IcsUploadZone({ file, inputRef, onFileChange }: IcsUploadZoneProps) {
-  function handleFileInput(e: React.ChangeEvent<HTMLInputElement>) {
-    onFileChange(e.target.files?.[0] ?? null);
-  }
-
-  function handleDrop(e: React.DragEvent<HTMLDivElement>) {
-    e.preventDefault();
-    const dropped = e.dataTransfer.files[0];
-    if (dropped?.name.endsWith(".ics")) {
-      onFileChange(dropped);
-    }
-  }
-
-  function handleDragOver(e: React.DragEvent<HTMLDivElement>) {
-    e.preventDefault();
-  }
-
-  return (
-    <div className="space-y-3">
-      {/* Drop zone */}
-      <div
-        role="button"
-        tabIndex={0}
-        className="flex cursor-pointer flex-col items-center gap-3 rounded-xl border-2 border-dashed border-[var(--line-strong)] bg-[var(--surface-2)] px-6 py-8 text-center transition-colors hover:border-[var(--ink-500)]"
-        onClick={() => inputRef.current?.click()}
-        onKeyDown={(e) => e.key === "Enter" && inputRef.current?.click()}
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-      >
-        {file ? (
-          <>
-            <CheckCircle2 className="h-10 w-10 text-[var(--brand-green)]" />
-            <div>
-              <p className="font-medium text-[var(--ink-900)]">{file.name}</p>
-              <p className="mt-0.5 text-xs text-[var(--ink-500)]">
-                {(file.size / 1024).toFixed(1)} KB · Listo para subir
-              </p>
-            </div>
-            <button
-              type="button"
-              className="text-xs text-[var(--ink-500)] underline"
-              onClick={(e) => {
-                e.stopPropagation();
-                onFileChange(null);
-                if (inputRef.current) inputRef.current.value = "";
-              }}
-            >
-              Cambiar archivo
-            </button>
-          </>
-        ) : (
-          <>
-            <Upload className="h-10 w-10 text-[var(--ink-400)]" />
-            <div>
-              <p className="font-medium text-[var(--ink-700)]">
-                Subí tu calendario .ics
-              </p>
-              <p className="mt-1 text-xs text-[var(--ink-500)]">
-                Arrastrá el archivo aquí o hacé clic para seleccionarlo.
-              </p>
-            </div>
-          </>
-        )}
-      </div>
-
-      <input
-        ref={inputRef}
-        type="file"
-        accept=".ics,text/calendar"
-        className="hidden"
-        onChange={handleFileInput}
-      />
-
-      <p className="text-[11px] leading-relaxed text-[var(--ink-500)]">
-        Exportá tu Google Calendar, Outlook o Apple Calendar como{" "}
-        <span className="font-medium">.ics</span>. El backend analiza los
-        eventos marcados como ocupados para calcular tu disponibilidad.
-      </p>
     </div>
   );
 }

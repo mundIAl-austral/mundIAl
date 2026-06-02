@@ -4,43 +4,41 @@ interface SummaryCardProps {
   icon: ReactNode;
   iconBg?: string;
   title: string;
-  count: string | number;
+  count: ReactNode;
   onEdit?: () => void;
   children: ReactNode;
 }
 
 export function SummaryCard({
   icon,
-  iconBg = "var(--ink-900)",
+  iconBg = "var(--surface-elevated)",
   title,
   count,
   onEdit,
   children,
 }: SummaryCardProps) {
   return (
-    <div className="rounded-2xl border border-[var(--line)] bg-white p-4">
-      <div className="mb-3 flex items-start justify-between">
+    <div className="rounded-2xl border border-border bg-card p-5">
+      <div className="mb-4 flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
           <div
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-white text-sm"
+            className="flex h-10 w-10 items-center justify-center rounded-2xl border border-border text-sm text-foreground"
             style={{ backgroundColor: iconBg }}
           >
             {icon}
           </div>
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-500)]">
+            <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
               {title}
             </p>
-            <p className="text-xl font-bold leading-tight text-[var(--ink-900)]">
-              {count}
-            </p>
+            <p className="text-2xl leading-tight text-foreground">{count}</p>
           </div>
         </div>
         {onEdit && (
           <button
             type="button"
             onClick={onEdit}
-            className="cursor-pointer border-b border-dotted border-[var(--ink-500)] text-xs text-[var(--ink-500)] hover:border-[var(--ink-900)] hover:text-[var(--ink-900)]"
+            className="cursor-pointer rounded-full border border-border bg-[color:var(--surface-soft)] px-3 py-1 text-xs text-muted-foreground transition-colors hover:bg-[color:var(--surface-medium)] hover:text-foreground"
           >
             Editar
           </button>

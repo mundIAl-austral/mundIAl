@@ -2,9 +2,11 @@ import {
   CONFEDERATION_LABELS,
   TEAMS_BY_CONFEDERATION,
   type TeamMeta,
+  TEAM_COUNTRY_CODES,
   TEAM_META,
   type Confederation,
 } from "@/data/teams";
+import { Flag } from "@/components/Flag";
 import type { CatalogTeam } from "@/types";
 
 interface TeamPickerProps {
@@ -12,12 +14,6 @@ interface TeamPickerProps {
   onChange: (teams: string[]) => void;
   teams?: CatalogTeam[];
 }
-
-const HOST_COLORS: Record<string, string> = {
-  USA: "#1848e8",
-  Mexico: "#3cac3b",
-  Canada: "#e8192c",
-};
 
 function buildTeamsByConfederation(
   teams: CatalogTeam[] | undefined,
@@ -75,12 +71,12 @@ export function TeamPicker({ selected, onChange, teams }: TeamPickerProps) {
         return (
           <div key={conf}>
             <div className="mb-3 flex items-center gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[var(--ink-500)]">
+              <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
                 {CONFEDERATION_LABELS[conf as Confederation] ?? conf}
               </span>
-              <div className="h-px flex-1 bg-[var(--line)]" />
+              <div className="h-px flex-1 bg-border" />
               {selectedCount > 0 && (
-                <span className="rounded-full bg-[var(--surface-3)] px-2 py-0.5 font-mono text-[11px] text-[var(--ink-700)]">
+                <span className="rounded-full border border-border bg-[color:var(--surface-strong)] px-2.5 py-1 font-mono text-[11px] text-muted-foreground">
                   {selectedCount}/{confTeams.length}
                 </span>
               )}
@@ -88,30 +84,27 @@ export function TeamPicker({ selected, onChange, teams }: TeamPickerProps) {
             <div className="flex flex-wrap gap-2">
               {confTeams.map((teamKey) => {
                 const meta: TeamMeta | undefined = TEAM_META[teamKey];
+                const countryCode = TEAM_COUNTRY_CODES[teamKey];
                 const isSelected = selectedSet.has(teamKey);
-                const hostColor = HOST_COLORS[teamKey];
                 return (
                   <button
                     key={teamKey}
                     type="button"
                     onClick={() => toggle(teamKey)}
-                    className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-all duration-150 select-none"
-                    style={
+                    className={`inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-all duration-150 select-none ${
                       isSelected
-                        ? {
-                            backgroundColor: hostColor ?? "var(--brand-red)",
-                            color: "#fff",
-                            borderColor: "transparent",
-                            boxShadow: "0 1px 4px rgba(0,0,0,.15)",
-                          }
-                        : {
-                            backgroundColor: "var(--surface-1)",
-                            color: "var(--ink-900)",
-                            borderColor: "var(--line-strong)",
-                          }
-                    }
+                        ? "border-primary/30 bg-primary text-primary-foreground"
+                        : "border-border bg-[color:var(--surface-soft)] text-foreground/90"
+                    }`}
                   >
-                    <span>{meta?.flag}</span>
+                    {countryCode ? (
+                      <Flag
+                        countryCode={countryCode}
+                        countryLabel={meta?.es ?? teamKey}
+                        size="sm"
+                        className="border-current/10 bg-white/70"
+                      />
+                    ) : null}
                     <span>{meta?.es ?? teamKey}</span>
                   </button>
                 );

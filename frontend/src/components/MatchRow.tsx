@@ -1,15 +1,16 @@
 import { MapPin } from "lucide-react";
 import type { MatchRecommendation } from "@/types";
-import { TEAM_META } from "@/data/teams";
+import { Flag } from "@/components/Flag";
+import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
 
 interface MatchRowProps {
   match: MatchRecommendation;
 }
 
 const CATEGORY_COLOR: Record<string, string> = {
-  imperdible: "var(--cat-imperdible)",
-  vale_la_pena: "var(--cat-vale)",
-  para_el_resumen: "var(--cat-resumen)",
+  imperdible: "var(--secondary)",
+  vale_la_pena: "var(--chart-3)",
+  para_el_resumen: "var(--primary)",
 };
 
 function formatLocalDate(dateStr: string | null): {
@@ -34,27 +35,27 @@ function formatLocalDate(dateStr: string | null): {
 }
 
 export function MatchRow({ match }: MatchRowProps) {
-  const color = CATEGORY_COLOR[match.category] ?? "var(--ink-700)";
+  const color = CATEGORY_COLOR[match.category] ?? "var(--foreground)";
   const { date, time } = formatLocalDate(
     match.local_datetime ?? match.utc_datetime,
   );
   const teamAMeta = TEAM_META[match.team_a];
   const teamBMeta = TEAM_META[match.team_b];
+  const teamACountryCode = TEAM_COUNTRY_CODES[match.team_a];
+  const teamBCountryCode = TEAM_COUNTRY_CODES[match.team_b];
   const pct = Math.round(match.score * 100);
 
   return (
-    <div className="relative flex gap-3 px-4 py-3">
-      {/* category bar */}
+    <div className="relative flex gap-4 px-4 py-4 sm:px-5">
       <div
-        className="absolute left-0 top-0 h-full w-0.5 rounded-r"
+        className="absolute left-0 top-0 h-full w-1 rounded-r-full"
         style={{ backgroundColor: color }}
       />
 
       <div className="min-w-0 flex-1">
-        {/* header */}
-        <div className="mb-2 flex items-center gap-2">
+        <div className="mb-3 flex flex-wrap items-center gap-2">
           <span
-            className="rounded-full px-2 py-0.5 font-mono text-[10px] font-semibold uppercase"
+            className="rounded-full px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.24em]"
             style={{
               backgroundColor: `color-mix(in srgb, ${color} 12%, transparent)`,
               color,
@@ -62,42 +63,50 @@ export function MatchRow({ match }: MatchRowProps) {
           >
             Grupo {match.group}
           </span>
-          <span className="text-[11px] text-[var(--ink-500)]">{date}</span>
-          <span className="font-mono text-[11px] font-medium text-[var(--ink-700)]">
+          <span className="text-[11px] text-muted-foreground">{date}</span>
+          <span className="font-mono text-[11px] font-medium text-foreground/70">
             {time}
           </span>
         </div>
 
-        {/* teams */}
-        <div className="mb-2 space-y-0.5">
-          <div className="flex items-center gap-2 text-sm font-semibold text-[var(--ink-900)]">
-            <span>{teamAMeta?.flag ?? "🏳️"}</span>
+        <div className="mb-3 space-y-1">
+          <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
+            {teamACountryCode ? (
+              <Flag
+                countryCode={teamACountryCode}
+                countryLabel={teamAMeta?.es ?? match.team_a}
+                size="sm"
+              />
+            ) : null}
             <span className="truncate">{teamAMeta?.es ?? match.team_a}</span>
           </div>
-          <div className="flex items-center gap-2 text-sm font-semibold text-[var(--ink-900)]">
-            <span>{teamBMeta?.flag ?? "🏳️"}</span>
+          <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
+            {teamBCountryCode ? (
+              <Flag
+                countryCode={teamBCountryCode}
+                countryLabel={teamBMeta?.es ?? match.team_b}
+                size="sm"
+              />
+            ) : null}
             <span className="truncate">{teamBMeta?.es ?? match.team_b}</span>
           </div>
         </div>
 
-        {/* venue */}
-        <div className="mb-2 flex items-center gap-1 text-[11px] text-[var(--ink-500)]">
+        <div className="mb-3 flex items-center gap-1.5 text-[11px] text-muted-foreground">
           <MapPin className="h-3 w-3 shrink-0" />
           <span className="truncate">
             {match.city} · {match.venue}
           </span>
         </div>
 
-        {/* explanation */}
-        <p className="text-[12px] italic text-[var(--ink-500)]">
+        <p className="text-[13px] leading-5 text-foreground/78">
           {match.explanation}
         </p>
       </div>
 
-      {/* affinity score */}
-      <div className="flex shrink-0 flex-col items-end justify-start pt-0.5">
+      <div className="flex shrink-0 flex-col items-end justify-start rounded-2xl border border-border bg-[color:var(--surface-soft)] px-3 py-2 text-right">
         <div className="text-right">
-          <span className="text-2xl font-bold leading-none" style={{ color }}>
+          <span className="text-2xl leading-none" style={{ color }}>
             {pct}
           </span>
           <span className="text-xs opacity-70" style={{ color }}>
@@ -105,7 +114,7 @@ export function MatchRow({ match }: MatchRowProps) {
           </span>
         </div>
         <span
-          className="font-mono text-[9px] uppercase tracking-wider"
+          className="font-mono text-[9px] uppercase tracking-[0.22em]"
           style={{ color }}
         >
           afinidad

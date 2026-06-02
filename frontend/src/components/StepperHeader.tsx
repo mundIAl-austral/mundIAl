@@ -1,13 +1,11 @@
-import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { StepperProgress } from "@/components/StepperProgress";
 
 interface StepperHeaderProps {
   step: number;
   total: number;
-  onBack: () => void;
 }
 
-export function StepperHeader({ step, total, onBack }: StepperHeaderProps) {
+export function StepperHeader({ step, total }: StepperHeaderProps) {
   const padded = String(step).padStart(2, "0");
   const totalPadded = String(total).padStart(2, "0");
 
@@ -19,24 +17,27 @@ export function StepperHeader({ step, total, onBack }: StepperHeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex h-14 items-center justify-between border-b border-[var(--line)] bg-white/90 px-5 backdrop-blur-sm">
-      <Button
-        variant="ghost"
-        size="icon"
-        onClick={onBack}
-        className="text-[var(--ink-700)]"
-        aria-label="Volver"
-      >
-        <ArrowLeft className="h-5 w-5" />
-      </Button>
+    <header className="px-5 pt-4">
+      <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-card">
+        <div className="flex min-h-16 w-full items-center justify-between gap-3 px-4 py-3 sm:px-5">
+          <div className="text-center">
+            <span
+              className="block text-2xl text-foreground"
+              style={{ fontFamily: "var(--font-heading)" }}
+            >
+              mund<span className="text-primary">IA</span>l
+            </span>
+          </div>
 
-      <span className="font-bold tracking-tight text-[var(--ink-900)]">
-        ⚽ mund<span className="text-[var(--brand-red)]">IA</span>l
-      </span>
+          <span className="shrink-0  px-3 py-1 font-mono text-[11px] text-foreground/60">
+            {padded} / {totalPadded} · {stepLabels[step] ?? ""}
+          </span>
+        </div>
 
-      <span className="font-mono text-xs text-[var(--ink-500)]">
-        {padded} / {totalPadded} · {stepLabels[step] ?? ""}
-      </span>
+        <div className="px-4 pb-4 sm:px-5">
+          <StepperProgress total={total} current={step} compact />
+        </div>
+      </div>
     </header>
   );
 }
