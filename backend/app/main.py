@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
 from app.ml import classifier
+from app.modules.chat.chat_routes import router as chat_router
 from app.modules.matches.matches_routes import router as matches_router
 from app.modules.players.players_routes import router as players_router
 from app.modules.recommendations.recommendations_routes import router as recommendations_router
@@ -36,6 +37,7 @@ app.add_middleware(
 app.include_router(recommendations_router)
 app.include_router(setup_router)
 app.include_router(players_router)
+app.include_router(chat_router)
 app.include_router(matches_router)
 
 
