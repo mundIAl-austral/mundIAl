@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { Clock, MapPin } from "lucide-react";
 import type { MatchRecommendation } from "@/types";
 import { Flag } from "@/components/Flag";
 import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
@@ -14,29 +14,89 @@ const CATEGORY_COLOR: Record<string, string> = {
 };
 
 function formatLocalDate(dateStr: string | null): {
+  weekday: string;
   date: string;
   time: string;
 } {
-  if (!dateStr) return { date: "—", time: "—" };
+  if (!dateStr) return { weekday: "—", date: "—", time: "—" };
   try {
     const d = new Date(dateStr);
+    const weekday = d
+      .toLocaleDateString("es-AR", { weekday: "short" })
+      .replace(".", "")
+      .toUpperCase();
     const date = d
       .toLocaleDateString("es-AR", { month: "short", day: "numeric" })
+      .replace(".", "")
       .toUpperCase();
     const time = d.toLocaleTimeString("es-AR", {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
     });
-    return { date, time };
+    return { weekday, date, time };
   } catch {
-    return { date: "—", time: "—" };
+    return { weekday: "—", date: "—", time: "—" };
   }
+}
+
+function TeamBlock({
+  name,
+  countryCode,
+  align,
+}: {
+  name: string;
+  countryCode?: string;
+  align: "left" | "right";
+}) {
+  const flag = countryCode ? (
+    <Flag
+      countryCode={countryCode}
+      countryLabel={name}
+      size="sm"
+      className="sm:h-9 sm:w-12 sm:text-xl"
+    />
+  ) : null;
+  const label = (
+    <div className="min-w-0">
+      <div
+        className={
+          align === "left"
+            ? "whitespace-normal break-words text-right text-sm font-semibold leading-tight text-foreground sm:text-lg"
+            : "whitespace-normal break-words text-left text-sm font-semibold leading-tight text-foreground sm:text-lg"
+        }
+      >
+        {name}
+      </div>
+    </div>
+  );
+
+  return (
+    <div
+      className={
+        align === "left"
+          ? "flex min-w-0 items-center justify-end gap-3 text-left"
+          : "flex min-w-0 items-center justify-start gap-3 text-right"
+      }
+    >
+      {align === "left" ? (
+        <>
+          {label}
+          {flag}
+        </>
+      ) : (
+        <>
+          {flag}
+          {label}
+        </>
+      )}
+    </div>
+  );
 }
 
 export function MatchRow({ match }: MatchRowProps) {
   const color = CATEGORY_COLOR[match.category] ?? "var(--foreground)";
-  const { date, time } = formatLocalDate(
+  const { weekday, date, time } = formatLocalDate(
     match.local_datetime ?? match.utc_datetime,
   );
   const teamAMeta = TEAM_META[match.team_a];
@@ -44,81 +104,57 @@ export function MatchRow({ match }: MatchRowProps) {
   const teamACountryCode = TEAM_COUNTRY_CODES[match.team_a];
   const teamBCountryCode = TEAM_COUNTRY_CODES[match.team_b];
   const pct = Math.round(match.score * 100);
+  const teamAName = teamAMeta?.es ?? match.team_a;
+  const teamBName = teamBMeta?.es ?? match.team_b;
 
   return (
-    <div className="relative flex gap-4 px-4 py-4 sm:px-5">
+    <div className="relative px-4 py-4 transition-colors hover:bg-[color:var(--surface-soft)] sm:px-5 sm:py-5">
       <div
-        className="absolute left-0 top-0 h-full w-1 rounded-r-full"
+        className="absolute left-0 top-4 h-[calc(100%-2rem)] w-1 rounded-r-full"
         style={{ backgroundColor: color }}
       />
 
-      <div className="min-w-0 flex-1">
-        <div className="mb-3 flex flex-wrap items-center gap-2">
-          <span
-            className="rounded-full px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.24em]"
-            style={{
-              backgroundColor: `color-mix(in srgb, ${color} 12%, transparent)`,
-              color,
-            }}
-          >
-            Grupo {match.group}
-          </span>
-          <span className="text-[11px] text-muted-foreground">{date}</span>
-          <span className="font-mono text-[11px] font-medium text-foreground/70">
-            {time}
-          </span>
-        </div>
-
-        <div className="mb-3 space-y-1">
-          <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-            {teamACountryCode ? (
-              <Flag
-                countryCode={teamACountryCode}
-                countryLabel={teamAMeta?.es ?? match.team_a}
-                size="sm"
-              />
-            ) : null}
-            <span className="truncate">{teamAMeta?.es ?? match.team_a}</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-            {teamBCountryCode ? (
-              <Flag
-                countryCode={teamBCountryCode}
-                countryLabel={teamBMeta?.es ?? match.team_b}
-                size="sm"
-              />
-            ) : null}
-            <span className="truncate">{teamBMeta?.es ?? match.team_b}</span>
-          </div>
-        </div>
-
-        <div className="mb-3 flex items-center gap-1.5 text-[11px] text-muted-foreground">
-          <MapPin className="h-3 w-3 shrink-0" />
-          <span className="truncate">
-            {match.city} · {match.venue}
-          </span>
-        </div>
-
-        <p className="text-[13px] leading-5 text-foreground/78">
-          {match.explanation}
-        </p>
-      </div>
-
-      <div className="flex shrink-0 flex-col items-end justify-start rounded-2xl border border-border bg-[color:var(--surface-soft)] px-3 py-2 text-right">
-        <div className="text-right">
-          <span className="text-2xl leading-none" style={{ color }}>
-            {pct}
-          </span>
-          <span className="text-xs opacity-70" style={{ color }}>
-            %
-          </span>
-        </div>
+      <div className="mb-3 flex items-center justify-between gap-3">
         <span
-          className="font-mono text-[9px] uppercase tracking-[0.22em]"
+          className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em]"
           style={{ color }}
         >
-          afinidad
+          Grupo {match.group}
         </span>
+        <span className="font-mono text-[11px] font-semibold text-foreground/74">
+          {pct}% afinidad
+        </span>
+      </div>
+
+      <div className="mb-1 hidden w-full items-start justify-center gap-1.5 px-8 text-center text-[10px] font-semibold uppercase leading-tight tracking-[0.12em] text-muted-foreground sm:flex">
+        <MapPin className="mt-0.5 h-3 w-3 shrink-0" />
+        <span className="whitespace-normal break-words">
+          {match.venue}, {match.city}
+        </span>
+      </div>
+
+      <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 sm:gap-6">
+        <TeamBlock
+          name={teamAName}
+          countryCode={teamACountryCode}
+          align="left"
+        />
+
+        <div className="flex w-[72px] shrink-0 flex-col items-center text-center sm:w-36">
+          <div className="font-heading text-2xl leading-none text-foreground sm:text-4xl">
+            {time}
+          </div>
+          <div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-muted-foreground sm:mt-1.5 sm:text-[11px] sm:tracking-[0.18em]">
+            <Clock className="mr-1 inline h-3 w-3 align-[-2px]" />
+            {weekday} {date}
+          </div>
+        </div>
+
+        <TeamBlock
+          name={teamBName}
+          countryCode={teamBCountryCode}
+          align="right"
+        />
       </div>
     </div>
   );
