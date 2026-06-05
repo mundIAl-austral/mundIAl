@@ -21,6 +21,7 @@ _FEATURE_TEMPLATES: dict[str, str] = {
     "expected_competitiveness": "los equipos están muy parejos en el ranking",
     "narrative_score": "es un partido con gran peso narrativo en el torneo",
     "regional_affinity": "compite una selección de tu región",
+    "playstyle_affinity": "hay jugadores con el estilo de juego que te gusta",
 }
 
 _PENALTY_TEMPLATES: dict[str, str] = {

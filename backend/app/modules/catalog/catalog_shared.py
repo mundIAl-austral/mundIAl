@@ -28,15 +28,6 @@ def load_seed_players() -> list[str]:
     return sorted(unique)
 
 
-def players_from_teams(teams: list[Team]) -> list[str]:
-    if not teams:
-        return []
-    unique: set[str] = {
-        player.strip() for team in teams for player in team.key_players if player and player.strip()
-    }
-    return sorted(unique)
-
-
 def catalog_teams_from_db(teams: list[Team]) -> list[CatalogTeam]:
     return [CatalogTeam(name=team.name, confederation=team.confederation) for team in teams]
 
