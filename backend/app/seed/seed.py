@@ -241,16 +241,19 @@ async def seed_team_playstyles(session: AsyncSession, team_map: dict[str, Team])
         team.playstyles_forwards = playstyles.get("playstyles_forwards", [])
 
 
-async def seed_team_grl_scores(session: AsyncSession, team_map: dict[str, Team]) -> None:
-    """Calculate and update grl_score (average OVR of players) for each team."""
+async def seed_team_grl_scores(session: AsyncSession) -> None:
+    """Calculate and update grl_score (average OVR of players) for each club."""
     from sqlalchemy import func
 
-    for team in team_map.values():
+    clubs_result = await session.execute(select(Club))
+    clubs = clubs_result.scalars().all()
+
+    for club in clubs:
         result = await session.execute(
-            select(func.avg(Player.overall_rating)).where(Player.team_id == team.id)
+            select(func.avg(Player.overall_rating)).where(Player.club == club.name)
         )
         avg_rating = result.scalar()
-        team.grl_score = float(avg_rating) if avg_rating is not None else 0.0
+        club.grl_score = float(avg_rating) if avg_rating is not None else 0.0
 
 
 async def main() -> None:
@@ -279,7 +282,7 @@ async def main() -> None:
         print("  48 teams enriched with playstyles")
 
         print("Calculating GRL scores...")
-        await seed_team_grl_scores(session, team_map)
+        await seed_team_grl_scores(session)
         print("  48 teams enriched with GRL scores")
 
     await engine.dispose()
