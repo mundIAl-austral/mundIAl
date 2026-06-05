@@ -14,6 +14,7 @@ import { Route as ResultsRouteImport } from './routes/results'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as ChatRouteImport } from './routes/chat'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as MatchesMatchIdRouteImport } from './routes/matches.$matchId'
 
 const SetupRoute = SetupRouteImport.update({
   id: '/setup',
@@ -40,6 +41,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MatchesMatchIdRoute = MatchesMatchIdRouteImport.update({
+  id: '/matches/$matchId',
+  path: '/matches/$matchId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/feedback': typeof FeedbackRoute
   '/results': typeof ResultsRoute
   '/setup': typeof SetupRoute
+  '/matches/$matchId': typeof MatchesMatchIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/feedback': typeof FeedbackRoute
   '/results': typeof ResultsRoute
   '/setup': typeof SetupRoute
+  '/matches/$matchId': typeof MatchesMatchIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +70,27 @@ export interface FileRoutesById {
   '/feedback': typeof FeedbackRoute
   '/results': typeof ResultsRoute
   '/setup': typeof SetupRoute
+  '/matches/$matchId': typeof MatchesMatchIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/chat' | '/feedback' | '/results' | '/setup'
+  fullPaths:
+    | '/'
+    | '/chat'
+    | '/feedback'
+    | '/results'
+    | '/setup'
+    | '/matches/$matchId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/chat' | '/feedback' | '/results' | '/setup'
-  id: '__root__' | '/' | '/chat' | '/feedback' | '/results' | '/setup'
+  to: '/' | '/chat' | '/feedback' | '/results' | '/setup' | '/matches/$matchId'
+  id:
+    | '__root__'
+    | '/'
+    | '/chat'
+    | '/feedback'
+    | '/results'
+    | '/setup'
+    | '/matches/$matchId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -77,6 +99,7 @@ export interface RootRouteChildren {
   FeedbackRoute: typeof FeedbackRoute
   ResultsRoute: typeof ResultsRoute
   SetupRoute: typeof SetupRoute
+  MatchesMatchIdRoute: typeof MatchesMatchIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -116,6 +139,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/matches/$matchId': {
+      id: '/matches/$matchId'
+      path: '/matches/$matchId'
+      fullPath: '/matches/$matchId'
+      preLoaderRoute: typeof MatchesMatchIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -125,6 +155,7 @@ const rootRouteChildren: RootRouteChildren = {
   FeedbackRoute: FeedbackRoute,
   ResultsRoute: ResultsRoute,
   SetupRoute: SetupRoute,
+  MatchesMatchIdRoute: MatchesMatchIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

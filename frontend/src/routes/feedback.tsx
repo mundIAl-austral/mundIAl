@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useProfile } from "@/hooks/useProfile";
 import type { FeedbackItem, UserProfile } from "@/types";
+import { storeRecommendations } from "@/utils/recommendationsStorage";
 
 export const Route = createFileRoute("/feedback")({
   component: FeedbackPage,
@@ -56,7 +57,7 @@ function FeedbackPage() {
     mutationFn: (feedback?: FeedbackItem[]) =>
       fetchRecommendations(profile as UserProfile, feedback),
     onSuccess: (data) => {
-      sessionStorage.setItem("recommendationData", JSON.stringify(data));
+      storeRecommendations(data);
       void navigate({ to: "/results" });
     },
   });
