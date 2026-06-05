@@ -23,6 +23,7 @@ def upgrade() -> None:
     op.create_table('clubs',
     sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('name', sa.String(length=120), nullable=False),
+    sa.Column('grl_score', sa.Float(), nullable=False, server_default='0.0'),
     sa.Column('playstyles_defence', postgresql.ARRAY(sa.Text()), nullable=False),
     sa.Column('playstyles_midfield', postgresql.ARRAY(sa.Text()), nullable=False),
     sa.Column('playstyles_forwards', postgresql.ARRAY(sa.Text()), nullable=False),
@@ -47,3 +48,4 @@ def downgrade() -> None:
     op.drop_index(op.f('ix_clubs_name'), table_name='clubs')
     op.drop_table('clubs')
     # ### end Alembic commands ###
+
