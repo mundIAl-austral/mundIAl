@@ -10,6 +10,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import type { MatchRecommendation, RecommendationResponse } from "@/types";
+import { getStoredRecommendations } from "@/utils/recommendationsStorage";
 
 export const Route = createFileRoute("/results")({
   component: ResultsPage,
@@ -96,12 +97,7 @@ function ResultsPage() {
   const navigate = useNavigate();
 
   const data = useMemo(() => {
-    try {
-      const rawData = sessionStorage.getItem("recommendationData");
-      return rawData ? (JSON.parse(rawData) as RecommendationResponse) : null;
-    } catch {
-      return null;
-    }
+    return getStoredRecommendations();
   }, []);
 
   const [openSections, setOpenSections] = useState<Set<string>>(
@@ -193,7 +189,16 @@ function ResultsPage() {
                         ) : (
                           <div className="divide-y divide-border">
                             {matches.map((match: MatchRecommendation) => (
-                              <MatchRow key={match.match_id} match={match} />
+                              <MatchRow
+                                key={match.match_id}
+                                match={match}
+                                onClick={() =>
+                                  void navigate({
+                                    to: "/matches/$matchId",
+                                    params: { matchId: match.match_id },
+                                  })
+                                }
+                              />
                             ))}
                           </div>
                         )}
