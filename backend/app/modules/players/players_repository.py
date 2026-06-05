@@ -65,6 +65,19 @@ async def get_top_players(db: AsyncSession, limit: int = 32) -> list[str]:
     return list(result.scalars().all())
 
 
+async def get_best_by_name(db: AsyncSession, name: str) -> Player | None:
+    """Best OVR row when the same name appears in multiple squads."""
+    stmt = (
+        select(Player)
+        .where(Player.name == name)
+        .options(joinedload(Player.team))
+        .order_by(Player.overall_rating.desc())
+        .limit(1)
+    )
+    result = await db.execute(stmt)
+    return result.scalar_one_or_none()
+
+
 async def get_squad(db: AsyncSession, team_name: str) -> list[Player] | None:
     """
     Return all players for a team ordered by position group then squad number.

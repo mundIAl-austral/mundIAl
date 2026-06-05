@@ -21,6 +21,11 @@ from app.modules.recommendations.recommendations_schemas import (
 
 # Number of diverse matches shown on the feedback screen.
 _PREVIEW_K = 5
+_FEEDBACK_LABELS = {
+    "lo_veo": 1.0,
+    "tal_vez": 0.5,
+    "paso": 0.0,
+}
 
 
 def _local_datetime(utc_dt: datetime, tz_name: str) -> datetime | None:
@@ -143,7 +148,7 @@ async def _resolve_user_country_play_styles(profile: UserProfile, db: AsyncSessi
 def _personalized_weights(
     profile: UserProfile, matches: list[MatchData], feature_matrix: np.ndarray
 ) -> np.ndarray | None:
-    """Tune scoring weights from the user's like/dislike feedback, or None."""
+    """Tune scoring weights from the user's preview feedback, or None."""
     if not profile.feedback:
         return None
 
@@ -155,7 +160,7 @@ def _personalized_weights(
         if idx is None:
             continue
         rows.append(feature_matrix[idx])
-        labels.append(1.0 if item.liked else 0.0)
+        labels.append(_FEEDBACK_LABELS[item.preference])
 
     if not rows:
         return None

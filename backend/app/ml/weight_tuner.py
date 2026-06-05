@@ -4,7 +4,7 @@ Personalization primitives — pure numpy, no new dependencies.
   farthest_point_sampling — pick k maximally-diverse matches for the feedback
                             screen, so the 5 shown span the feature space.
   adjust_weights          — nudge the linear scoring weights toward the user's
-                            5 like/dislike answers, L2-regularized to the prior.
+                            preview answers, L2-regularized to the prior.
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ def farthest_point_sampling(feature_matrix: np.ndarray, k: int = 5) -> list[int]
 
 def adjust_weights(
     feedback_features: np.ndarray,  # (m, d)
-    feedback_labels: np.ndarray,  # (m,) — 1=liked, 0=disliked
+    feedback_labels: np.ndarray,  # (m,) — 1=lo_veo, 0.5=tal_vez, 0=paso
     w_default: np.ndarray,  # (d,) prior weights from classifier.py
     lam: float = 1.0,
     lr: float = 0.05,
@@ -48,6 +48,7 @@ def adjust_weights(
 ) -> np.ndarray:
     """
     Logistic regression fit on the feedback, regularized toward `w_default`.
+    Labels may be soft values in [0, 1], so "tal vez" can stay neutral.
 
         loss(w) = cross_entropy(sigmoid(X @ w), y) + lam * ||w - w_default||^2
 

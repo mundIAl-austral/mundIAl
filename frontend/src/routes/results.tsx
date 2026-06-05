@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { ArrowLeft, ChevronDown, Trophy } from "lucide-react";
+import { ArrowLeft, ChevronDown, MessageCircle, Trophy } from "lucide-react";
 import { MatchRow } from "@/components/MatchRow";
 import { NavBar } from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
@@ -212,6 +212,25 @@ function ResultsPage() {
         </div>
       </main>
 
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
+        <div className="mx-auto flex min-h-16 max-w-3xl items-center gap-3 px-5 py-3">
+          <Button
+            variant="outline"
+            className="h-12 shrink-0 gap-2 rounded-2xl rounded-tl-xs px-4 text-muted-foreground hover:text-foreground"
+            onClick={() => void navigate({ to: "/chat" })}
+          >
+            <MessageCircle className="h-4 w-4" />
+            Chat
+          </Button>
+          <Button
+            variant="outline"
+            className="h-12 flex-1 rounded-2xl rounded-tl-xs text-muted-foreground hover:text-foreground"
+            onClick={() => void navigate({ to: "/setup", search: { step: 1 } })}
+          >
+            Ajustar perfil y recalcular
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }

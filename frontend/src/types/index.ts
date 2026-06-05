@@ -106,9 +106,11 @@ export interface MatchDetail {
   team_b: MatchTeamDetail;
 }
 
+export type FeedbackPreference = "lo_veo" | "paso" | "tal_vez";
+
 export interface FeedbackItem {
   match_id: string;
-  liked: boolean;
+  preference: FeedbackPreference;
 }
 
 export interface PreviewResponse {
