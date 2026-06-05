@@ -19,9 +19,7 @@ class Team(Base, TimestampMixin):
     key_players: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
     star_power: Mapped[float] = mapped_column(Float, nullable=False, default=5.0)
     narrative_flags: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict)
-    playstyles_defence: Mapped[list[str]] = mapped_column(
-        ARRAY(Text), nullable=False, default=list
-    )
+    playstyles_defence: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
     playstyles_midfield: Mapped[list[str]] = mapped_column(
         ARRAY(Text), nullable=False, default=list
     )

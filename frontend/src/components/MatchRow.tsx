@@ -5,6 +5,7 @@ import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
 
 interface MatchRowProps {
   match: MatchRecommendation;
+  onClick?: () => void;
 }
 
 const CATEGORY_COLOR: Record<string, string> = {
@@ -94,7 +95,7 @@ function TeamBlock({
   );
 }
 
-export function MatchRow({ match }: MatchRowProps) {
+export function MatchRow({ match, onClick }: MatchRowProps) {
   const color = CATEGORY_COLOR[match.category] ?? "var(--foreground)";
   const { weekday, date, time } = formatLocalDate(
     match.local_datetime ?? match.utc_datetime,
@@ -106,9 +107,26 @@ export function MatchRow({ match }: MatchRowProps) {
   const pct = Math.round(match.score * 100);
   const teamAName = teamAMeta?.es ?? match.team_a;
   const teamBName = teamBMeta?.es ?? match.team_b;
+  const isClickable = Boolean(onClick);
 
   return (
-    <div className="relative px-4 py-4 transition-colors hover:bg-[color:var(--surface-soft)] sm:px-5 sm:py-5">
+    <div
+      role={isClickable ? "button" : undefined}
+      tabIndex={isClickable ? 0 : undefined}
+      onClick={onClick}
+      onKeyDown={(event) => {
+        if (!onClick) return;
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          onClick();
+        }
+      }}
+      className={
+        isClickable
+          ? "relative cursor-pointer px-4 py-4 transition-colors hover:bg-[color:var(--surface-soft)] focus-visible:bg-[color:var(--surface-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-5 sm:py-5"
+          : "relative px-4 py-4 transition-colors hover:bg-[color:var(--surface-soft)] sm:px-5 sm:py-5"
+      }
+    >
       <div
         className="absolute left-0 top-4 h-[calc(100%-2rem)] w-1 rounded-r-full"
         style={{ backgroundColor: color }}

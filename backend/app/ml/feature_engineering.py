@@ -241,9 +241,7 @@ def _club_affinity(match: MatchData, fav_clubs: set[str]) -> float:
     return min(score, 1.0)
 
 
-def _team_playstyle_affinity(
-    match: MatchData, user_country_playstyles: set[str]
-) -> float:
+def _team_playstyle_affinity(match: MatchData, user_country_playstyles: set[str]) -> float:
     """
     Max Jaccard similarity between a team's aggregate playstyles and the user's
     country's typical playstyles. 0 when user has no country or no playstyles.
@@ -365,8 +363,5 @@ def compute_batch(
 ) -> np.ndarray:
     """Return shape (n_matches, 14) feature matrix."""
     return np.vstack(
-        [
-            compute(profile, m, cal, user_play_styles, user_country_playstyles)
-            for m in matches
-        ]
+        [compute(profile, m, cal, user_play_styles, user_country_playstyles) for m in matches]
     )

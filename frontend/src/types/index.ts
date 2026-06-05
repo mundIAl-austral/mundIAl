@@ -62,6 +62,50 @@ export interface RecommendationResponse {
   para_el_resumen: MatchRecommendation[];
 }
 
+export interface MatchPlayerDetail {
+  name: string;
+  squad_number: number | null;
+  squad_position: string;
+  detailed_position: string | null;
+  alternative_positions: string[];
+  club: string | null;
+  is_captain: boolean;
+  overall_rating: number;
+  nationality: string | null;
+  league: string | null;
+  age: number | null;
+  height_cm: number | null;
+  weight_kg: number | null;
+  preferred_foot: string | null;
+  play_styles: string[];
+  photo_url: string | null;
+  is_estimated: boolean;
+  attributes: Record<string, number>;
+}
+
+export interface MatchTeamDetail {
+  name: string;
+  fifa_ranking: number;
+  confederation: string;
+  star_power: number;
+  narrative_flags: Record<string, unknown>;
+  players: MatchPlayerDetail[];
+}
+
+export interface MatchDetail {
+  match_id: string;
+  group: string;
+  round_in_group: number;
+  utc_datetime: string;
+  venue: string;
+  city: string;
+  venue_country: string;
+  narrative_score: number;
+  rivalry_index: number;
+  team_a: MatchTeamDetail;
+  team_b: MatchTeamDetail;
+}
+
 export interface FeedbackItem {
   match_id: string;
   liked: boolean;
