@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { ArrowLeft, ChevronDown, Sparkles, Trophy } from "lucide-react";
+import { ArrowLeft, ChevronDown, Trophy } from "lucide-react";
 import { MatchRow } from "@/components/MatchRow";
 import { NavBar } from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
@@ -121,14 +121,6 @@ function ResultsPage() {
     data.vale_la_pena.length +
     data.para_el_resumen.length;
 
-  const topTeams = [
-    ...new Set(
-      [...data.imperdible, ...data.vale_la_pena]
-        .flatMap((match: MatchRecommendation) => [match.team_a, match.team_b])
-        .slice(0, 4),
-    ),
-  ];
-
   function toggleSection(key: string) {
     setOpenSections((previous) => {
       const next = new Set(previous);
@@ -149,12 +141,12 @@ function ResultsPage() {
             className="gap-1.5 rounded-full border-border bg-[color:var(--surface-soft)] px-4 text-muted-foreground hover:bg-[color:var(--surface-medium)] hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
-            Volver
+            Editar perfil
           </Button>
         }
       />
 
-      <main className="px-5 pb-36">
+      <main className="px-5 pb-12">
         <div className="mx-auto max-w-3xl space-y-5">
           <div className="px-1 pt-8">
             <div className="flex items-center gap-3">
@@ -169,23 +161,6 @@ function ResultsPage() {
               Priorizamos tus mejores cruces en función de afinidad, contexto y
               disponibilidad horaria.
             </p>
-
-            {topTeams.length > 0 && (
-              <div className="mt-4 flex flex-wrap items-center gap-2">
-                <div className="inline-flex items-center gap-2 rounded-full border border-border bg-[color:var(--surface-soft)] px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
-                  <Sparkles className="h-3.5 w-3.5 text-secondary" />
-                  Más afinidad con
-                </div>
-                {topTeams.map((team) => (
-                  <span
-                    key={team}
-                    className="rounded-full border border-border bg-[color:var(--surface-medium)] px-3 py-1.5 text-sm text-foreground/88"
-                  >
-                    {team}
-                  </span>
-                ))}
-              </div>
-            )}
           </div>
 
           <section className="space-y-3">
@@ -232,17 +207,6 @@ function ResultsPage() {
         </div>
       </main>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
-        <div className="mx-auto flex min-h-16 max-w-3xl items-center gap-3 px-5 py-3">
-          <Button
-            variant="outline"
-            className="h-12 w-full rounded-2xl rounded-tl-xs text-muted-foreground hover:text-foreground"
-            onClick={() => void navigate({ to: "/setup", search: { step: 1 } })}
-          >
-            Ajustar perfil y recalcular
-          </Button>
-        </div>
-      </div>
     </div>
   );
 }
