@@ -6,6 +6,11 @@ from datetime import datetime
 from pydantic import BaseModel, Field, field_validator
 
 
+class FeedbackItem(BaseModel):
+    match_id: str
+    liked: bool
+
+
 class UserProfile(BaseModel):
     favorite_teams: list[str] = Field(default_factory=list)
     favorite_players: list[str] = Field(default_factory=list)
@@ -14,6 +19,9 @@ class UserProfile(BaseModel):
     ics_content: str = Field(..., description="Base64-encoded .ics calendar file")
     timezone: str = Field(default="UTC", examples=["America/Argentina/Buenos_Aires"])
     country: str = Field(default="", examples=["AR"], description="ISO 3166-1 alpha-2")
+    # Optional like/dislike answers from the preview screen — when present the
+    # scoring weights are tuned per-user before classifying all 72 matches.
+    feedback: list[FeedbackItem] | None = None
 
     @field_validator("ics_content")
     @classmethod
@@ -33,7 +41,9 @@ class MatchData(BaseModel):
         fifa_ranking: int
         confederation: str
         rival_team_names: list[str]
-        key_players: list[str]
+        squad_players: list[str]
+        # Aligned with squad_players: inner list = that player's EA FC26 play styles.
+        squad_play_styles: list[list[str]]
         star_power: float
 
     match_id: str
@@ -61,6 +71,7 @@ class ScoreBreakdown(BaseModel):
     expected_competitiveness: float
     narrative_score: float
     regional_affinity: float
+    playstyle_affinity: float
 
 
 class MatchRecommendation(BaseModel):
@@ -84,9 +95,17 @@ class RecommendationResponse(BaseModel):
     para_el_resumen: list[MatchRecommendation]
 
 
+class PreviewResponse(BaseModel):
+    matches: list[MatchRecommendation]
+
+
 class GetRecommendationsInput(BaseModel):
     profile: UserProfile
 
 
 class GetRecommendationsOutput(BaseModel):
     response: RecommendationResponse
+
+
+class GetPreviewOutput(BaseModel):
+    response: PreviewResponse
