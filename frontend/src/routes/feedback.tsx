@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Sparkles, ThumbsDown, ThumbsUp } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Sparkles,
+  ThumbsDown,
+  ThumbsUp,
+} from "lucide-react";
 import { fetchRecommendations, getPreview } from "@/api/recommendations";
 import { MatchRow } from "@/components/MatchRow";
 import { NavBar } from "@/components/NavBar";

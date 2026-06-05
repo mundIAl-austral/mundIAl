@@ -1,11 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import {
-  ArrowLeft,
-  CalendarDays,
-  Crown,
-  MapPin,
-} from "lucide-react";
+import { ArrowLeft, CalendarDays, Crown, MapPin } from "lucide-react";
 import { Flag } from "@/components/Flag";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -13,7 +8,11 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
 import { useMatchDetail } from "@/hooks/useMatchDetail";
-import type { MatchPlayerDetail, MatchRecommendation, MatchTeamDetail } from "@/types";
+import type {
+  MatchPlayerDetail,
+  MatchRecommendation,
+  MatchTeamDetail,
+} from "@/types";
 import { getStoredRecommendation } from "@/utils/recommendationsStorage";
 
 export const Route = createFileRoute("/matches/$matchId")({
@@ -92,7 +91,8 @@ function groupedPlayers(
   );
 
   const known = POSITION_ORDER.filter((position) => grouped[position]).map(
-    (position) => [position, grouped[position]] as [string, MatchPlayerDetail[]],
+    (position) =>
+      [position, grouped[position]] as [string, MatchPlayerDetail[]],
   );
   const rest = Object.entries(grouped)
     .filter(([position]) => !POSITION_ORDER.includes(position))
@@ -316,7 +316,13 @@ function MatchSkeleton() {
 function MatchDetailPage() {
   const { matchId } = Route.useParams();
   const navigate = useNavigate();
-  const { data: match, isPending, isError, error, refetch } = useMatchDetail(matchId);
+  const {
+    data: match,
+    isPending,
+    isError,
+    error,
+    refetch,
+  } = useMatchDetail(matchId);
   const recommendation = useMemo(
     () => getStoredRecommendation(matchId),
     [matchId],

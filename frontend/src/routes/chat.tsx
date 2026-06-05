@@ -25,15 +25,20 @@ function ChatPage() {
   const [input, setInput] = useState("");
   const listRef = useRef<HTMLDivElement>(null);
 
-  const timezone =
-    profile?.timezone ?? "America/Argentina/Buenos_Aires";
+  const timezone = profile?.timezone ?? "America/Argentina/Buenos_Aires";
 
   const { mutate, isPending } = useMutation({
     mutationFn: (history: ChatMessage[]) => sendChatMessage(history, timezone),
     onSuccess: (data, sentMessages) => {
-      setMessages([...sentMessages, { role: "assistant", content: data.message }]);
+      setMessages([
+        ...sentMessages,
+        { role: "assistant", content: data.message },
+      ]);
       requestAnimationFrame(() => {
-        listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
+        listRef.current?.scrollTo({
+          top: listRef.current.scrollHeight,
+          behavior: "smooth",
+        });
       });
     },
   });
