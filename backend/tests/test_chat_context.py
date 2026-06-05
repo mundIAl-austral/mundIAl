@@ -10,7 +10,8 @@ def _team(name: str) -> MatchData.TeamInfo:
         fifa_ranking=1,
         confederation="UEFA",
         rival_team_names=[],
-        key_players=[],
+        squad_players=[],
+        squad_play_styles=[],
         star_power=5.0,
     )
 
@@ -46,4 +47,17 @@ def test_select_by_group() -> None:
     selected = chat_context.select_relevant_matches(matches, "partidos del grupo A")
     assert len(selected) == 1
     assert selected[0].group == "A"
+
+
+def test_build_match_context_uses_human_facing_keys() -> None:
+    matches = [_match("A1", "A", "Argentina", "Canada")]
+    payload = chat_context.build_match_context(
+        matches,
+        all_count=72,
+        timezone="America/Argentina/Buenos_Aires",
+    )
+    assert "narrative_score" not in payload
+    assert "rivalry_index" not in payload
+    assert "por_que_llama_la_atencion" in payload
+    assert "Argentina vs Canada" in payload
 

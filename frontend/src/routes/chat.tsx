@@ -59,7 +59,7 @@ function ChatPage() {
           <Button
             variant="outline"
             size="sm"
-            onClick={() => void navigate({ to: "/" })}
+            onClick={() => void navigate({ to: "/results" })}
             className="gap-1.5 rounded-full border-border bg-[color:var(--surface-soft)] px-4 text-muted-foreground"
           >
             <ArrowLeft className="h-4 w-4" />

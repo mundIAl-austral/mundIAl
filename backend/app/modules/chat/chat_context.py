@@ -60,31 +60,68 @@ def _format_local(utc_dt: datetime, timezone: str) -> str | None:
         return None
 
 
+def _round_label(round_in_group: int) -> str:
+    labels = {
+        1: "1.ª fecha del grupo",
+        2: "2.ª fecha del grupo",
+        3: "3.ª fecha del grupo",
+    }
+    return labels.get(round_in_group, f"fecha {round_in_group} del grupo")
+
+
+def _significance_phrase(narrative_score: float) -> str:
+    if narrative_score >= 8:
+        return "cruce muy destacado del torneo (apertura, clásico o gran expectativa)"
+    if narrative_score >= 6:
+        return "partido con buen contexto y algo de repercusión"
+    if narrative_score >= 4:
+        return "partido interesante pero sin ser el foco del día"
+    return "partido habitual de la fase de grupos"
+
+
+def _rivalry_phrase(rivalry_index: float) -> str:
+    if rivalry_index >= 8:
+        return "rivalidad histórica muy marcada entre ambas selecciones"
+    if rivalry_index >= 5:
+        return "hay historial de cruces relevantes entre estos equipos"
+    if rivalry_index >= 2:
+        return "poco historial de enfrentamientos memorables"
+    return "sin una rivalidad histórica destacada"
+
+
+def _venue_phrase(venue: str, city: str, venue_country: str) -> str:
+    return f"{venue}, {city}, {venue_country}"
+
+
+def _match_row(m: MatchData, timezone: str) -> dict[str, object]:
+    """Serialize one match with human-facing keys only (no internal field names)."""
+    row: dict[str, object] = {
+        "grupo": m.group,
+        "fecha_del_grupo": _round_label(m.round_in_group),
+        "equipos": f"{m.team_a.name} vs {m.team_b.name}",
+        "sede": _venue_phrase(m.venue, m.city, m.venue_country),
+        "por_que_llama_la_atencion": _significance_phrase(m.narrative_score),
+        "contexto_historico": _rivalry_phrase(m.rivalry_index),
+        "jugadores_destacados": {
+            m.team_a.name: m.team_a.squad_players[:5],
+            m.team_b.name: m.team_b.squad_players[:5],
+        },
+    }
+    local = _format_local(m.utc_datetime, timezone)
+    if local:
+        row["horario_local"] = local
+    else:
+        row["horario_utc"] = m.utc_datetime.strftime("%Y-%m-%d %H:%M UTC")
+    return row
+
+
 def build_match_context(
     matches: list[MatchData],
     all_count: int,
     timezone: str,
 ) -> str:
     """JSON string injected into the system prompt."""
-    rows = []
-    for m in matches:
-        rows.append(
-            {
-                "group": m.group,
-                "round_in_group": m.round_in_group,
-                "team_a": m.team_a.name,
-                "team_b": m.team_b.name,
-                "utc_datetime": m.utc_datetime.isoformat(),
-                "local_datetime": _format_local(m.utc_datetime, timezone),
-                "venue": m.venue,
-                "city": m.city,
-                "venue_country": m.venue_country,
-                "narrative_score": m.narrative_score,
-                "rivalry_index": m.rivalry_index,
-                "team_a_key_players": m.team_a.key_players[:5],
-                "team_b_key_players": m.team_b.key_players[:5],
-            }
-        )
+    rows = [_match_row(m, timezone) for m in matches]
 
     payload = {
         "torneo": "Copa Mundial FIFA 2026 — fase de grupos (72 partidos)",
