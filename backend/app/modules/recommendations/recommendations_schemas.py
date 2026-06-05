@@ -2,13 +2,26 @@ from __future__ import annotations
 
 import base64
 from datetime import datetime
+from typing import Any, Literal
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 class FeedbackItem(BaseModel):
     match_id: str
-    liked: bool
+    preference: Literal["lo_veo", "paso", "tal_vez"]
+
+    @model_validator(mode="before")
+    @classmethod
+    def normalize_legacy_liked(cls, data: Any) -> Any:
+        if not isinstance(data, dict):
+            return data
+        if "preference" in data or "liked" not in data:
+            return data
+        return {
+            **data,
+            "preference": "lo_veo" if data["liked"] else "paso",
+        }
 
 
 class UserProfile(BaseModel):
@@ -19,7 +32,7 @@ class UserProfile(BaseModel):
     ics_content: str = Field(..., description="Base64-encoded .ics calendar file")
     timezone: str = Field(default="UTC", examples=["America/Argentina/Buenos_Aires"])
     country: str = Field(default="", examples=["AR"], description="ISO 3166-1 alpha-2")
-    # Optional like/dislike answers from the preview screen — when present the
+    # Optional answers from the preview screen — when present the
     # scoring weights are tuned per-user before classifying all 72 matches.
     feedback: list[FeedbackItem] | None = None
 
