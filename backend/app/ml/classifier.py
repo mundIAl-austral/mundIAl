@@ -30,6 +30,8 @@ DEFAULT_WEIGHTS = np.array(
         1.2,  # narrative_score
         0.5,  # regional_affinity
         1.0,  # playstyle_affinity
+        0.8,  # club_affinity
+        0.6,  # team_playstyle_affinity
     ]
 )
 

@@ -23,6 +23,7 @@ function readProfile(): UserProfile | null {
       const migrated: UserProfile = {
         favorite_teams: (parsed.favorite_teams as string[]) ?? [],
         favorite_players: (parsed.favorite_players as string[]) ?? [],
+        favorite_clubs: (parsed.favorite_clubs as string[]) ?? [],
         available_slots: slots,
         ics_content,
         ics_source: "manual",

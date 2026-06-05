@@ -64,6 +64,8 @@ def _build_recommendation(
             narrative_score=round(feat_row[9], 3),
             regional_affinity=round(feat_row[10], 3),
             playstyle_affinity=round(feat_row[11], 3),
+            club_affinity=round(feat_row[12], 3),
+            team_playstyle_affinity=round(feat_row[13], 3),
         ),
     )
 
@@ -71,6 +73,71 @@ def _build_recommendation(
 async def _resolve_user_play_styles(profile: UserProfile, db: AsyncSession) -> set[str]:
     """Union of play styles across the user's favorite players (empty if none)."""
     return await players_repository.get_play_styles_by_names(db, profile.favorite_players)
+
+
+async def _resolve_user_country_play_styles(profile: UserProfile, db: AsyncSession) -> set[str]:
+    """Playstyles typical of the user's country (empty if none)."""
+    if not profile.country:
+        return set()
+    # Mapping of country codes to WC2026 team names
+    country_map = {
+        "AR": "Argentina",
+        "BR": "Brazil",
+        "UY": "Uruguay",
+        "CO": "Colombia",
+        "EC": "Ecuador",
+        "PY": "Paraguay",
+        "PE": "Peru",
+        "BO": "Bolivia",
+        "VE": "Venezuela",
+        "CL": "Chile",
+        "MX": "Mexico",
+        "US": "United States",
+        "CA": "Canada",
+        "PA": "Panama",
+        "CR": "Costa Rica",
+        "HN": "Honduras",
+        "JM": "Jamaica",
+        "GT": "Guatemala",
+        "ES": "Spain",
+        "PT": "Portugal",
+        "FR": "France",
+        "DE": "Germany",
+        "IT": "Italy",
+        "GB": "England",
+        "NL": "Netherlands",
+        "BE": "Belgium",
+        "CH": "Switzerland",
+        "AT": "Austria",
+        "HR": "Croatia",
+        "RS": "Serbia",
+        "CZ": "Czech Republic",
+        "PL": "Poland",
+        "SE": "Sweden",
+        "DK": "Denmark",
+        "NO": "Norway",
+        "TR": "Turkey",
+        "MA": "Morocco",
+        "DZ": "Algeria",
+        "TN": "Tunisia",
+        "EG": "Egypt",
+        "NG": "Nigeria",
+        "SN": "Senegal",
+        "CM": "Cameroon",
+        "ZA": "South Africa",
+        "CD": "Democratic Republic of Congo",
+        "JP": "Japan",
+        "KR": "South Korea",
+        "SA": "Saudi Arabia",
+        "AU": "Australia",
+        "QA": "Qatar",
+        "IQ": "Iraq",
+        "CN": "China",
+    }
+    country_name = country_map.get(profile.country.upper())
+    if not country_name:
+        return set()
+    return await players_repository.get_country_playstyles(db, country_name)
 
 
 def _personalized_weights(
@@ -110,8 +177,11 @@ async def get_recommendations(
     # so a one-off event only affects that specific match datetime.
     cal = ics_parser.parse_calendar(profile.ics_content)
     user_styles = await _resolve_user_play_styles(profile, db)
+    user_country_styles = await _resolve_user_country_play_styles(profile, db)
 
-    feature_matrix = feature_engineering.compute_batch(profile, matches, cal, user_styles)
+    feature_matrix = feature_engineering.compute_batch(
+        profile, matches, cal, user_styles, user_country_styles
+    )
     custom_weights = _personalized_weights(profile, matches, feature_matrix)
     categories, scores, features = classifier.predict(feature_matrix, custom_weights)
 
@@ -150,7 +220,10 @@ async def get_preview(
 
     cal = ics_parser.parse_calendar(profile.ics_content)
     user_styles = await _resolve_user_play_styles(profile, db)
-    feature_matrix = feature_engineering.compute_batch(profile, matches, cal, user_styles)
+    user_country_styles = await _resolve_user_country_play_styles(profile, db)
+    feature_matrix = feature_engineering.compute_batch(
+        profile, matches, cal, user_styles, user_country_styles
+    )
 
     # Classify on the full set so preview categories match the final ranking.
     categories, scores, features = classifier.predict(feature_matrix)

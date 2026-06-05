@@ -14,6 +14,10 @@ class FeedbackItem(BaseModel):
 class UserProfile(BaseModel):
     favorite_teams: list[str] = Field(default_factory=list)
     favorite_players: list[str] = Field(default_factory=list)
+    favorite_clubs: list[str] = Field(
+        default_factory=list,
+        description="Favorite clubs (e.g., 'Real Madrid', 'Manchester City')",
+    )
     # ICS file (base64-encoded) — the backend parses busy events directly
     # from the calendar to compute per-match availability.
     ics_content: str = Field(..., description="Base64-encoded .ics calendar file")
@@ -45,6 +49,9 @@ class MatchData(BaseModel):
         # Aligned with squad_players: inner list = that player's EA FC26 play styles.
         squad_play_styles: list[list[str]]
         star_power: float
+        playstyles_defence: list[str]
+        playstyles_midfield: list[str]
+        playstyles_forwards: list[str]
 
     match_id: str
     group: str
@@ -72,6 +79,8 @@ class ScoreBreakdown(BaseModel):
     narrative_score: float
     regional_affinity: float
     playstyle_affinity: float
+    club_affinity: float
+    team_playstyle_affinity: float
 
 
 class MatchRecommendation(BaseModel):
