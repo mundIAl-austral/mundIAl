@@ -14,6 +14,8 @@ class Settings(BaseSettings):
     model_api_key: str = ""
     model: str = "deepseek/deepseek-v4-flash"
     model_temperature: float = 0.7
+    model_max_tool_rounds: int = 4
+    model_max_tokens: int = 512
 
     @property
     def cors_origins_list(self) -> list[str]:

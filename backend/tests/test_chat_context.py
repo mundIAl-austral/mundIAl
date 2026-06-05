@@ -49,6 +49,17 @@ def test_select_by_group() -> None:
     assert selected[0].group == "A"
 
 
+def test_match_row_uses_human_facing_keys() -> None:
+    matches = [_match("A1", "A", "Argentina", "Canada")]
+    row = chat_context.match_row(
+        matches[0],
+        timezone="America/Argentina/Buenos_Aires",
+    )
+    assert "narrative_score" not in str(row)
+    assert "por_que_llama_la_atencion" in row
+    assert row["equipos"] == "Argentina vs Canada"
+
+
 def test_build_match_context_uses_human_facing_keys() -> None:
     matches = [_match("A1", "A", "Argentina", "Canada")]
     payload = chat_context.build_match_context(
@@ -60,4 +71,3 @@ def test_build_match_context_uses_human_facing_keys() -> None:
     assert "rivalry_index" not in payload
     assert "por_que_llama_la_atencion" in payload
     assert "Argentina vs Canada" in payload
-

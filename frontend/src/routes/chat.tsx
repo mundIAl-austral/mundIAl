@@ -15,7 +15,7 @@ export const Route = createFileRoute("/chat")({
 const WELCOME: ChatMessage = {
   role: "assistant",
   content:
-    "Preguntame sobre partidos del Mundial 2026: equipos, grupos u horarios. No respondo otros temas.",
+    "Preguntame sobre el Mundial 2026: partidos, grupos, horarios, selecciones y planteles. No respondo otros temas.",
 };
 
 function ChatPage() {
@@ -76,7 +76,7 @@ function ChatPage() {
           <div>
             <h1 className="text-xl text-foreground">Chat de partidos</h1>
             <p className="text-sm text-muted-foreground">
-              Solo fase de grupos del Mundial 2026.
+              Partidos, equipos y planteles — fase de grupos.
             </p>
           </div>
         </div>

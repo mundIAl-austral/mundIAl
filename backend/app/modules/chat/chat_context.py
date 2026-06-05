@@ -11,6 +11,7 @@ from app.modules.recommendations.recommendations_schemas import MatchData
 
 _GROUP_RE = re.compile(r"\bgrupo\s*([a-l])\b", re.IGNORECASE)
 _MAX_CONTEXT_MATCHES = 15
+_MAX_TOOL_MATCHES = 20
 
 
 def team_mentioned(team_name: str, text: str) -> bool:
@@ -50,6 +51,26 @@ def select_relevant_matches(matches: list[MatchData], query: str) -> list[MatchD
                     add(m)
 
     return hits[:_MAX_CONTEXT_MATCHES]
+
+
+def filter_matches(
+    matches: list[MatchData],
+    *,
+    team_name: str | None = None,
+    group: str | None = None,
+    round_in_group: int | None = None,
+) -> list[MatchData]:
+    """Filter group-stage matches for chat tools."""
+    result = matches
+    if group:
+        g = group.strip().upper()
+        result = [m for m in result if m.group.upper() == g]
+    if team_name:
+        t = team_name.strip()
+        result = [m for m in result if m.team_a.name == t or m.team_b.name == t]
+    if round_in_group is not None:
+        result = [m for m in result if m.round_in_group == round_in_group]
+    return result[:_MAX_TOOL_MATCHES]
 
 
 def _format_local(utc_dt: datetime, timezone: str) -> str | None:
@@ -93,7 +114,7 @@ def _venue_phrase(venue: str, city: str, venue_country: str) -> str:
     return f"{venue}, {city}, {venue_country}"
 
 
-def _match_row(m: MatchData, timezone: str) -> dict[str, object]:
+def match_row(m: MatchData, timezone: str) -> dict[str, object]:
     """Serialize one match with human-facing keys only (no internal field names)."""
     row: dict[str, object] = {
         "grupo": m.group,
@@ -121,7 +142,7 @@ def build_match_context(
     timezone: str,
 ) -> str:
     """JSON string injected into the system prompt."""
-    rows = [_match_row(m, timezone) for m in matches]
+    rows = [match_row(m, timezone) for m in matches]
 
     payload = {
         "torneo": "Copa Mundial FIFA 2026 — fase de grupos (72 partidos)",
