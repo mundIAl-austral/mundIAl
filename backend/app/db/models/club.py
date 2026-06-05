@@ -1,6 +1,6 @@
 import uuid
 
-from sqlalchemy import String, Text
+from sqlalchemy import Float, String, Text
 from sqlalchemy.dialects.postgresql import ARRAY, UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -12,7 +12,10 @@ class Club(Base, TimestampMixin):
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name: Mapped[str] = mapped_column(String(120), unique=True, nullable=False, index=True)
-    playstyles_defence: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
+    grl_score: Mapped[float] = mapped_column(Float, nullable=False, default=0.0)
+    playstyles_defence: Mapped[list[str]] = mapped_column(
+        ARRAY(Text), nullable=False, default=list
+    )
     playstyles_midfield: Mapped[list[str]] = mapped_column(
         ARRAY(Text), nullable=False, default=list
     )
