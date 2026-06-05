@@ -15,15 +15,18 @@ import {
   MapPin,
   Shield,
   Star,
+  Trophy,
 } from "lucide-react";
 import { z } from "zod";
 import { searchPlayers } from "@/api/players";
 import { StepperHeader } from "@/components/StepperHeader";
+import { StepClubs } from "@/components/setup/StepClubs";
 import { StepLocation } from "@/components/setup/StepLocation";
 import { StepPlayers } from "@/components/setup/StepPlayers";
 import { StepSchedule } from "@/components/setup/StepSchedule";
 import { StepTeams } from "@/components/setup/StepTeams";
 import { Button } from "@/components/ui/button";
+import { useClubs } from "@/hooks/useClubs";
 import { usePlayerSuggestions } from "@/hooks/usePlayerSuggestions";
 import { useProfile } from "@/hooks/useProfile";
 import { useSetupStep1 } from "@/hooks/useSetupStep1";
@@ -31,7 +34,7 @@ import { useSetupStep4 } from "@/hooks/useSetupStep4";
 import { fileToBase64, generateBusyIcs } from "@/utils/icsGenerator";
 import type { TimeSlot } from "@/types";
 
-const TOTAL_STEPS = 4;
+const TOTAL_STEPS = 5;
 
 export const Route = createFileRoute("/setup")({
   validateSearch: z.object({
@@ -50,12 +53,16 @@ function SetupPage() {
   const { teams } = useSetupStep1();
   const { countries, timezones } = useSetupStep4();
   const { players: playerSuggestions } = usePlayerSuggestions();
+  const { clubs } = useClubs();
 
   const [selectedTeams, setSelectedTeams] = useState<string[]>(
     profile?.favorite_teams ?? [],
   );
   const [players, setPlayers] = useState<string[]>(
     profile?.favorite_players ?? [],
+  );
+  const [selectedClubs, setSelectedClubs] = useState<string[]>(
+    profile?.favorite_clubs ?? [],
   );
   const [slots, setSlots] = useState<TimeSlot[]>(
     profile?.available_slots ?? [
@@ -79,6 +86,7 @@ function SetupPage() {
     if (profile) {
       setSelectedTeams(profile.favorite_teams);
       setPlayers(profile.favorite_players);
+      setSelectedClubs(profile.favorite_clubs ?? []);
       setSlots(profile.available_slots);
       setTimezone(profile.timezone);
       setCountry(profile.country);
@@ -127,11 +135,11 @@ function SetupPage() {
 
   function isStepValid() {
     if (step === 1) return selectedTeams.length > 0;
-    if (step === 3) {
+    if (step === 4) {
       if (slotMode === "manual") return slots.length > 0;
       return uploadedFile !== null;
     }
-    if (step === 4) return timezone.length > 0 && country.trim().length >= 2;
+    if (step === 5) return timezone.length > 0 && country.trim().length >= 2;
     return true;
   }
 
@@ -167,6 +175,7 @@ function SetupPage() {
     saveProfile({
       favorite_teams: selectedTeams,
       favorite_players: players,
+      favorite_clubs: selectedClubs,
       available_slots: slotMode === "manual" ? slots : [],
       ics_content,
       ics_source,
@@ -195,11 +204,16 @@ function SetupPage() {
       subtitle: "Agregá los jugadores que no te querés perder.",
     },
     3: {
+      icon: Trophy,
+      title: "Tus clubs",
+      subtitle: "Selecciona tus equipos de clubs favoritos (opcional).",
+    },
+    4: {
       icon: Clock3,
       title: "Tus horarios",
       subtitle: "Indicá cuándo podés mirar partidos durante la semana.",
     },
-    4: {
+    5: {
       icon: MapPin,
       title: "Tu ubicación",
       subtitle: "Para mostrarte los horarios en tu zona horaria.",
@@ -261,6 +275,14 @@ function SetupPage() {
             )}
 
             {step === 3 && (
+              <StepClubs
+                selectedClubs={selectedClubs}
+                clubs={clubs}
+                onChange={setSelectedClubs}
+              />
+            )}
+
+            {step === 4 && (
               <StepSchedule
                 slotMode={slotMode}
                 slots={slots}
@@ -272,7 +294,7 @@ function SetupPage() {
               />
             )}
 
-            {step === 4 && (
+            {step === 5 && (
               <StepLocation
                 country={country}
                 timezone={timezone}
