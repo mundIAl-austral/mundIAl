@@ -125,7 +125,9 @@ function FeedbackPage() {
   const dragHintRef = useRef<FeedbackPreference | null>(null);
   const autoSubmitRef = useRef(false);
 
-  const [ratings, setRatings] = useState<Record<string, FeedbackPreference>>({});
+  const [ratings, setRatings] = useState<Record<string, FeedbackPreference>>(
+    {},
+  );
   const [activeIndex, setActiveIndex] = useState(0);
   const [dragHint, setDragHint] = useState<FeedbackPreference | null>(null);
 
@@ -160,7 +162,8 @@ function FeedbackPage() {
   const activeMatch = matches[activeIndex];
   const ratedCount = Object.keys(ratings).length;
   const allRated = matches.length > 0 && ratedCount === matches.length;
-  const progressPct = matches.length > 0 ? (ratedCount / matches.length) * 100 : 0;
+  const progressPct =
+    matches.length > 0 ? (ratedCount / matches.length) * 100 : 0;
   const feedbackItems = useMemo<FeedbackItem[]>(
     () =>
       Object.entries(ratings).map(([match_id, preference]) => ({
@@ -518,15 +521,12 @@ function SwipeDeck({
 const MatchSwipeCard = forwardRef<
   HTMLDivElement,
   {
-  match: MatchRecommendation;
-  deckIndex: number;
-  isActive: boolean;
-  dragHint: FeedbackPreference | null;
+    match: MatchRecommendation;
+    deckIndex: number;
+    isActive: boolean;
+    dragHint: FeedbackPreference | null;
   }
->(function MatchSwipeCard(
-  { match, deckIndex, isActive, dragHint },
-  ref,
-) {
+>(function MatchSwipeCard({ match, deckIndex, isActive, dragHint }, ref) {
   const offset = deckIndex * 14;
   const scale = 1 - deckIndex * 0.045;
   const opacity = 1 - deckIndex * 0.22;
@@ -534,11 +534,7 @@ const MatchSwipeCard = forwardRef<
   return (
     <div
       ref={ref}
-      aria-label={
-        isActive
-          ? `${match.team_a} vs ${match.team_b}`
-          : undefined
-      }
+      aria-label={isActive ? `${match.team_a} vs ${match.team_b}` : undefined}
       className={
         isActive
           ? "absolute inset-x-0 top-16 z-30 select-none px-0 will-change-transform"
@@ -676,7 +672,9 @@ function PreferenceButton({
     >
       <Icon className="h-4 w-4" />
       <span className="min-w-0 truncate">{meta.label}</span>
-      <span className="hidden text-muted-foreground sm:inline-flex">{arrow}</span>
+      <span className="hidden text-muted-foreground sm:inline-flex">
+        {arrow}
+      </span>
     </Button>
   );
 }
