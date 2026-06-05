@@ -27,7 +27,6 @@ export function StepperProgress({
                   : isActive
                     ? "var(--secondary)"
                     : "var(--progress-idle)",
-                boxShadow: isActive ? "var(--glow-secondary)" : "none",
               }}
             />
           );
