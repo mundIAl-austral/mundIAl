@@ -7,6 +7,7 @@ export interface TimeSlot {
 export interface UserProfile {
   favorite_teams: string[];
   favorite_players: string[];
+  favorite_clubs: string[];
   /**
    * available_slots is kept for UI display purposes only (WeekHeatmap, hours stat).
    * For uploaded ICS, this is empty; the heatmap falls back to a "Calendario importado" notice.
@@ -36,6 +37,8 @@ export interface ScoreBreakdown {
   narrative_score: number;
   regional_affinity: number;
   playstyle_affinity: number;
+  club_affinity: number;
+  team_playstyle_affinity: number;
 }
 
 export interface MatchRecommendation {

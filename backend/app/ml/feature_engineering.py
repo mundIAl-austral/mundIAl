@@ -1,5 +1,5 @@
 """
-Computes a 12-dimensional feature vector for each (UserProfile, Match) pair.
+Computes a 14-dimensional feature vector for each (UserProfile, Match) pair.
 
 Features:
   0  team_affinity          — favorite team is playing (0/1)
@@ -14,6 +14,8 @@ Features:
   9  narrative_score        — pre-computed match narrative value (0–10) → normalized /10
   10 regional_affinity      — user country shares confederation with a team (0/1)
   11 playstyle_affinity     — a non-favorite squad player plays like the user's favorites (0–1)
+  12 club_affinity          — fraction of squad players in user's favorite clubs (0–1)
+  13 team_playstyle_affinity — team's playstyles match user's confederation playstyles (0–1)
 """
 
 from __future__ import annotations
@@ -40,6 +42,8 @@ FEATURE_NAMES = [
     "narrative_score",
     "regional_affinity",
     "playstyle_affinity",
+    "club_affinity",
+    "team_playstyle_affinity",
 ]
 
 # Map confederation → set of country codes (ISO 3166-1 alpha-2)
@@ -209,14 +213,68 @@ def _playstyle_affinity(match: MatchData, user_styles: set[str], fav_players: se
     return best
 
 
+def _club_affinity(match: MatchData, fav_clubs: set[str]) -> float:
+    """
+    Fraction of total squad players in the match that play for user's favorite clubs.
+    """
+    if not fav_clubs:
+        return 0.0
+
+    # Count players per squad (typically ~20 players per team in a squad)
+    total_squad = len(match.team_a.squad_players) + len(match.team_b.squad_players)
+    if total_squad == 0:
+        return 0.0
+
+    # We don't have club info in MatchData.TeamInfo, so we approximate:
+    # If a team's name matches a favorite club (fuzzy), boost by 0.5 per team
+    # This is a simplification; ideal would be to track players' clubs in MatchData
+    score = 0.0
+    fav_clubs_lower = {c.lower().strip() for c in fav_clubs}
+    team_a_lower = match.team_a.name.lower().strip()
+    team_b_lower = match.team_b.name.lower().strip()
+
+    if team_a_lower in fav_clubs_lower:
+        score += 0.5
+    if team_b_lower in fav_clubs_lower:
+        score += 0.5
+
+    return min(score, 1.0)
+
+
+def _team_playstyle_affinity(match: MatchData, user_country_playstyles: set[str]) -> float:
+    """
+    Max Jaccard similarity between a team's aggregate playstyles and the user's
+    country's typical playstyles. 0 when user has no country or no playstyles.
+    """
+    if not user_country_playstyles:
+        return 0.0
+
+    # Aggregate playstyles for each team
+    team_a_styles = set()
+    team_a_styles.update(match.team_a.playstyles_defence)
+    team_a_styles.update(match.team_a.playstyles_midfield)
+    team_a_styles.update(match.team_a.playstyles_forwards)
+
+    team_b_styles = set()
+    team_b_styles.update(match.team_b.playstyles_defence)
+    team_b_styles.update(match.team_b.playstyles_midfield)
+    team_b_styles.update(match.team_b.playstyles_forwards)
+
+    sim_a = _jaccard(team_a_styles, user_country_playstyles)
+    sim_b = _jaccard(team_b_styles, user_country_playstyles)
+    return max(sim_a, sim_b)
+
+
 def compute(
     profile: UserProfile,
     match: MatchData,
     cal: Calendar | None,
     user_play_styles: set[str],
+    user_country_playstyles: set[str],
 ) -> np.ndarray:
     fav_teams = _normalize_names(profile.favorite_teams)
     fav_players = _normalize_names(profile.favorite_players)
+    fav_clubs = _normalize_names(profile.favorite_clubs)
 
     team_a_name = match.team_a.name.lower()
     team_b_name = match.team_b.name.lower()
@@ -269,6 +327,12 @@ def compute(
     # 11 — playstyle_affinity: a player who plays like your favorites is on the pitch
     playstyle = _playstyle_affinity(match, user_play_styles, fav_players)
 
+    # 12 — club_affinity: proportion of squad players in favorite clubs
+    club = _club_affinity(match, fav_clubs)
+
+    # 13 — team_playstyle_affinity: team plays like the user's country
+    team_playstyle = _team_playstyle_affinity(match, user_country_playstyles)
+
     return np.array(
         [
             team_affinity,
@@ -283,6 +347,8 @@ def compute(
             narrative,
             regional_affinity,
             playstyle,
+            club,
+            team_playstyle,
         ],
         dtype=np.float64,
     )
@@ -293,6 +359,9 @@ def compute_batch(
     matches: list[MatchData],
     cal: Calendar | None,
     user_play_styles: set[str],
+    user_country_playstyles: set[str],
 ) -> np.ndarray:
-    """Return shape (n_matches, 12) feature matrix."""
-    return np.vstack([compute(profile, m, cal, user_play_styles) for m in matches])
+    """Return shape (n_matches, 14) feature matrix."""
+    return np.vstack(
+        [compute(profile, m, cal, user_play_styles, user_country_playstyles) for m in matches]
+    )

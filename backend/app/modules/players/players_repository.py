@@ -100,3 +100,24 @@ async def get_squad(db: AsyncSession, team_name: str) -> list[Player] | None:
         )
     )
     return players
+
+
+async def get_country_playstyles(db: AsyncSession, country_name: str) -> set[str]:
+    """
+    Union of playstyles for a national team by name.
+    Empty set if team not found.
+    """
+    if not country_name or not country_name.strip():
+        return set()
+
+    stmt = select(Team).where(Team.name == country_name.strip())
+    result = await db.execute(stmt)
+    team = result.scalar_one_or_none()
+    if team is None:
+        return set()
+
+    styles: set[str] = set()
+    styles.update(team.playstyles_defence or [])
+    styles.update(team.playstyles_midfield or [])
+    styles.update(team.playstyles_forwards or [])
+    return styles

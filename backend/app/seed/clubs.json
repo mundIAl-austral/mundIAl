@@ -1,0 +1,6454 @@
+{
+  "1. FC Köln": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "1. FC Magdeburg": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass",
+      "Long Throw",
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "1. FC Nürnberg": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Rapid",
+      "Relentless"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "1. FSV Mainz 05": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Bruiser",
+      "Finesse Shot",
+      "Technical"
+    ]
+  },
+  "1860 München": {
+    "playstyles_defence": [
+      "Block",
+      "Far Reach",
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic"
+    ]
+  },
+  "AC Ajaccio": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Far Throw",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Technical"
+    ]
+  },
+  "AEK Athens": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Jockey",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "AFC Bournemouth": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "AFC Wimbledon": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Bruiser"
+    ]
+  },
+  "AGF": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Footwork",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "AIK": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "AJ Auxerre": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Anticipate",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "APOEL FC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "AS Monaco": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Cross Claimer",
+      "Long Throw",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "AS Roma": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "AS Saint-Étienne": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer",
+      "Far Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "AVS Futebol SAD": {
+    "playstyles_defence": [
+      "Bruiser"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "AaB": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Block",
+      "Long Ball Pass",
+      "Rapid",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Aberdeen": {
+    "playstyles_defence": [
+      "Aerial",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "Accrington": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Adana Demirspor": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Adelaide United": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Rapid",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Al Ahli": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Power Header"
+    ]
+  },
+  "Al Ain FC": {
+    "playstyles_defence": [
+      "Footwork",
+      "Trivela"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": []
+  },
+  "Al Ettifaq": {
+    "playstyles_defence": [
+      "Aerial",
+      "Jockey",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Rapid"
+    ]
+  },
+  "Al Fateh": {
+    "playstyles_defence": [
+      "Block",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Al Fayha": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Al Hilal": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Al Ittihad": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Al Khaleej": {
+    "playstyles_defence": [
+      "Block",
+      "Far Throw",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Press Proven",
+      "Rapid"
+    ]
+  },
+  "Al Kholood": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Al Nassr": {
+    "playstyles_defence": [
+      "Deflector",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Al Okhdood": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Al Orobah": {
+    "playstyles_defence": [
+      "Aerial"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Al Qadsiah": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "Al Raed": {
+    "playstyles_defence": [
+      "Block",
+      "Bruiser"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Al Riyadh": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Al Shabab": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Trivela"
+    ],
+    "playstyles_forwards": []
+  },
+  "Al Taawoun": {
+    "playstyles_defence": [
+      "Block",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header",
+      "Power Shot"
+    ]
+  },
+  "Al Wehda": {
+    "playstyles_defence": [
+      "Block",
+      "Long Throw+"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Alanyaspor": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Albacete BP": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Aleman. Aachen": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Quick Step"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Amiens SC": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Angers SCO": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Power Header"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Antalyaspor": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Flair",
+      "Intercept",
+      "Power Header"
+    ],
+    "playstyles_forwards": []
+  },
+  "Argentinos Jrs.": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Block"
+    ],
+    "playstyles_forwards": []
+  },
+  "Arminia Bielefeld": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Intercept",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Arouca": {
+    "playstyles_defence": [
+      "Intercept",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Arsenal": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Cross Claimer",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Aston Villa": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Athletic Club": {
+    "playstyles_defence": [
+      "Intercept",
+      "Jockey",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Atlanta United": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Atlético Tucumán": {
+    "playstyles_defence": [
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Jockey"
+    ],
+    "playstyles_forwards": []
+  },
+  "Atlético de Madrid": {
+    "playstyles_defence": [
+      "Bruiser"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Auckland FC": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Austin FC": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Austria Klagenfurt": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "B. Dortmund II": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "BK Häcken": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "BSC Young Boys": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Throw+",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Banfield": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Footwork",
+      "Jockey",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Bari": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Barnsley": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Long Throw",
+      "Long Throw+",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Barracas Central": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Barrow": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Başakşehir": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Bruiser",
+      "Cross Claimer",
+      "Deflector",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Beijing FC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Belgrano": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Bengaluru FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Bergamo Calcio": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Block",
+      "Bruiser"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "First Touch",
+      "Power Header"
+    ]
+  },
+  "Beşiktaş": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "First Touch"
+    ],
+    "playstyles_forwards": []
+  },
+  "Birmingham City": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Jockey",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Block",
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Blackburn Rovers": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Reach",
+      "Jockey",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "Blackpool": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Throw",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Blau-Weiss Linz": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Boavista FC": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Boca Juniors": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Far Throw",
+      "Long Throw",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Bodrum FK": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Bohemians": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Dead Ball",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Bologna": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Shot",
+      "Rapid"
+    ]
+  },
+  "Bolton": {
+    "playstyles_defence": [
+      "Deflector",
+      "Jockey",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Relentless"
+    ]
+  },
+  "Borussia Dortmund": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Bradford City": {
+    "playstyles_defence": [
+      "Aerial",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Braunschweig": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Brentford": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Jockey"
+    ],
+    "playstyles_forwards": []
+  },
+  "Brescia": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Brighton": {
+    "playstyles_defence": [
+      "Footwork",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Brisbane Roar": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Bristol City": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Bristol Rovers": {
+    "playstyles_defence": [
+      "Footwork",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Bromley FC": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Brommapojkarna": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Brøndby IF": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Burgos CF": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Burnley": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Burton Albion": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "CA Osasuna": {
+    "playstyles_defence": [
+      "Aerial",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "CD Castellón": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "CD Eldense": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "CD Leganés": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "CD Mirandés": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "CD Tenerife": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header",
+      "Rapid"
+    ]
+  },
+  "CF Montréal": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "CFR 1907 Cluj": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Cagliari": {
+    "playstyles_defence": [
+      "Block",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Cambridge Utd": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Cangzhou FC": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Cardiff City": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "First Touch",
+      "Power Shot",
+      "Rapid",
+      "Trivela"
+    ],
+    "playstyles_forwards": []
+  },
+  "Carlisle United": {
+    "playstyles_defence": [
+      "Relentless"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Carrarese Calcio": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Casa Pia AC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Catanzaro": {
+    "playstyles_defence": [
+      "Trivela"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Celta": {
+    "playstyles_defence": [
+      "Block",
+      "Bruiser",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic"
+    ]
+  },
+  "Celtic": {
+    "playstyles_defence": [
+      "Deflector",
+      "Footwork",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Central Coast": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Central Córdoba": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Cercle Brugge": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Cesena": {
+    "playstyles_defence": [
+      "Block",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Changchun Yatai": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Charlotte FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer",
+      "Far Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Charlton Ath": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Dead Ball"
+    ],
+    "playstyles_forwards": [
+      "Rapid",
+      "Trivela"
+    ]
+  },
+  "Chelsea": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Cheltenham Town": {
+    "playstyles_defence": [
+      "Aerial",
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Power Shot"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Relentless"
+    ]
+  },
+  "Chengdu FC": {
+    "playstyles_defence": [
+      "Deflector",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Chennaiyin FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Chesterfield": {
+    "playstyles_defence": [
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Chicago Fire FC": {
+    "playstyles_defence": [
+      "Footwork",
+      "Jockey",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Cittadella": {
+    "playstyles_defence": [
+      "1v1 Close Down"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Clermont Foot 63": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Club Brugge": {
+    "playstyles_defence": [
+      "Aerial",
+      "Footwork",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Colchester": {
+    "playstyles_defence": [
+      "Block",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Jockey",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Quick Step"
+    ]
+  },
+  "Colorado Rapids": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Columbus Crew": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Como": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Far Throw",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Power Shot",
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Cosenza": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Footwork",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Coventry City": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Cracovia": {
+    "playstyles_defence": [
+      "Deflector",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Crawley Town": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Cremonese": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Cross Claimer",
+      "Jockey",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Crewe Alexandra": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Throw",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot"
+    ]
+  },
+  "Crystal Palace": {
+    "playstyles_defence": [
+      "Footwork",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Flair"
+    ]
+  },
+  "Cádiz CF": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Córdoba CF": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "D. Alavés": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "D.C. United": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Daegu FC": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Block"
+    ],
+    "playstyles_forwards": []
+  },
+  "Daejeon Hana": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Pinged Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Damac": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header",
+      "Rapid"
+    ]
+  },
+  "Defensa": {
+    "playstyles_defence": [
+      "Footwork",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Dep. Riestra": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Derby County": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Power Header",
+      "Rapid"
+    ]
+  },
+  "Derry City": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Dinamo Zagreb": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Djurgårdens IF": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Incisive Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Doncaster": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Drogheda United": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Dundalk": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Dundee FC": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid",
+      "Relentless"
+    ]
+  },
+  "Dundee United": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Dynamo Dresden": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Footwork",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Whipped Pass"
+    ]
+  },
+  "Dynamo Kyiv": {
+    "playstyles_defence": [
+      "Aerial",
+      "Power Header",
+      "Quick Step"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Düsseldorf": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "ESTAC Troyes": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "East Bengal": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Elche CF": {
+    "playstyles_defence": [
+      "Bruiser"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Empoli": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "En Avant Guingamp": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Energie Cottbus": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Estoril Praia": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Estrela Amadora": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Estudiantes": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": []
+  },
+  "Everton": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Exeter City": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Pinged Pass"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot"
+    ],
+    "playstyles_forwards": [
+      "Power Shot"
+    ]
+  },
+  "Eyüpspor": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Power Header"
+    ],
+    "playstyles_forwards": []
+  },
+  "F.C. København": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "FC Annecy": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Augsburg": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic"
+    ]
+  },
+  "FC Barcelona": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "FC Basel 1893": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Bayern München": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Botoșani": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "FC Cartagena": {
+    "playstyles_defence": [
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Press Proven",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "FC Cincinnati": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "FC Dallas": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Ball Pass",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "FC Dinamo 1948": {
+    "playstyles_defence": [
+      "Aerial",
+      "Deflector",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "FC Erzgebirge Aue": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Jockey",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Power Header",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "FC Famalicão": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "FC Gloria Buzău": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "FC Goa": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Hansa Rostock": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Hermannstadt": {
+    "playstyles_defence": [
+      "Power Header",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Ingolstadt 04": {
+    "playstyles_defence": [
+      "Deflector",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial",
+      "Power Header"
+    ]
+  },
+  "FC Lorient": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Footwork",
+      "Intercept",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Lugano": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Bruiser"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Power Shot"
+    ]
+  },
+  "FC Luzern": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw+"
+    ],
+    "playstyles_midfield": [
+      "Chip Shot",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "FC Martigues": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "FC Metz": {
+    "playstyles_defence": [
+      "Intercept",
+      "Relentless"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Midtjylland": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Bruiser",
+      "Power Header"
+    ]
+  },
+  "FC Nantes": {
+    "playstyles_defence": [
+      "Aerial",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "FC Nordsjælland": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Petrolul": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Power Shot"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "FC Porto": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Footwork",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "FC Rapid 1923": {
+    "playstyles_defence": [
+      "Block",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Long Throw"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Schalke 04": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "FC Seoul": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "FC Sion": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC St. Gallen": {
+    "playstyles_defence": [
+      "Aerial",
+      "Footwork",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "FC St. Pauli": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Block",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "FC Univ. Cluj": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "FC Winterthur": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "FC Zürich": {
+    "playstyles_defence": [
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "FCSB": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Intercept",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Relentless"
+    ]
+  },
+  "FCV Dender EH": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "FK Austria Wien": {
+    "playstyles_defence": [
+      "Intercept",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot"
+    ],
+    "playstyles_forwards": []
+  },
+  "FK Bodø/Glimt": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "FK Haugesund": {
+    "playstyles_defence": [
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "Farense": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "Farul Constanța": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Power Header"
+    ]
+  },
+  "Fenerbahçe": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Ferencvárosi TC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Footwork",
+      "Power Shot",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot",
+      "Technical"
+    ]
+  },
+  "Fiorentina": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Fleetwood Town": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Anticipate"
+    ],
+    "playstyles_forwards": []
+  },
+  "Frankfurt": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Fredrikstad FK": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Frosinone": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Fulham": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Acrobatic",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Pinged Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Fürth": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "GAIS": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Reach",
+      "Technical"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "GC Zürich": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Throw",
+      "Rapid",
+      "Slide Tackle",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "GKS Katowice": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Galatasaray": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Press Proven"
+    ]
+  },
+  "Galway United": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Gangwon FC": {
+    "playstyles_defence": [
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Gaziantep": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Genoa": {
+    "playstyles_defence": [
+      "Block",
+      "Long Throw",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Trivela"
+    ],
+    "playstyles_forwards": []
+  },
+  "Getafe CF": {
+    "playstyles_defence": [
+      "Footwork",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Gil Vicente": {
+    "playstyles_defence": [
+      "Block",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Gillingham": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Gimcheon Sangmu": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Gimnasia": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "Girona FC": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Power Header"
+    ]
+  },
+  "Godoy Cruz": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Granada CF": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Footwork",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial",
+      "Power Header"
+    ]
+  },
+  "Grazer AK": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Throw"
+    ],
+    "playstyles_forwards": []
+  },
+  "Grenoble Foot 38": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Jockey",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Grimsby Town": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Gwangju FC": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Anticipate",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "First Touch",
+      "Flair",
+      "Technical"
+    ]
+  },
+  "Górnik Zabrze": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Göztepe": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Footwork",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "HJK Helsinki": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Hajduk Split": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Cross Claimer",
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Power Header"
+    ],
+    "playstyles_forwards": []
+  },
+  "Halmstads BK": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "HamKam Fotball": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Incisive Pass"
+    ]
+  },
+  "Hamburger SV": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Intercept",
+      "Power Shot"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Technical"
+    ]
+  },
+  "Hammarby IF": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Hannover 96": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Deflector",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Hannover 96 II": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Harrogate Town": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Chip Shot"
+    ]
+  },
+  "Hatayspor": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Bruiser",
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Havre AC": {
+    "playstyles_defence": [
+      "Power Header",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Hearts": {
+    "playstyles_defence": [
+      "Block",
+      "Deflector",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Heidenheim": {
+    "playstyles_defence": [
+      "Intercept",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Long Ball Pass",
+      "Power Header",
+      "Press Proven",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Hellas Verona": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Henan FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "First Touch"
+    ]
+  },
+  "Hertha BSC": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Chip Shot"
+    ]
+  },
+  "Hibernian": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Bruiser",
+      "Cross Claimer",
+      "Long Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Holstein Kiel": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser",
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "Houston Dynamo": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Jockey",
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Technical"
+    ]
+  },
+  "Huddersfield": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Far Reach",
+      "Far Throw",
+      "Jockey",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Hull City": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Deflector",
+      "Far Throw",
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Huracán": {
+    "playstyles_defence": [
+      "Block",
+      "Footwork",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Hyderabad FC": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "IF Elfsborg": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Quick Step"
+    ],
+    "playstyles_forwards": []
+  },
+  "IFK Göteborg": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "IFK Norrköping": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "IFK Värnamo": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "IK Sirius": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Incheon United": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Anticipate",
+      "Block",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Ind. Rivadavia": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Independiente": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Press Proven"
+    ]
+  },
+  "Instituto": {
+    "playstyles_defence": [
+      "Aerial"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "Inter Miami CF": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "Ipswich": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Long Throw",
+      "Power Shot",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Jagiellonia": {
+    "playstyles_defence": [
+      "Deflector",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Power Shot",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Jahn Regensburg": {
+    "playstyles_defence": [
+      "Block",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Jamshedpur FC": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Jeju United": {
+    "playstyles_defence": [
+      "Aerial",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Jeonbuk Hyundai": {
+    "playstyles_defence": [
+      "Footwork",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Juventus": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Long Throw",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Shot"
+    ]
+  },
+  "K. Beerschot VA": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "KAA Gent": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Quick Step"
+    ],
+    "playstyles_forwards": []
+  },
+  "KFUM-Kameratene": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "KRC Genk": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "KV Kortrijk": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "KV Mechelen": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Flair",
+      "Intercept",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Rapid"
+    ]
+  },
+  "KVC Westerlo": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Kaiserslautern": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Footwork",
+      "Jockey",
+      "Technical"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Kalmar FF": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Ball Pass",
+      "Technical",
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Karlsruher SC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Kasımpaşa": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Kayserispor": {
+    "playstyles_defence": [
+      "Block",
+      "Far Reach"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Kerala Blasters": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Kilmarnock": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Konyaspor": {
+    "playstyles_defence": [
+      "Block",
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Korona Kielce": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Kristiansund BK": {
+    "playstyles_defence": [
+      "Deflector"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "LA Galaxy": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "LAFC": {
+    "playstyles_defence": [
+      "Deflector",
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "LASK": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "LOSC Lille": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Jockey",
+      "Rapid",
+      "Trivela"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Lanús": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Latium": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Lausanne-Sport": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Laval MFC": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Lecce": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Lech Poznań": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Lechia Gdańsk": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Leeds United": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Far Throw",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Legia Warszawa": {
+    "playstyles_defence": [
+      "Aerial",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "First Touch"
+    ]
+  },
+  "Leicester City": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Levante UD": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": []
+  },
+  "Leverkusen": {
+    "playstyles_defence": [
+      "Aerial",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Leyton Orient": {
+    "playstyles_defence": [
+      "Aerial",
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Quick Step"
+    ],
+    "playstyles_forwards": []
+  },
+  "Lillestrøm SK": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Lincoln City": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Long Throw+"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Bruiser",
+      "Finesse Shot",
+      "Power Header"
+    ]
+  },
+  "Liverpool": {
+    "playstyles_defence": [
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Lombardia FC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Reach+"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Luton Town": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Power Shot",
+      "Rapid",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Lyngby BK": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "M'gladbach": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Far Reach",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "MK Dons": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Power Shot"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Technical"
+    ]
+  },
+  "Macarthur FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Malmö FF": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Man Utd": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Manchester City": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Mansfield Town": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Rapid"
+    ]
+  },
+  "Mantova": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Meizhou Hakka FC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Melb. Victory": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "Melbourne City": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Middlesbrough": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Aerial",
+      "Footwork",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "First Touch",
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Quick Step",
+      "Rapid",
+      "Trivela"
+    ]
+  },
+  "Milano FC": {
+    "playstyles_defence": [
+      "Block",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Technical"
+    ]
+  },
+  "Millwall": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Minnesota United": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Footwork",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Rapid"
+    ]
+  },
+  "Mjällby AIF": {
+    "playstyles_defence": [
+      "Deflector"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Long Throw",
+      "Power Header"
+    ]
+  },
+  "Modena": {
+    "playstyles_defence": [
+      "Footwork",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Block",
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Power Header"
+    ]
+  },
+  "Mohammedan SC": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Mohun Bagan SG": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Press Proven"
+    ]
+  },
+  "Molde FK": {
+    "playstyles_defence": [
+      "Finesse Shot"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Montpellier": {
+    "playstyles_defence": [
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Monza": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Morecambe": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Moreirense FC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Motherwell": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Power Header"
+    ]
+  },
+  "Motor Lublin": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Mumbai City FC": {
+    "playstyles_defence": [
+      "Anticipate"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Málaga CF": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Press Proven",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Nacional": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Nantong Zhiyun FC": {
+    "playstyles_defence": [
+      "Bruiser"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Nashville SC": {
+    "playstyles_defence": [
+      "Aerial"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "New England": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "New York City FC": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Newcastle Jets": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Block",
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Newcastle Utd": {
+    "playstyles_defence": [
+      "Aerial",
+      "Footwork",
+      "Long Throw",
+      "Press Proven"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Rapid"
+    ]
+  },
+  "Newell's": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Newport County": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "NorthEast United": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Northampton": {
+    "playstyles_defence": [
+      "Block",
+      "Long Throw",
+      "Quick Step"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Norwich": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Intercept",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Relentless"
+    ]
+  },
+  "Nott'm Forest": {
+    "playstyles_defence": [
+      "Aerial",
+      "Far Reach",
+      "Far Throw",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Notts County": {
+    "playstyles_defence": [
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "OGC Nice": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Press Proven",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "OH Leuven": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "OL": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw",
+      "Rapid",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "OM": {
+    "playstyles_defence": [
+      "Power Header",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Odds BK": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Dead Ball"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Odisha FC": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Olympiacos FC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Orlando City": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Oxford United": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "PAOK FC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Flair",
+      "Footwork",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Finesse Shot"
+    ],
+    "playstyles_forwards": []
+  },
+  "Palermo": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Block",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Panathinaikos": {
+    "playstyles_defence": [
+      "Deflector",
+      "Far Throw",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Flair",
+      "Long Ball Pass",
+      "Relentless",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Paris FC": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Pinged Pass",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Paris SG": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Parma": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Jockey",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Pau FC": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Power Shot"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Perth Glory": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Peterborough": {
+    "playstyles_defence": [
+      "Block",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Philadelphia": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Piast Gliwice": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Pisa": {
+    "playstyles_defence": [
+      "Deflector",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": []
+  },
+  "Platense": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Anticipate"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Plymouth Argyle": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Pogoń Szczecin": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Pohang Steelers": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Press Proven"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Power Shot"
+    ]
+  },
+  "Politehnica Iași": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Long Throw",
+      "Quick Step"
+    ]
+  },
+  "Port Vale": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw+",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Portland Timbers": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Finesse Shot",
+      "Trivela"
+    ]
+  },
+  "Portsmouth": {
+    "playstyles_defence": [
+      "Intercept",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Preston": {
+    "playstyles_defence": [
+      "Relentless",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Preußen Münster": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Punjab FC": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Puszcza": {
+    "playstyles_defence": [
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "QPR": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Qarabağ FK": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": []
+  },
+  "Qingdao Hainiu": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Qingdao W. Coast": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "R. Oviedo": {
+    "playstyles_defence": [
+      "Intercept",
+      "Pinged Pass",
+      "Relentless"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Technical"
+    ]
+  },
+  "R. Racing Club": {
+    "playstyles_defence": [
+      "Block",
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "R. Sporting": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Relentless"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "R. Union St.-G.": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "R. Valladolid CF": {
+    "playstyles_defence": [
+      "Footwork",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial",
+      "Chip Shot"
+    ]
+  },
+  "RB Leipzig": {
+    "playstyles_defence": [
+      "Pinged Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "RB Salzburg": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Reach",
+      "Jockey",
+      "Long Ball Pass",
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "RC Deportivo": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Slide Tackle",
+      "Trivela"
+    ],
+    "playstyles_forwards": []
+  },
+  "RC Lens": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Footwork",
+      "Quick Step",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Press Proven",
+      "Technical"
+    ]
+  },
+  "RCD Espanyol": {
+    "playstyles_defence": [
+      "Pinged Pass",
+      "Rapid",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "RCD Mallorca": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Far Throw",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "RSC Anderlecht": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Power Header",
+      "Technical"
+    ]
+  },
+  "Racing Club": {
+    "playstyles_defence": [
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Racing de Ferrol": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Radomiak Radom": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Raków": {
+    "playstyles_defence": [
+      "Intercept",
+      "Long Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Anticipate"
+    ],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Randers FC": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Rangers": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Pinged Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Rayo Vallecano": {
+    "playstyles_defence": [
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Reading": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Footwork",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Real Betis": {
+    "playstyles_defence": [
+      "Footwork",
+      "Intercept",
+      "Power Shot",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Real Madrid": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Real Salt Lake": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Power Header"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Real Sociedad": {
+    "playstyles_defence": [
+      "Flair"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Real Zaragoza": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Press Proven",
+      "Slide Tackle",
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": []
+  },
+  "Red Bulls": {
+    "playstyles_defence": [
+      "Intercept",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Red Star FC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Reggiana": {
+    "playstyles_defence": [
+      "Block",
+      "Far Reach",
+      "Jockey",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Throw",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Rio Ave FC": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "River Plate": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Rodez AF": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Rosario Central": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Power Header",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Press Proven",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Rosenborg BK": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Rapid",
+      "Relentless"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Ross County": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Aerial",
+      "Block"
+    ],
+    "playstyles_midfield": [
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": []
+  },
+  "Rot-Weiss Essen": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Rotherham Utd": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Royal Antwerp FC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "SC Bastia": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "SC Braga": {
+    "playstyles_defence": [
+      "Block",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Flair",
+      "Technical"
+    ]
+  },
+  "SC Freiburg": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Far Reach",
+      "Footwork",
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Rapid",
+      "Relentless"
+    ]
+  },
+  "SC Oțelul Galați": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Reach",
+      "Relentless"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "SC Paderborn 07": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header",
+      "Technical"
+    ]
+  },
+  "SC Verl": {
+    "playstyles_defence": [
+      "Intercept",
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Power Shot",
+      "Trickster"
+    ],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "SCR Altach": {
+    "playstyles_defence": [
+      "Deflector"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "SD Eibar": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Trivela"
+    ]
+  },
+  "SD Huesca": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "SJ Earthquakes": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Intercept",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Rapid",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "SK Brann": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Power Header",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "SK Rapid": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "SK Sturm Graz": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "SL Benfica": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "SM Caen": {
+    "playstyles_defence": [
+      "Block",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot"
+    ]
+  },
+  "SS Juve Stabia": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "SSC Napoli": {
+    "playstyles_defence": [
+      "Jockey",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header",
+      "Technical"
+    ]
+  },
+  "SSV Ulm 1846": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "STVV": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "SV Darmstadt 98": {
+    "playstyles_defence": [
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "SV Elversberg": {
+    "playstyles_defence": [
+      "Trivela"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "SV Sandhausen": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw",
+      "Intercept",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Power Header",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "SV Waldhof": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "SV Werder Bremen": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Intercept",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "SZ Peng City": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "First Touch",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Saarbrücken": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Bruiser"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Salernitana": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Salford City": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Power Shot"
+    ]
+  },
+  "Sampdoria": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Throw",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Samsunspor": {
+    "playstyles_defence": [
+      "Footwork",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Power Header"
+    ]
+  },
+  "San Lorenzo": {
+    "playstyles_defence": [
+      "Deflector",
+      "Jockey",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Rapid"
+    ]
+  },
+  "Sandefjord": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Santa Clara": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Sarmiento": {
+    "playstyles_defence": [
+      "Aerial",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Sarpsborg 08": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Sassuolo": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Power Header"
+    ]
+  },
+  "Sepsi OSK": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Anticipate"
+    ],
+    "playstyles_midfield": [
+      "Intercept"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Servette FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Deflector",
+      "Jockey"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Flair"
+    ]
+  },
+  "Sevilla FC": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Throw",
+      "Power Shot"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Shakhtar Donetsk": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Flair",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Technical"
+    ]
+  },
+  "Shamrock Rovers": {
+    "playstyles_defence": [
+      "Aerial"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Shandong Taishan": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "Shanghai Port FC": {
+    "playstyles_defence": [
+      "Block",
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Shanghai Shenhua": {
+    "playstyles_defence": [
+      "Deflector"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Rapid"
+    ]
+  },
+  "Sheffield Utd": {
+    "playstyles_defence": [
+      "Block",
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Sheffield Wed": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Jockey",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Throw",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Shelbourne": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Far Throw",
+      "Finesse Shot"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Slide Tackle"
+    ]
+  },
+  "Shrewsbury": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser",
+      "Long Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Silkeborg IF": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Jockey",
+      "Long Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Sivasspor": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Shot"
+    ]
+  },
+  "Slavia Praha": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Deflector",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Sligo Rovers": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Sounders FC": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Southampton": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Intercept",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Flair",
+      "Power Header",
+      "Rapid"
+    ]
+  },
+  "Sp. Charleroi": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Sparta Praha": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Intercept",
+      "Long Ball Pass",
+      "Power Shot"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "Spezia": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "First Touch"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Sporting CP": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Press Proven"
+    ]
+  },
+  "Sporting KC": {
+    "playstyles_defence": [
+      "Block",
+      "Far Throw",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Spurs": {
+    "playstyles_defence": [
+      "Block",
+      "Footwork",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "St. Johnstone": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Rapid",
+      "Trivela"
+    ]
+  },
+  "St. Louis CITY SC": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "St. Mirren": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Power Header",
+      "Rapid",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Finesse Shot",
+      "Rapid"
+    ]
+  },
+  "St. Pats": {
+    "playstyles_defence": [
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Stade Brestois 29": {
+    "playstyles_defence": [
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Quick Step",
+      "Technical"
+    ]
+  },
+  "Stade Rennais FC": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Cross Claimer",
+      "Deflector",
+      "Power Header",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Press Proven"
+    ],
+    "playstyles_forwards": []
+  },
+  "Stade de Reims": {
+    "playstyles_defence": [
+      "Rapid",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Jockey",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Stal Mielec": {
+    "playstyles_defence": [
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Throw",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Standard Liège": {
+    "playstyles_defence": [
+      "Far Reach",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Stevenage": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Dead Ball",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Flair",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Stockport": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Quick Step"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot"
+    ]
+  },
+  "Stoke City": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Long Ball Pass",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Power Header"
+    ]
+  },
+  "Strasbourg": {
+    "playstyles_defence": [
+      "Bruiser"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Strømsgodset IF": {
+    "playstyles_defence": [
+      "Footwork"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Sunderland": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Suwon FC": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Footwork",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Swansea City": {
+    "playstyles_defence": [
+      "Intercept",
+      "Long Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Press Proven",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Swindon Town": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Sydney FC": {
+    "playstyles_defence": [
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Sønderjyske": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Deflector",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Südtirol": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "TSG Hoffenheim": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Intercept",
+      "Press Proven",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "TSV Hartberg": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Talleres": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Tianjin JMT FC": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Tigre": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Torino": {
+    "playstyles_defence": [
+      "Block",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Jockey",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Shot"
+    ]
+  },
+  "Toronto FC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Toulouse FC": {
+    "playstyles_defence": [
+      "Aerial",
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Trabzonspor": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Tranmere Rovers": {
+    "playstyles_defence": [
+      "Aerial",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Tromsø IL": {
+    "playstyles_defence": [
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "UD Almería": {
+    "playstyles_defence": [
+      "Block",
+      "Deflector"
+    ],
+    "playstyles_midfield": [
+      "Anticipate"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  },
+  "UD Las Palmas": {
+    "playstyles_defence": [
+      "Deflector",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "Incisive Pass",
+      "Press Proven"
+    ],
+    "playstyles_forwards": [
+      "Power Shot"
+    ]
+  },
+  "USL Dunkerque": {
+    "playstyles_defence": [
+      "Long Throw",
+      "Power Header"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "UTA Arad": {
+    "playstyles_defence": [
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Pinged Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Udinese": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Rapid",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Technical"
+    ]
+  },
+  "Ulsan HD FC": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Press Proven",
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot"
+    ]
+  },
+  "Union Berlin": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Cross Claimer",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Unirea Slobozia": {
+    "playstyles_defence": [
+      "Block",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": []
+  },
+  "Univ. Craiova": {
+    "playstyles_defence": [
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Relentless"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Unión": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [
+      "Flair"
+    ],
+    "playstyles_forwards": [
+      "Power Shot",
+      "Rapid"
+    ]
+  },
+  "Unterhaching": {
+    "playstyles_defence": [
+      "Block"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Valencia CF": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Vejle Boldklub": {
+    "playstyles_defence": [
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Venezia": {
+    "playstyles_defence": [
+      "Far Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Block",
+      "Trivela"
+    ],
+    "playstyles_forwards": []
+  },
+  "VfB Stuttgart": {
+    "playstyles_defence": [
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic"
+    ]
+  },
+  "VfB Stuttgart II": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "VfL Bochum 1848": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Aerial"
+    ],
+    "playstyles_forwards": [
+      "Quick Step"
+    ]
+  },
+  "VfL Osnabrück": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Aerial",
+      "Power Shot"
+    ],
+    "playstyles_forwards": [
+      "Power Shot"
+    ]
+  },
+  "VfL Wolfsburg": {
+    "playstyles_defence": [
+      "Footwork",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Flair",
+      "Rapid"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Viborg FF": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Viking FK": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw",
+      "Intercept",
+      "Long Ball Pass",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Viktoria Köln": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Viktoria Plzeň": {
+    "playstyles_defence": [
+      "Deflector",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Finesse Shot"
+    ]
+  },
+  "Villarreal CF": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Far Throw",
+      "Footwork",
+      "Intercept",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser"
+    ],
+    "playstyles_forwards": []
+  },
+  "Vitória SC": {
+    "playstyles_defence": [
+      "Block",
+      "Intercept",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Press Proven"
+    ]
+  },
+  "Västerås SK": {
+    "playstyles_defence": [
+      "Jockey",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Vélez Sarsfield": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Long Throw",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "WS Wanderers": {
+    "playstyles_defence": [
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Incisive Pass"
+    ]
+  },
+  "WSG Tirol": {
+    "playstyles_defence": [
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Walsall": {
+    "playstyles_defence": [
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header",
+      "Relentless"
+    ]
+  },
+  "Waterford": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Bruiser",
+      "Far Reach",
+      "Long Throw"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Watford": {
+    "playstyles_defence": [
+      "Deflector",
+      "Footwork",
+      "Rapid",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Wehen Wiesbaden": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Jockey"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Dead Ball",
+      "Incisive Pass"
+    ],
+    "playstyles_forwards": []
+  },
+  "Well. Phoenix": {
+    "playstyles_defence": [
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "West Brom": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer",
+      "Long Throw+",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "West Ham": {
+    "playstyles_defence": [
+      "Far Throw"
+    ],
+    "playstyles_midfield": [
+      "Power Header"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Power Header"
+    ]
+  },
+  "Western United": {
+    "playstyles_defence": [
+      "Deflector",
+      "Intercept"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Whitecaps FC": {
+    "playstyles_defence": [
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Widzew Łódź": {
+    "playstyles_defence": [
+      "Block",
+      "Footwork"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Wigan Athletic": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot"
+    ]
+  },
+  "Wolfsberger AC": {
+    "playstyles_defence": [
+      "Intercept",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Wolves": {
+    "playstyles_defence": [
+      "Deflector",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": []
+  },
+  "Wrexham": {
+    "playstyles_defence": [
+      "Aerial",
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Chip Shot",
+      "Power Header"
+    ]
+  },
+  "Wuhan Three Towns": {
+    "playstyles_defence": [
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass",
+      "Technical",
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Power Header"
+    ]
+  },
+  "Wycombe": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Long Ball Pass",
+      "Long Throw",
+      "Relentless"
+    ],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Yverdon Sport FC": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Zagłębie Lubin": {
+    "playstyles_defence": [
+      "Power Header",
+      "Trivela"
+    ],
+    "playstyles_midfield": [
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Zhejiang Pro": {
+    "playstyles_defence": [
+      "Cross Claimer"
+    ],
+    "playstyles_midfield": [
+      "Relentless"
+    ],
+    "playstyles_forwards": []
+  },
+  "Çaykur Rizespor": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Long Ball Pass"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Śląsk Wrocław": {
+    "playstyles_defence": [
+      "Block",
+      "Long Ball Pass"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Throw",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Aerial"
+    ]
+  }
+}

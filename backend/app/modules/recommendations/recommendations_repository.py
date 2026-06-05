@@ -40,6 +40,9 @@ def _team_info(team: Team) -> MatchData.TeamInfo:
         squad_players=squad_players,
         squad_play_styles=[p.play_styles for p in team.players],
         star_power=star_power,
+        playstyles_defence=team.playstyles_defence or [],
+        playstyles_midfield=team.playstyles_midfield or [],
+        playstyles_forwards=team.playstyles_forwards or [],
     )
 
 

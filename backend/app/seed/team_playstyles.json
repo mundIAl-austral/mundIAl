@@ -1,0 +1,1592 @@
+{
+  "Algeria": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Far Throw",
+      "Flair",
+      "Footwork",
+      "Jockey",
+      "Power Header",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Intercept",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Shot",
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Quick Step",
+      "Rapid"
+    ]
+  },
+  "Argentina": {
+    "playstyles_defence": [
+      "1v1 Close Down+",
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Flair",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Header",
+      "Slide Tackle",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Long Ball Pass+",
+      "Pinged Pass+",
+      "Power Shot",
+      "Press Proven",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Tiki Taka",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Dead Ball",
+      "Finesse Shot",
+      "Finesse Shot+",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Shot",
+      "Press Proven+",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Technical+",
+      "Tiki Taka",
+      "Trivela"
+    ]
+  },
+  "Australia": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Reach",
+      "Far Throw",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Header",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Jockey",
+      "Pinged Pass",
+      "Power Header",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Quick Step+",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Rapid"
+    ]
+  },
+  "Austria": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Dead Ball",
+      "Deflector",
+      "Far Reach",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Acrobatic",
+      "Anticipate",
+      "Block+",
+      "Bruiser",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Shot",
+      "Press Proven",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Flair",
+      "Power Header",
+      "Technical",
+      "Tiki Taka"
+    ]
+  },
+  "Belgium": {
+    "playstyles_defence": [
+      "1v1 Close Down+",
+      "Aerial",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Anticipate",
+      "Dead Ball",
+      "Flair",
+      "Incisive Pass",
+      "Incisive Pass+",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Header",
+      "Power Shot",
+      "Press Proven",
+      "Rapid",
+      "Slide Tackle",
+      "Tiki Taka",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Power Header",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Rapid+",
+      "Technical",
+      "Trickster",
+      "Trivela"
+    ]
+  },
+  "Bosnia-Herzegovina": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Bruiser",
+      "Power Header",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Ball Pass",
+      "Press Proven",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot",
+      "Flair",
+      "Incisive Pass",
+      "Power Header",
+      "Press Proven",
+      "Relentless",
+      "Technical"
+    ]
+  },
+  "Brazil": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Bruiser+",
+      "Cross Claimer",
+      "Deflector",
+      "Deflector+",
+      "Far Throw",
+      "Intercept",
+      "Intercept+",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Ball Pass+",
+      "Pinged Pass",
+      "Power Header",
+      "Rapid",
+      "Slide Tackle+"
+    ],
+    "playstyles_midfield": [
+      "Block",
+      "Bruiser",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Long Ball Pass",
+      "Power Shot",
+      "Press Proven",
+      "Slide Tackle",
+      "Technical",
+      "Trivela",
+      "Trivela+"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Shot",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Trickster",
+      "Trickster+",
+      "Trivela",
+      "Whipped Pass"
+    ]
+  },
+  "Canada": {
+    "playstyles_defence": [
+      "Block",
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Flair",
+      "Jockey",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Quick Step",
+      "Relentless",
+      "Trivela"
+    ]
+  },
+  "Cape Verde": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Jockey",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Pinged Pass",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Quick Step",
+      "Technical"
+    ]
+  },
+  "Colombia": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Anticipate",
+      "Bruiser",
+      "Dead Ball",
+      "Finesse Shot",
+      "Flair",
+      "Press Proven",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Chip Shot",
+      "Flair",
+      "Quick Step",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Congo DR": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Deflector",
+      "Far Throw",
+      "Footwork",
+      "Intercept",
+      "Long Ball Pass",
+      "Rapid",
+      "Slide Tackle+",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Aerial",
+      "Press Proven",
+      "Rapid"
+    ]
+  },
+  "Croatia": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block+",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Bruiser",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Shot",
+      "Press Proven",
+      "Technical",
+      "Trivela",
+      "Trivela+",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Chip Shot",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Header",
+      "Technical",
+      "Trivela"
+    ]
+  },
+  "Cura\u00e7ao": {
+    "playstyles_defence": [
+      "Block",
+      "Bruiser",
+      "Long Throw",
+      "Power Header",
+      "Press Proven",
+      "Rapid",
+      "Slide Tackle",
+      "Trivela"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Ball Pass",
+      "Rapid"
+    ],
+    "playstyles_forwards": []
+  },
+  "Czech Republic": {
+    "playstyles_defence": [
+      "Aerial",
+      "Bruiser",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Press Proven",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Power Header",
+      "Power Shot",
+      "Press Proven",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Aerial+",
+      "Bruiser",
+      "Flair",
+      "Power Header",
+      "Press Proven"
+    ]
+  },
+  "Ecuador": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Flair",
+      "Footwork",
+      "Jockey",
+      "Quick Step",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "First Touch",
+      "Flair",
+      "Intercept",
+      "Pinged Pass",
+      "Press Proven",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Tiki Taka",
+      "Trickster",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Flair",
+      "Quick Step",
+      "Rapid",
+      "Technical",
+      "Trickster"
+    ]
+  },
+  "Egypt": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Quick Step",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Finesse Shot+",
+      "Rapid",
+      "Technical",
+      "Trivela"
+    ]
+  },
+  "England": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Slide Tackle",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Block",
+      "Dead Ball",
+      "Finesse Shot",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Power Shot",
+      "Power Shot+",
+      "Press Proven",
+      "Quick Step",
+      "Relentless+",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Finesse Shot",
+      "Finesse Shot+",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Long Ball Pass",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Trivela",
+      "Whipped Pass"
+    ]
+  },
+  "France": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Anticipate+",
+      "Block",
+      "Bruiser",
+      "Bruiser+",
+      "Cross Claimer",
+      "Deflector+",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Jockey+",
+      "Long Throw",
+      "Pinged Pass",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Anticipate",
+      "Bruiser",
+      "Chip Shot",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Flair+",
+      "Incisive Pass",
+      "Intercept",
+      "Intercept+",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Relentless",
+      "Technical",
+      "Tiki Taka",
+      "Trickster",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Aerial",
+      "Finesse Shot",
+      "Flair",
+      "Pinged Pass",
+      "Quick Step",
+      "Quick Step+",
+      "Rapid",
+      "Rapid+",
+      "Relentless",
+      "Trickster",
+      "Trivela"
+    ]
+  },
+  "Germany": {
+    "playstyles_defence": [
+      "Acrobatic",
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser+",
+      "Cross Claimer",
+      "Dead Ball",
+      "Deflector",
+      "Far Throw",
+      "Finesse Shot",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Ball Pass+",
+      "Pinged Pass",
+      "Pinged Pass+",
+      "Power Header",
+      "Press Proven",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Slide Tackle+",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Block",
+      "Bruiser",
+      "Chip Shot",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Incisive Pass+",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Technical",
+      "Technical+",
+      "Tiki Taka",
+      "Trickster",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Chip Shot",
+      "Chip Shot+",
+      "Finesse Shot",
+      "First Touch",
+      "Incisive Pass",
+      "Quick Step",
+      "Rapid",
+      "Technical",
+      "Trivela"
+    ]
+  },
+  "Ghana": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Footwork",
+      "Long Throw",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Chip Shot",
+      "Finesse Shot",
+      "Flair",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Finesse Shot",
+      "Flair",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Haiti": {
+    "playstyles_defence": [
+      "Bruiser",
+      "Cross Claimer",
+      "Intercept"
+    ],
+    "playstyles_midfield": [
+      "First Touch",
+      "Relentless",
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Technical"
+    ]
+  },
+  "Iran": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "First Touch",
+      "Flair",
+      "Press Proven"
+    ]
+  },
+  "Iraq": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [
+      "Flair",
+      "Intercept",
+      "Long Ball Pass",
+      "Technical"
+    ],
+    "playstyles_forwards": []
+  },
+  "Ivory Coast": {
+    "playstyles_defence": [
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Rapid",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Shot",
+      "Press Proven",
+      "Relentless",
+      "Technical",
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic+",
+      "Flair",
+      "Quick Step",
+      "Rapid",
+      "Technical",
+      "Trivela"
+    ]
+  },
+  "Japan": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Cross Claimer",
+      "Dead Ball",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Header",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Long Ball Pass",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Aerial",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical"
+    ]
+  },
+  "Jordan": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Mexico": {
+    "playstyles_defence": [
+      "Acrobatic",
+      "Aerial",
+      "Block",
+      "Bruiser",
+      "Intercept",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Block+",
+      "Bruiser",
+      "Flair",
+      "Power Header",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Flair",
+      "Power Header",
+      "Rapid"
+    ]
+  },
+  "Morocco": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw+",
+      "Flair",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Quick Step",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Finesse Shot"
+    ]
+  },
+  "Netherlands": {
+    "playstyles_defence": [
+      "Aerial+",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Quick Step",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Chip Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Power Header",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Tiki Taka",
+      "Trivela",
+      "Trivela+"
+    ],
+    "playstyles_forwards": [
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Header",
+      "Press Proven",
+      "Quick Step",
+      "Technical",
+      "Trivela"
+    ]
+  },
+  "New Zealand": {
+    "playstyles_defence": [
+      "Cross Claimer",
+      "Deflector",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Rapid",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Flair",
+      "Long Ball Pass",
+      "Power Shot",
+      "Press Proven",
+      "Slide Tackle",
+      "Technical",
+      "Tiki Taka"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Rapid"
+    ]
+  },
+  "Norway": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Cross Claimer",
+      "Deflector",
+      "Far Throw",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Power Header",
+      "Press Proven",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Block",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass+",
+      "Intercept",
+      "Jockey",
+      "Pinged Pass",
+      "Power Header",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic+",
+      "Bruiser",
+      "Finesse Shot",
+      "Flair",
+      "Incisive Pass",
+      "Power Header",
+      "Power Shot",
+      "Press Proven",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Panama": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Footwork",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Long Ball Pass",
+      "Slide Tackle"
+    ],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "Paraguay": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Long Ball Pass",
+      "Power Header"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Dead Ball",
+      "Finesse Shot",
+      "Flair",
+      "Incisive Pass",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Finesse Shot",
+      "First Touch",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless"
+    ]
+  },
+  "Portugal": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Aerial",
+      "Block",
+      "Bruiser+",
+      "Deflector",
+      "Far Throw",
+      "First Touch",
+      "Flair",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Slide Tackle",
+      "Technical",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Block",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Long Ball Pass+",
+      "Pinged Pass",
+      "Power Shot",
+      "Press Proven",
+      "Relentless",
+      "Technical",
+      "Technical+",
+      "Tiki Taka",
+      "Tiki Taka+",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Aerial",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Header",
+      "Power Shot",
+      "Power Shot+",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Rapid+",
+      "Technical",
+      "Trickster",
+      "Trivela",
+      "Whipped Pass"
+    ]
+  },
+  "Qatar": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": []
+  },
+  "Saudi Arabia": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Cross Claimer",
+      "Intercept",
+      "Long Ball Pass",
+      "Long Throw",
+      "Long Throw+",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Chip Shot",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Power Shot",
+      "Rapid",
+      "Technical",
+      "Trickster"
+    ],
+    "playstyles_forwards": [
+      "Power Header"
+    ]
+  },
+  "Scotland": {
+    "playstyles_defence": [
+      "Aerial",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Deflector",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Pinged Pass",
+      "Power Header",
+      "Rapid",
+      "Relentless+",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Long Ball Pass",
+      "Press Proven",
+      "Relentless"
+    ],
+    "playstyles_forwards": [
+      "Power Header",
+      "Power Shot",
+      "Quick Step"
+    ]
+  },
+  "Senegal": {
+    "playstyles_defence": [
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Header",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Flair",
+      "Intercept",
+      "Jockey",
+      "Quick Step",
+      "Rapid",
+      "Slide Tackle",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Acrobatic",
+      "Flair",
+      "Quick Step",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "South Africa": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Rapid"
+    ]
+  },
+  "South Korea": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Reach",
+      "Far Throw",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Relentless",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Tiki Taka",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Aerial",
+      "Power Header",
+      "Power Shot",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Spain": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Acrobatic",
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Press Proven",
+      "Rapid",
+      "Relentless",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Aerial",
+      "Bruiser",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Incisive Pass+",
+      "Long Ball Pass",
+      "Power Shot",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Rapid+",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Tiki Taka",
+      "Tiki Taka+",
+      "Trivela",
+      "Whipped Pass",
+      "Whipped Pass+"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Flair",
+      "Quick Step",
+      "Technical",
+      "Trivela"
+    ]
+  },
+  "Sweden": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Deflector",
+      "Far Throw",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Rapid"
+    ],
+    "playstyles_midfield": [
+      "Flair",
+      "Incisive Pass",
+      "Long Ball Pass",
+      "Press Proven",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Power Header",
+      "Press Proven",
+      "Rapid"
+    ]
+  },
+  "Switzerland": {
+    "playstyles_defence": [
+      "1v1 Close Down+",
+      "Aerial",
+      "Bruiser",
+      "Deflector",
+      "Far Reach",
+      "Far Throw",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Shot",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Bruiser",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Long Ball Pass",
+      "Long Ball Pass+",
+      "Power Header",
+      "Power Shot",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Technical"
+    ]
+  },
+  "Tunisia": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Jockey",
+      "Long Ball Pass",
+      "Long Throw",
+      "Relentless",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Bruiser",
+      "Flair",
+      "Intercept",
+      "Press Proven",
+      "Relentless",
+      "Technical"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Flair",
+      "Technical",
+      "Tiki Taka",
+      "Trickster",
+      "Trivela"
+    ]
+  },
+  "Turkey": {
+    "playstyles_defence": [
+      "Aerial",
+      "Anticipate",
+      "Block",
+      "Bruiser",
+      "Cross Claimer",
+      "Far Throw",
+      "First Touch",
+      "Footwork",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Pinged Pass",
+      "Power Header",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Bruiser",
+      "Dead Ball",
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Incisive Pass+",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Shot",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Trickster",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "First Touch",
+      "Incisive Pass",
+      "Power Shot",
+      "Technical",
+      "Whipped Pass"
+    ]
+  },
+  "USA": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Aerial",
+      "Anticipate",
+      "Far Throw",
+      "Flair",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Rapid",
+      "Technical",
+      "Whipped Pass"
+    ],
+    "playstyles_midfield": [
+      "Finesse Shot",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Long Ball Pass",
+      "Long Throw",
+      "Power Shot",
+      "Quick Step",
+      "Rapid",
+      "Relentless",
+      "Technical",
+      "Tiki Taka",
+      "Trivela"
+    ],
+    "playstyles_forwards": [
+      "Finesse Shot",
+      "Flair",
+      "Rapid"
+    ]
+  },
+  "Uruguay": {
+    "playstyles_defence": [
+      "1v1 Close Down",
+      "Acrobatic",
+      "Aerial",
+      "Anticipate",
+      "Block+",
+      "Cross Claimer",
+      "Far Throw",
+      "Footwork",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Header",
+      "Slide Tackle"
+    ],
+    "playstyles_midfield": [
+      "Anticipate",
+      "Bruiser",
+      "First Touch",
+      "Flair",
+      "Incisive Pass",
+      "Intercept",
+      "Jockey",
+      "Long Ball Pass",
+      "Power Shot",
+      "Power Shot+",
+      "Rapid",
+      "Relentless",
+      "Slide Tackle",
+      "Technical",
+      "Trivela",
+      "Whipped Pass"
+    ],
+    "playstyles_forwards": [
+      "Quick Step",
+      "Rapid",
+      "Relentless"
+    ]
+  },
+  "Uzbekistan": {
+    "playstyles_defence": [],
+    "playstyles_midfield": [],
+    "playstyles_forwards": [
+      "Chip Shot",
+      "Rapid"
+    ]
+  }
+}

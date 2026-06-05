@@ -15,6 +15,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
 from app.core.config import settings
+from app.db.models.club import Club
 from app.db.models.match import Match
 from app.db.models.player import Player
 from app.db.models.team import Team
@@ -203,6 +204,58 @@ async def seed_players(session: AsyncSession, team_map: dict[str, Team]) -> int:
     return count
 
 
+async def seed_clubs(session: AsyncSession) -> int:
+    """Seed clubs table from clubs.json."""
+    raw = json.loads((SEED_DIR / "clubs.json").read_text())
+
+    # Idempotent: skip if clubs already exist
+    existing = await session.execute(select(Club.id).limit(1))
+    if existing.scalar_one_or_none() is not None:
+        return 0
+
+    count = 0
+    for club_name, playstyles in raw.items():
+        club = Club(
+            name=club_name,
+            playstyles_defence=playstyles.get("playstyles_defence", []),
+            playstyles_midfield=playstyles.get("playstyles_midfield", []),
+            playstyles_forwards=playstyles.get("playstyles_forwards", []),
+        )
+        session.add(club)
+        count += 1
+
+    return count
+
+
+async def seed_team_playstyles(session: AsyncSession, team_map: dict[str, Team]) -> None:
+    """Update teams with playstyles from team_playstyles.json."""
+    raw = json.loads((SEED_DIR / "team_playstyles.json").read_text())
+
+    for nation, playstyles in raw.items():
+        team = team_map.get(nation)
+        if team is None:
+            continue
+
+        team.playstyles_defence = playstyles.get("playstyles_defence", [])
+        team.playstyles_midfield = playstyles.get("playstyles_midfield", [])
+        team.playstyles_forwards = playstyles.get("playstyles_forwards", [])
+
+
+async def seed_team_grl_scores(session: AsyncSession) -> None:
+    """Calculate and update grl_score (average OVR of players) for each club."""
+    from sqlalchemy import func
+
+    clubs_result = await session.execute(select(Club))
+    clubs = clubs_result.scalars().all()
+
+    for club in clubs:
+        result = await session.execute(
+            select(func.avg(Player.overall_rating)).where(Player.club == club.name)
+        )
+        avg_rating = result.scalar()
+        club.grl_score = float(avg_rating) if avg_rating is not None else 0.0
+
+
 async def main() -> None:
     engine = create_async_engine(settings.database_url)
     factory = async_sessionmaker(engine, expire_on_commit=False)
@@ -219,6 +272,18 @@ async def main() -> None:
         print("Seeding players...")
         player_count = await seed_players(session, team_map)
         print(f"  {player_count} players seeded")
+
+        print("Seeding clubs...")
+        club_count = await seed_clubs(session)
+        print(f"  {club_count} clubs seeded")
+
+        print("Seeding team playstyles...")
+        await seed_team_playstyles(session, team_map)
+        print("  48 teams enriched with playstyles")
+
+        print("Calculating GRL scores...")
+        await seed_team_grl_scores(session)
+        print("  48 teams enriched with GRL scores")
 
     await engine.dispose()
     print("Seed complete.")

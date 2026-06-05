@@ -1,5 +1,13 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { ArrowRight, Clock3, Globe2, Shield, Star, Users } from "lucide-react";
+import {
+  ArrowRight,
+  Building2,
+  Clock3,
+  Globe2,
+  Shield,
+  Star,
+  Users,
+} from "lucide-react";
 import { Flag } from "@/components/Flag";
 import { NavBar } from "@/components/NavBar";
 import { SummaryCard } from "@/components/SummaryCard";
@@ -169,6 +177,34 @@ function IndexPage() {
               ) : (
                 <p className="text-sm leading-6 text-muted-foreground">
                   No agregaste jugadores todavía.
+                </p>
+              )}
+            </SummaryCard>
+
+            <SummaryCard
+              icon={<Building2 className="h-4 w-4" />}
+              iconBg="var(--secondary-soft)"
+              title="Clubs favoritos"
+              count={profile.favorite_clubs?.length || "—"}
+              onEdit={() =>
+                void navigate({ to: "/setup", search: { step: 3 } })
+              }
+            >
+              {profile.favorite_clubs && profile.favorite_clubs.length > 0 ? (
+                <div className="flex flex-wrap gap-2">
+                  {profile.favorite_clubs.map((club) => (
+                    <span
+                      key={club}
+                      className="inline-flex items-center gap-2 rounded-full border border-border bg-[color:var(--surface-soft)] px-3 py-1.5 text-sm text-foreground/88"
+                    >
+                      <span className="h-2 w-2 rounded-full bg-secondary" />
+                      {club}
+                    </span>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm leading-6 text-muted-foreground">
+                  No agregaste clubs todavía.
                 </p>
               )}
             </SummaryCard>
