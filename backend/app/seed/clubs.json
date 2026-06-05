@@ -1,5 +1,5 @@
 {
-  "1. FC K\u00f6ln": {
+  "1. FC Köln": {
     "playstyles_defence": [
       "Block",
       "Cross Claimer",
@@ -23,7 +23,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "1. FC N\u00fcrnberg": {
+  "1. FC Nürnberg": {
     "playstyles_defence": [
       "Far Reach",
       "Rapid",
@@ -47,7 +47,7 @@
       "Technical"
     ]
   },
-  "1860 M\u00fcnchen": {
+  "1860 München": {
     "playstyles_defence": [
       "Block",
       "Far Reach",
@@ -185,7 +185,7 @@
       "Power Header"
     ]
   },
-  "AS Saint-\u00c9tienne": {
+  "AS Saint-Étienne": {
     "playstyles_defence": [
       "Anticipate",
       "Cross Claimer",
@@ -590,7 +590,7 @@
       "Chip Shot"
     ]
   },
-  "Atl\u00e9tico Tucum\u00e1n": {
+  "Atlético Tucumán": {
     "playstyles_defence": [
       "Power Header",
       "Slide Tackle"
@@ -600,7 +600,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Atl\u00e9tico de Madrid": {
+  "Atlético de Madrid": {
     "playstyles_defence": [
       "Bruiser"
     ],
@@ -651,7 +651,7 @@
     ],
     "playstyles_forwards": []
   },
-  "BK H\u00e4cken": {
+  "BK Häcken": {
     "playstyles_defence": [
       "Block",
       "Cross Claimer",
@@ -727,7 +727,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Ba\u015fak\u015fehir": {
+  "Başakşehir": {
     "playstyles_defence": [
       "Anticipate",
       "Bruiser",
@@ -788,7 +788,7 @@
       "Power Header"
     ]
   },
-  "Be\u015fikta\u015f": {
+  "Beşiktaş": {
     "playstyles_defence": [
       "Block",
       "Cross Claimer",
@@ -1034,7 +1034,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Br\u00f8ndby IF": {
+  "Brøndby IF": {
     "playstyles_defence": [
       "Long Ball Pass"
     ],
@@ -1081,7 +1081,7 @@
       "Technical"
     ]
   },
-  "CD Castell\u00f3n": {
+  "CD Castellón": {
     "playstyles_defence": [
       "Footwork"
     ],
@@ -1095,7 +1095,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "CD Legan\u00e9s": {
+  "CD Leganés": {
     "playstyles_defence": [
       "Bruiser",
       "Far Throw"
@@ -1105,7 +1105,7 @@
     ],
     "playstyles_forwards": []
   },
-  "CD Mirand\u00e9s": {
+  "CD Mirandés": {
     "playstyles_defence": [
       "Long Throw"
     ],
@@ -1122,7 +1122,7 @@
       "Rapid"
     ]
   },
-  "CF Montr\u00e9al": {
+  "CF Montréal": {
     "playstyles_defence": [
       "Cross Claimer",
       "Long Ball Pass"
@@ -1241,7 +1241,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "Central C\u00f3rdoba": {
+  "Central Córdoba": {
     "playstyles_defence": [],
     "playstyles_midfield": [
       "Flair",
@@ -1514,7 +1514,7 @@
       "Flair"
     ]
   },
-  "C\u00e1diz CF": {
+  "Cádiz CF": {
     "playstyles_defence": [
       "Long Ball Pass",
       "Long Throw"
@@ -1527,12 +1527,12 @@
       "Finesse Shot"
     ]
   },
-  "C\u00f3rdoba CF": {
+  "Córdoba CF": {
     "playstyles_defence": [],
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "D. Alav\u00e9s": {
+  "D. Alavés": {
     "playstyles_defence": [
       "Anticipate",
       "Block",
@@ -1641,7 +1641,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Djurg\u00e5rdens IF": {
+  "Djurgårdens IF": {
     "playstyles_defence": [
       "Aerial",
       "Cross Claimer",
@@ -1730,7 +1730,7 @@
     ],
     "playstyles_forwards": []
   },
-  "D\u00fcsseldorf": {
+  "Düsseldorf": {
     "playstyles_defence": [
       "Anticipate"
     ],
@@ -1840,7 +1840,7 @@
       "Power Shot"
     ]
   },
-  "Ey\u00fcpspor": {
+  "Eyüpspor": {
     "playstyles_defence": [
       "Long Throw"
     ],
@@ -1850,7 +1850,7 @@
     ],
     "playstyles_forwards": []
   },
-  "F.C. K\u00f8benhavn": {
+  "F.C. København": {
     "playstyles_defence": [
       "Cross Claimer",
       "Long Throw"
@@ -1900,7 +1900,7 @@
     ],
     "playstyles_forwards": []
   },
-  "FC Bayern M\u00fcnchen": {
+  "FC Bayern München": {
     "playstyles_defence": [
       "Anticipate"
     ],
@@ -1909,7 +1909,7 @@
     ],
     "playstyles_forwards": []
   },
-  "FC Boto\u0219ani": {
+  "FC Botoșani": {
     "playstyles_defence": [
       "Long Ball Pass",
       "Long Throw",
@@ -1984,7 +1984,7 @@
       "Rapid"
     ]
   },
-  "FC Famalic\u00e3o": {
+  "FC Famalicão": {
     "playstyles_defence": [
       "Footwork",
       "Long Ball Pass"
@@ -1997,7 +1997,7 @@
       "Technical"
     ]
   },
-  "FC Gloria Buz\u0103u": {
+  "FC Gloria Buzău": {
     "playstyles_defence": [
       "Power Header"
     ],
@@ -2128,7 +2128,7 @@
       "Rapid"
     ]
   },
-  "FC Nordsj\u00e6lland": {
+  "FC Nordsjælland": {
     "playstyles_defence": [
       "Rapid"
     ],
@@ -2255,7 +2255,7 @@
     ],
     "playstyles_forwards": []
   },
-  "FC Z\u00fcrich": {
+  "FC Zürich": {
     "playstyles_defence": [
       "Rapid",
       "Technical"
@@ -2298,7 +2298,7 @@
     ],
     "playstyles_forwards": []
   },
-  "FK Bod\u00f8/Glimt": {
+  "FK Bodø/Glimt": {
     "playstyles_defence": [
       "Long Ball Pass",
       "Rapid"
@@ -2332,7 +2332,7 @@
       "Trivela"
     ]
   },
-  "Farul Constan\u021ba": {
+  "Farul Constanța": {
     "playstyles_defence": [
       "Far Throw",
       "Footwork"
@@ -2346,7 +2346,7 @@
       "Power Header"
     ]
   },
-  "Fenerbah\u00e7e": {
+  "Fenerbahçe": {
     "playstyles_defence": [
       "Anticipate"
     ],
@@ -2355,7 +2355,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Ferencv\u00e1rosi TC": {
+  "Ferencvárosi TC": {
     "playstyles_defence": [
       "Cross Claimer",
       "Footwork",
@@ -2437,7 +2437,7 @@
       "Flair"
     ]
   },
-  "F\u00fcrth": {
+  "Fürth": {
     "playstyles_defence": [
       "Power Header"
     ],
@@ -2453,7 +2453,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "GC Z\u00fcrich": {
+  "GC Zürich": {
     "playstyles_defence": [
       "1v1 Close Down",
       "Long Throw",
@@ -2647,7 +2647,7 @@
       "Technical"
     ]
   },
-  "G\u00f3rnik Zabrze": {
+  "Górnik Zabrze": {
     "playstyles_defence": [
       "Slide Tackle"
     ],
@@ -2659,7 +2659,7 @@
       "Finesse Shot"
     ]
   },
-  "G\u00f6ztepe": {
+  "Göztepe": {
     "playstyles_defence": [
       "Cross Claimer",
       "Footwork",
@@ -2916,7 +2916,7 @@
       "Power Header"
     ]
   },
-  "Hurac\u00e1n": {
+  "Huracán": {
     "playstyles_defence": [
       "Block",
       "Footwork",
@@ -2943,14 +2943,14 @@
     ],
     "playstyles_forwards": []
   },
-  "IFK G\u00f6teborg": {
+  "IFK Göteborg": {
     "playstyles_defence": [
       "Long Ball Pass"
     ],
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "IFK Norrk\u00f6ping": {
+  "IFK Norrköping": {
     "playstyles_defence": [],
     "playstyles_midfield": [
       "Flair",
@@ -2958,7 +2958,7 @@
     ],
     "playstyles_forwards": []
   },
-  "IFK V\u00e4rnamo": {
+  "IFK Värnamo": {
     "playstyles_defence": [
       "Slide Tackle"
     ],
@@ -3219,7 +3219,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Kas\u0131mpa\u015fa": {
+  "Kasımpaşa": {
     "playstyles_defence": [
       "Cross Claimer",
       "Long Ball Pass"
@@ -3332,7 +3332,7 @@
       "Finesse Shot"
     ]
   },
-  "Lan\u00fas": {
+  "Lanús": {
     "playstyles_defence": [
       "Power Header"
     ],
@@ -3378,7 +3378,7 @@
       "Rapid"
     ]
   },
-  "Lech Pozna\u0144": {
+  "Lech Poznań": {
     "playstyles_defence": [
       "Far Reach",
       "Long Ball Pass"
@@ -3388,7 +3388,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Lechia Gda\u0144sk": {
+  "Lechia Gdańsk": {
     "playstyles_defence": [],
     "playstyles_midfield": [
       "Rapid"
@@ -3466,7 +3466,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Lillestr\u00f8m SK": {
+  "Lillestrøm SK": {
     "playstyles_defence": [
       "Slide Tackle"
     ],
@@ -3571,7 +3571,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Malm\u00f6 FF": {
+  "Malmö FF": {
     "playstyles_defence": [
       "Cross Claimer",
       "Long Ball Pass",
@@ -3710,7 +3710,7 @@
       "Rapid"
     ]
   },
-  "Mj\u00e4llby AIF": {
+  "Mjällby AIF": {
     "playstyles_defence": [
       "Deflector"
     ],
@@ -3839,7 +3839,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "M\u00e1laga CF": {
+  "Málaga CF": {
     "playstyles_defence": [
       "Far Throw",
       "Long Ball Pass",
@@ -4270,7 +4270,7 @@
       "Flair"
     ]
   },
-  "Pogo\u0144 Szczecin": {
+  "Pogoń Szczecin": {
     "playstyles_defence": [
       "Cross Claimer",
       "Jockey",
@@ -4296,7 +4296,7 @@
       "Power Shot"
     ]
   },
-  "Politehnica Ia\u0219i": {
+  "Politehnica Iași": {
     "playstyles_defence": [],
     "playstyles_midfield": [
       "Long Ball Pass"
@@ -4360,7 +4360,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Preu\u00dfen M\u00fcnster": {
+  "Preußen Münster": {
     "playstyles_defence": [
       "Block"
     ],
@@ -4401,7 +4401,7 @@
       "Finesse Shot"
     ]
   },
-  "Qaraba\u011f FK": {
+  "Qarabağ FK": {
     "playstyles_defence": [
       "1v1 Close Down",
       "Long Ball Pass"
@@ -4610,7 +4610,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "Rak\u00f3w": {
+  "Raków": {
     "playstyles_defence": [
       "Intercept",
       "Long Throw",
@@ -4891,7 +4891,7 @@
       "Relentless"
     ]
   },
-  "SC O\u021belul Gala\u021bi": {
+  "SC Oțelul Galați": {
     "playstyles_defence": [
       "Bruiser",
       "Far Reach",
@@ -5118,7 +5118,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Saarbr\u00fccken": {
+  "Saarbrücken": {
     "playstyles_defence": [
       "Anticipate",
       "Bruiser"
@@ -5636,7 +5636,7 @@
       "Chip Shot"
     ]
   },
-  "Standard Li\u00e8ge": {
+  "Standard Liège": {
     "playstyles_defence": [
       "Far Reach",
       "Long Ball Pass",
@@ -5704,7 +5704,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Str\u00f8msgodset IF": {
+  "Strømsgodset IF": {
     "playstyles_defence": [
       "Footwork"
     ],
@@ -5764,7 +5764,7 @@
       "Finesse Shot"
     ]
   },
-  "S\u00f8nderjyske": {
+  "Sønderjyske": {
     "playstyles_defence": [
       "Cross Claimer",
       "Deflector",
@@ -5777,7 +5777,7 @@
       "Rapid"
     ]
   },
-  "S\u00fcdtirol": {
+  "Südtirol": {
     "playstyles_defence": [
       "Far Throw"
     ],
@@ -5888,7 +5888,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Troms\u00f8 IL": {
+  "Tromsø IL": {
     "playstyles_defence": [
       "Rapid"
     ],
@@ -5897,7 +5897,7 @@
     ],
     "playstyles_forwards": []
   },
-  "UD Almer\u00eda": {
+  "UD Almería": {
     "playstyles_defence": [
       "Block",
       "Deflector"
@@ -6006,7 +6006,7 @@
       "Power Header"
     ]
   },
-  "Uni\u00f3n": {
+  "Unión": {
     "playstyles_defence": [
       "Anticipate",
       "Long Throw"
@@ -6081,7 +6081,7 @@
       "Quick Step"
     ]
   },
-  "VfL Osnabr\u00fcck": {
+  "VfL Osnabrück": {
     "playstyles_defence": [],
     "playstyles_midfield": [
       "Aerial",
@@ -6127,7 +6127,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Viktoria K\u00f6ln": {
+  "Viktoria Köln": {
     "playstyles_defence": [
       "Aerial",
       "Bruiser"
@@ -6135,7 +6135,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "Viktoria Plze\u0148": {
+  "Viktoria Plzeň": {
     "playstyles_defence": [
       "Deflector",
       "Intercept"
@@ -6159,7 +6159,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Vit\u00f3ria SC": {
+  "Vitória SC": {
     "playstyles_defence": [
       "Block",
       "Intercept",
@@ -6172,7 +6172,7 @@
       "Press Proven"
     ]
   },
-  "V\u00e4ster\u00e5s SK": {
+  "Västerås SK": {
     "playstyles_defence": [
       "Jockey",
       "Long Throw"
@@ -6180,7 +6180,7 @@
     "playstyles_midfield": [],
     "playstyles_forwards": []
   },
-  "V\u00e9lez Sarsfield": {
+  "Vélez Sarsfield": {
     "playstyles_defence": [
       "Anticipate",
       "Long Throw",
@@ -6313,7 +6313,7 @@
       "Power Header"
     ]
   },
-  "Widzew \u0141\u00f3d\u017a": {
+  "Widzew Łódź": {
     "playstyles_defence": [
       "Block",
       "Footwork"
@@ -6404,7 +6404,7 @@
     ],
     "playstyles_forwards": []
   },
-  "Zag\u0142\u0119bie Lubin": {
+  "Zagłębie Lubin": {
     "playstyles_defence": [
       "Power Header",
       "Trivela"
@@ -6424,7 +6424,7 @@
     ],
     "playstyles_forwards": []
   },
-  "\u00c7aykur Rizespor": {
+  "Çaykur Rizespor": {
     "playstyles_defence": [
       "1v1 Close Down",
       "Long Ball Pass"
@@ -6436,7 +6436,7 @@
       "Power Header"
     ]
   },
-  "\u015al\u0105sk Wroc\u0142aw": {
+  "Śląsk Wrocław": {
     "playstyles_defence": [
       "Block",
       "Long Ball Pass"
