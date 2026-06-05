@@ -312,14 +312,6 @@ function FeedbackPage() {
 
   if (!profile) return null;
 
-  function handleSubmit() {
-    submit.mutate(feedbackItems.length > 0 ? feedbackItems : undefined);
-  }
-
-  function handleSkip() {
-    submit.mutate(undefined);
-  }
-
   function handleButtonKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
     if (event.key === "ArrowUp") event.currentTarget.blur();
   }
@@ -429,32 +421,6 @@ function FeedbackPage() {
               onKeyDown={handleButtonKeyDown}
               disabled={!activeMatch || submit.isPending}
             />
-          </div>
-
-          <div className="flex min-h-12 items-center gap-3">
-            <Button
-              variant="outline"
-              onClick={handleSkip}
-              disabled={submit.isPending}
-              className="h-12 rounded-2xl border-border bg-card px-5 text-foreground/80 hover:bg-[color:var(--surface-elevated-hover)] hover:text-foreground"
-            >
-              Omitir
-            </Button>
-            {submit.isPending ? (
-              <Skeleton className="h-12 flex-1 rounded-2xl" />
-            ) : (
-              <Button
-                onClick={handleSubmit}
-                disabled={!allRated}
-                className="h-12 flex-1 gap-2 rounded-2xl rounded-tl-xs"
-                size="lg"
-              >
-                {allRated
-                  ? "Ver mis recomendaciones"
-                  : `Elegí ${matches.length || 5} partidos (${ratedCount}/${matches.length || 5})`}
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            )}
           </div>
         </div>
       </div>
