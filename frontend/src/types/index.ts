@@ -35,6 +35,7 @@ export interface ScoreBreakdown {
   expected_competitiveness: number;
   narrative_score: number;
   regional_affinity: number;
+  playstyle_affinity: number;
 }
 
 export interface MatchRecommendation {
@@ -56,6 +57,15 @@ export interface RecommendationResponse {
   imperdible: MatchRecommendation[];
   vale_la_pena: MatchRecommendation[];
   para_el_resumen: MatchRecommendation[];
+}
+
+export interface FeedbackItem {
+  match_id: string;
+  liked: boolean;
+}
+
+export interface PreviewResponse {
+  matches: MatchRecommendation[];
 }
 
 export interface CatalogTeam {

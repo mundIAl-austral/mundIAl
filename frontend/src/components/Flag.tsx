@@ -28,7 +28,7 @@ export function Flag({
   const normalizedCode = countryCode.trim().toUpperCase();
   const accessibleLabel =
     countryLabel ?? COUNTRY_LABELS[normalizedCode] ?? normalizedCode;
-  const isValidCountryCode = /^[A-Z]{2}$/.test(normalizedCode);
+  const isValidCountryCode = /^[A-Z]{2}(-[A-Z]{3})?$/.test(normalizedCode);
   const [hasImageError, setHasImageError] = useState(!isValidCountryCode);
 
   return (
@@ -37,7 +37,7 @@ export function Flag({
       aria-label={`Bandera de ${accessibleLabel}`}
       title={accessibleLabel}
       className={cn(
-        "inline-flex shrink-0 items-center justify-center overflow-hidden border border-border/80 bg-[color:var(--surface-soft)] text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] rounded-tl-[4px] rounded-tr-[10px] rounded-br-[4px] rounded-bl-[10px]",
+        "inline-flex shrink-0 items-center justify-center overflow-hidden border border-white bg-[color:var(--surface-soft)] text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] rounded-tl-[4px] rounded-tr-[10px] rounded-br-[4px] rounded-bl-[10px]",
         FLAG_SIZE_STYLES[size],
         className,
       )}

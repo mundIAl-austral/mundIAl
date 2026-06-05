@@ -71,7 +71,7 @@ mundIAl/
 │   │   │   ├── matches.json               # 72 group-stage matches: UTC datetimes, narrative_score, rivalry_index
 │   │   │   └── seed.py                    # CLI: uv run python -m app.seed.seed
 │   │   ├── ml/
-│   │   │   ├── feature_engineering.py     # (UserProfile, MatchData) → 11-dim feature vector
+│   │   │   ├── feature_engineering.py     # (UserProfile, MatchData) → 12-dim feature vector
 │   │   │   ├── classifier.py              # sklearn RF inference; rule-based fallback if no pkl
 │   │   │   └── explainer.py               # Template-based Spanish explanations
 │   │   └── modules/
@@ -145,15 +145,16 @@ Note: `end_hour=24` in availability slots is supported (handled as midnight next
 | 8 | `expected_competitiveness` | Closeness of FIFA rankings (equal = 1) | 0–1 |
 | 9 | `narrative_score` | Pre-annotated match significance (opener, classic rematch, etc.) | 0–1 |
 | 10 | `regional_affinity` | User's country shares confederation with a team | 0/1 |
+| 11 | `playstyle_affinity` | A non-favorite squad player plays like the user's favorites (max Jaccard of EA FC26 play styles) | 0–1 |
 
 ### ML Classifier (`app/ml/classifier.py`)
 
 - **Model:** Random Forest (scikit-learn), trained in `notebooks/02_model_training.ipynb`
-- **Input:** 11-dim feature vector per (user, match) pair
+- **Input:** 12-dim feature vector per (user, match) pair
 - **Output:** `imperdible` / `vale_la_pena` / `para_el_resumen`
 - **Training data:** ~20 diverse user personas × 72 matches ≈ 1,440 labeled rows, annotated by the team
 - **Validation:** Stratified k-fold CV across personas; feature importance plot expected to show `team_affinity` and `rivalry_index` as top predictors
-- **Fallback:** If `app/models/classifier.pkl` does not exist, a rule-based weighted-sum heuristic is used automatically (same 11 features, hardcoded weights). This keeps the API functional before the notebook is run.
+- **Fallback:** If `app/models/classifier.pkl` does not exist, a rule-based weighted-sum heuristic is used automatically (same 12 features, hardcoded weights). This keeps the API functional before the notebook is run.
 
 ### Explanation (`app/ml/explainer.py`)
 

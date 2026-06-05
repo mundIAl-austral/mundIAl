@@ -26,3 +26,6 @@ class Team(Base, TimestampMixin):
     away_matches: Mapped[list["Match"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
         "Match", foreign_keys="Match.team_b_id", back_populates="team_b"
     )
+    players: Mapped[list["Player"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        "Player", back_populates="team", cascade="all, delete-orphan"
+    )

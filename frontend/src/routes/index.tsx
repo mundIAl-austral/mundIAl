@@ -1,14 +1,10 @@
-import { useMutation } from "@tanstack/react-query";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { ArrowRight, Clock3, Globe2, Shield, Star, Users } from "lucide-react";
-import { fetchRecommendations } from "@/api/recommendations";
 import { Flag } from "@/components/Flag";
 import { NavBar } from "@/components/NavBar";
 import { SummaryCard } from "@/components/SummaryCard";
 import { WeekHeatmap } from "@/components/WeekHeatmap";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import { COUNTRY_LABELS } from "@/data/countries";
 import { TEAM_COUNTRY_CODES, TEAM_META } from "@/data/teams";
 import { TIMEZONES } from "@/data/timezones";
@@ -24,16 +20,8 @@ function IndexPage() {
   const navigate = useNavigate();
   const { countries, timezones } = useSetupStep4();
 
-  const { mutate, isPending, isError, error, reset } = useMutation({
-    mutationFn: fetchRecommendations,
-    onSuccess: (data) => {
-      sessionStorage.setItem("recommendationData", JSON.stringify(data));
-      void navigate({ to: "/results" });
-    },
-  });
-
   function handleRecommend() {
-    if (profile) mutate(profile);
+    if (profile) void navigate({ to: "/feedback" });
   }
 
   if (!profile) {
@@ -229,39 +217,19 @@ function IndexPage() {
               </p>
             </SummaryCard>
           </section>
-
-          {isError && (
-            <Alert variant="destructive">
-              <AlertTitle>No pudimos generar recomendaciones</AlertTitle>
-              <AlertDescription className="mt-1">
-                {error instanceof Error ? error.message : "Error desconocido"}
-                <button
-                  type="button"
-                  onClick={reset}
-                  className="ml-2 underline"
-                >
-                  Reintentar
-                </button>
-              </AlertDescription>
-            </Alert>
-          )}
         </div>
       </main>
 
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
         <div className="mx-auto flex min-h-16 max-w-3xl items-center px-5 py-3">
-          {isPending ? (
-            <Skeleton className="h-12 w-full rounded-2xl" />
-          ) : (
-            <Button
-              onClick={handleRecommend}
-              className="h-12 w-full gap-2 rounded-2xl rounded-tl-xs"
-              size="lg"
-            >
-              Ver mis recomendaciones
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-          )}
+          <Button
+            onClick={handleRecommend}
+            className="h-12 w-full gap-2 rounded-2xl rounded-tl-xs"
+            size="lg"
+          >
+            Ver mis recomendaciones
+            <ArrowRight className="h-4 w-4" />
+          </Button>
         </div>
       </div>
     </div>

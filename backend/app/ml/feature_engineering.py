@@ -1,5 +1,5 @@
 """
-Computes an 11-dimensional feature vector for each (UserProfile, Match) pair.
+Computes a 12-dimensional feature vector for each (UserProfile, Match) pair.
 
 Features:
   0  team_affinity          — favorite team is playing (0/1)
@@ -13,6 +13,7 @@ Features:
   8  expected_competitiveness — closeness of FIFA rankings (0–1, equal = 1)
   9  narrative_score        — pre-computed match narrative value (0–10) → normalized /10
   10 regional_affinity      — user country shares confederation with a team (0/1)
+  11 playstyle_affinity     — a non-favorite squad player plays like the user's favorites (0–1)
 """
 
 from __future__ import annotations
@@ -38,6 +39,7 @@ FEATURE_NAMES = [
     "expected_competitiveness",
     "narrative_score",
     "regional_affinity",
+    "playstyle_affinity",
 ]
 
 # Map confederation → set of country codes (ISO 3166-1 alpha-2)
@@ -179,14 +181,47 @@ def _expected_competitiveness(rank_a: int, rank_b: int) -> float:
     return max(0.0, 1.0 - gap / _MAX_FIFA_RANK)
 
 
-def compute(profile: UserProfile, match: MatchData, cal: Calendar | None) -> np.ndarray:
+def _jaccard(a: set[str], b: set[str]) -> float:
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def _playstyle_affinity(match: MatchData, user_styles: set[str], fav_players: set[str]) -> float:
+    """
+    Max stylistic similarity of any *other* player in the match to the user's
+    favorites' play styles. Skips the user's own favorites (covered by
+    star_player_playing). 0 when the user has no resolvable styles.
+    """
+    if not user_styles:
+        return 0.0
+
+    best = 0.0
+    for team in (match.team_a, match.team_b):
+        for name, styles in zip(  # noqa: B905
+            team.squad_players, team.squad_play_styles
+        ):
+            if name.lower().strip() in fav_players:
+                continue
+            sim = _jaccard(set(styles), user_styles)
+            if sim > best:
+                best = sim
+    return best
+
+
+def compute(
+    profile: UserProfile,
+    match: MatchData,
+    cal: Calendar | None,
+    user_play_styles: set[str],
+) -> np.ndarray:
     fav_teams = _normalize_names(profile.favorite_teams)
     fav_players = _normalize_names(profile.favorite_players)
 
     team_a_name = match.team_a.name.lower()
     team_b_name = match.team_b.name.lower()
-    team_a_players = _normalize_names(match.team_a.key_players)
-    team_b_players = _normalize_names(match.team_b.key_players)
+    team_a_players = _normalize_names(match.team_a.squad_players)
+    team_b_players = _normalize_names(match.team_b.squad_players)
     team_a_rivals = _normalize_names(match.team_a.rival_team_names)
     team_b_rivals = _normalize_names(match.team_b.rival_team_names)
 
@@ -231,6 +266,9 @@ def compute(profile: UserProfile, match: MatchData, cal: Calendar | None) -> np.
     team_b_conf = match.team_b.confederation
     regional_affinity = 1.0 if user_conf and user_conf in (team_a_conf, team_b_conf) else 0.0
 
+    # 11 — playstyle_affinity: a player who plays like your favorites is on the pitch
+    playstyle = _playstyle_affinity(match, user_play_styles, fav_players)
+
     return np.array(
         [
             team_affinity,
@@ -244,13 +282,17 @@ def compute(profile: UserProfile, match: MatchData, cal: Calendar | None) -> np.
             competitiveness,
             narrative,
             regional_affinity,
+            playstyle,
         ],
         dtype=np.float64,
     )
 
 
 def compute_batch(
-    profile: UserProfile, matches: list[MatchData], cal: Calendar | None
+    profile: UserProfile,
+    matches: list[MatchData],
+    cal: Calendar | None,
+    user_play_styles: set[str],
 ) -> np.ndarray:
-    """Return shape (n_matches, 11) feature matrix."""
-    return np.vstack([compute(profile, m, cal) for m in matches])
+    """Return shape (n_matches, 12) feature matrix."""
+    return np.vstack([compute(profile, m, cal, user_play_styles) for m in matches])

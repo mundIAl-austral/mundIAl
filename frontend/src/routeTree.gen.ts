@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SetupRouteImport } from './routes/setup'
 import { Route as ResultsRouteImport } from './routes/results'
+import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as ChatRouteImport } from './routes/chat'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -22,6 +23,11 @@ const SetupRoute = SetupRouteImport.update({
 const ResultsRoute = ResultsRouteImport.update({
   id: '/results',
   path: '/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeedbackRoute = FeedbackRouteImport.update({
+  id: '/feedback',
+  path: '/feedback',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ChatRoute = ChatRouteImport.update({
@@ -38,12 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/chat': typeof ChatRoute
+  '/feedback': typeof FeedbackRoute
   '/results': typeof ResultsRoute
   '/setup': typeof SetupRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/chat': typeof ChatRoute
+  '/feedback': typeof FeedbackRoute
   '/results': typeof ResultsRoute
   '/setup': typeof SetupRoute
 }
@@ -51,20 +59,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/chat': typeof ChatRoute
+  '/feedback': typeof FeedbackRoute
   '/results': typeof ResultsRoute
   '/setup': typeof SetupRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/chat' | '/results' | '/setup'
+  fullPaths: '/' | '/chat' | '/feedback' | '/results' | '/setup'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/chat' | '/results' | '/setup'
-  id: '__root__' | '/' | '/chat' | '/results' | '/setup'
+  to: '/' | '/chat' | '/feedback' | '/results' | '/setup'
+  id: '__root__' | '/' | '/chat' | '/feedback' | '/results' | '/setup'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ChatRoute: typeof ChatRoute
+  FeedbackRoute: typeof FeedbackRoute
   ResultsRoute: typeof ResultsRoute
   SetupRoute: typeof SetupRoute
 }
@@ -83,6 +93,13 @@ declare module '@tanstack/react-router' {
       path: '/results'
       fullPath: '/results'
       preLoaderRoute: typeof ResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feedback': {
+      id: '/feedback'
+      path: '/feedback'
+      fullPath: '/feedback'
+      preLoaderRoute: typeof FeedbackRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/chat': {
@@ -105,6 +122,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ChatRoute: ChatRoute,
+  FeedbackRoute: FeedbackRoute,
   ResultsRoute: ResultsRoute,
   SetupRoute: SetupRoute,
 }
