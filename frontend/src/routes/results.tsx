@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { ArrowLeft, ChevronDown, Sparkles, Trophy } from "lucide-react";
+import { ArrowLeft, ChevronDown, MessageCircle, Sparkles, Trophy } from "lucide-react";
 import { MatchRow } from "@/components/MatchRow";
 import { NavBar } from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
@@ -236,7 +236,15 @@ function ResultsPage() {
         <div className="mx-auto flex min-h-16 max-w-3xl items-center gap-3 px-5 py-3">
           <Button
             variant="outline"
-            className="h-12 w-full rounded-2xl rounded-tl-xs text-muted-foreground hover:text-foreground"
+            className="h-12 shrink-0 gap-2 rounded-2xl rounded-tl-xs px-4 text-muted-foreground hover:text-foreground"
+            onClick={() => void navigate({ to: "/chat" })}
+          >
+            <MessageCircle className="h-4 w-4" />
+            Chat
+          </Button>
+          <Button
+            variant="outline"
+            className="h-12 flex-1 rounded-2xl rounded-tl-xs text-muted-foreground hover:text-foreground"
             onClick={() => void navigate({ to: "/setup", search: { step: 1 } })}
           >
             Ajustar perfil y recalcular
