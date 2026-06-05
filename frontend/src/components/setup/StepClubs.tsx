@@ -1,26 +1,48 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown, X } from "lucide-react";
+import { getClubs } from "@/api/clubs";
 import { Input } from "@/components/ui/input";
 
 interface StepClubsProps {
   selectedClubs: string[];
-  clubs: string[];
   onChange: (clubs: string[]) => void;
 }
 
-export function StepClubs({
-  selectedClubs,
-  clubs,
-  onChange,
-}: StepClubsProps) {
+const PAGE_SIZE = 20;
+
+export function StepClubs({ selectedClubs, onChange }: StepClubsProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
+  const [results, setResults] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const filteredClubs = clubs.filter(
-    (club) =>
-      club.toLowerCase().includes(inputValue.toLowerCase()) &&
-      !selectedClubs.includes(club)
-  );
+  // Debounced server-side prefix search (paginated, first page).
+  useEffect(() => {
+    const controller = new AbortController();
+    setIsLoading(true);
+    const timer = setTimeout(() => {
+      getClubs(inputValue.trim(), PAGE_SIZE, 0, controller.signal)
+        .then((r) => {
+          if (!controller.signal.aborted) {
+            setResults(r.clubs);
+            setIsLoading(false);
+          }
+        })
+        .catch(() => {
+          if (!controller.signal.aborted) {
+            setResults([]);
+            setIsLoading(false);
+          }
+        });
+    }, 250);
+
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
+  }, [inputValue]);
+
+  const filteredClubs = results.filter((club) => !selectedClubs.includes(club));
 
   const handleSelectClub = (club: string) => {
     onChange([...selectedClubs, club]);
@@ -54,7 +76,11 @@ export function StepClubs({
 
         {isOpen && (
           <div className="absolute top-full left-0 right-0 z-50 mt-2 max-h-48 overflow-y-auto rounded-lg border border-border bg-card shadow-lg">
-            {filteredClubs.length > 0 ? (
+            {isLoading && filteredClubs.length === 0 ? (
+              <div className="px-4 py-2 text-sm text-muted-foreground">
+                Buscando…
+              </div>
+            ) : filteredClubs.length > 0 ? (
               filteredClubs.map((club) => (
                 <button
                   key={club}
@@ -96,7 +122,9 @@ export function StepClubs({
 
       {selectedClubs.length === 0 && (
         <p className="text-sm text-muted-foreground">
-          Podés seleccionar tus equipos de clubs favoritos (opcional). Los jugadores de estos clubs tendrán más peso en las recomendaciones.
+          Podés seleccionar tus equipos de clubs favoritos. Las recomendaciones
+          incluirán partidos con naciones que juegen similar a tus clubes
+          favoritos.
         </p>
       )}
     </div>

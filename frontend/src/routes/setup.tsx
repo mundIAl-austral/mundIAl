@@ -26,7 +26,6 @@ import { StepPlayers } from "@/components/setup/StepPlayers";
 import { StepSchedule } from "@/components/setup/StepSchedule";
 import { StepTeams } from "@/components/setup/StepTeams";
 import { Button } from "@/components/ui/button";
-import { useClubs } from "@/hooks/useClubs";
 import { usePlayerSuggestions } from "@/hooks/usePlayerSuggestions";
 import { useProfile } from "@/hooks/useProfile";
 import { useSetupStep1 } from "@/hooks/useSetupStep1";
@@ -53,7 +52,6 @@ function SetupPage() {
   const { teams } = useSetupStep1();
   const { countries, timezones } = useSetupStep4();
   const { players: playerSuggestions } = usePlayerSuggestions();
-  const { clubs } = useClubs();
 
   const [selectedTeams, setSelectedTeams] = useState<string[]>(
     profile?.favorite_teams ?? [],
@@ -206,7 +204,7 @@ function SetupPage() {
     3: {
       icon: Trophy,
       title: "Tus clubs",
-      subtitle: "Selecciona tus equipos de clubs favoritos (opcional).",
+      subtitle: "Selecciona tus equipos de clubs favoritos.",
     },
     4: {
       icon: Clock3,
@@ -277,7 +275,6 @@ function SetupPage() {
             {step === 3 && (
               <StepClubs
                 selectedClubs={selectedClubs}
-                clubs={clubs}
                 onChange={setSelectedClubs}
               />
             )}
